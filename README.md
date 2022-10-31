@@ -1,5 +1,6 @@
 # First-Collab
 
-**Yessir**
-- Something
-- Scissors
+**TNK**
+- Figma
+- html, css, js
+
