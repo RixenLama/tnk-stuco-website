@@ -1,6 +1,8 @@
-# First-Collab
+# tnk-stuco-website
 
-**TNK**
+This is a website made of the Student Council (STUCO) of **Turun Normaalikoulu High School**
+
+## Technologies
+
 - Figma
-- html, css, js
-
+- HTML, CSS, Sass, JavaScript
