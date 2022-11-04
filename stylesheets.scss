@@ -1,4 +1,73 @@
-$Primary-color: white; 
-$Secondary-color: black;   
+// Variables
 
+$primary-color: hsl(0, 0%, 100%);
+$secondary-color: hsl(0, 0%, 0%);
 
+$fw-bold: 600;
+$fw-refular: 400;
+
+// Base Styles
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: violet;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.container {
+  height: inherit;
+  width: 85%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+// Header
+
+.header {
+  background-color: $primary-color;
+  height: 64px;
+}
+
+.header-container {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav > ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+
+  .active-nav-item {
+    font-weight: 700;
+  }
+}
+
+// Footer
+
+.footer {
+  margin-top: auto;
+  padding: 1em 0;
+  background-color: $secondary-color;
+  text-align: center;
+
+  .footer-text {
+    font-size: 0.8rem;
+    color: white;
+  }
+}

@@ -1,1 +1,57 @@
-/*# sourceMappingURL=stylesheets.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: violet;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.container {
+  height: inherit;
+  width: 85%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: hsl(0deg, 0%, 100%);
+  height: 64px;
+}
+
+.header-container {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav > ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+.nav > ul .active-nav-item {
+  font-weight: 700;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 1em 0;
+  background-color: hsl(0deg, 0%, 0%);
+  text-align: center;
+}
+.footer .footer-text {
+  font-size: 0.8rem;
+  color: white;
+}/*# sourceMappingURL=stylesheets.css.map */
