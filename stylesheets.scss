@@ -1,10 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
 // Variables
 
-$primary-color: hsl(0, 0%, 100%);
-$secondary-color: hsl(0, 0%, 0%);
+$clr-primary: hsl(0, 0%, 100%);
+$clr-secondary: hsl(0, 0%, 0%);
+$clr-accent: hsl(273, 83%, 47%);
+$clr-gray: hsl(0, 0%, 95%);
 
-$fw-bold: 600;
-$fw-refular: 400;
+$fw-bold: 700;
+$fw-regular: 400;
+
+$fs-sm: clamp(0.8rem, -0.07vw + 0.81rem, 0.75rem);
+$fs-base: clamp(1rem, 0.18vw + 0.96rem, 1.13rem);
+$fs-md: clamp(1.25rem, 0.63vw + 1.13rem, 1.69rem);
+$fs-lg: clamp(1.56rem, 1.38vw + 1.29rem, 2.53rem);
+$fs-xl: clamp(1.95rem, 2.63vw + 1.43rem, 3.8rem);
+$fs-2xl: clamp(2.44rem, 4.65vw + 1.51rem, 5.7rem);
+$fs-3xl: clamp(3.05rem, 7.84vw + 1.48rem, 8.54rem);
 
 // Base Styles
 
@@ -18,26 +30,43 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: violet;
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 a {
   text-decoration: none;
   color: unset;
+  font-size: $fs-base;
+}
+
+section {
+  padding-block: 2em;
+}
+
+h1 {
+  font-size: $fs-xl;
+}
+
+p {
+  font-size: $fs-base;
 }
 
 .container {
   height: inherit;
-  width: 85%;
-  max-width: 1280px;
-  margin: 0 auto;
+  width: min(85%, 1280px);
+  margin-inline: auto;
+}
+
+.section-heading {
+  margin-bottom: 1em;
+  font-size: $fs-lg;
 }
 
 // Header
 
 .header {
-  background-color: $primary-color;
+  background-color: $clr-secondary;
+  color: $clr-primary;
   height: 64px;
 }
 
@@ -50,12 +79,20 @@ a {
 
 .nav > ul {
   display: flex;
-  gap: 1em;
+  gap: 2em;
   list-style: none;
 
-  .active-nav-item {
-    font-weight: 700;
+  a {
+    font-size: $fs-base;
   }
+
+  .nav-item--active {
+    font-weight: $fw-bold;
+  }
+}
+
+.quotes-section {
+  background-color: $clr-gray;
 }
 
 // Footer
@@ -63,7 +100,7 @@ a {
 .footer {
   margin-top: auto;
   padding: 1em 0;
-  background-color: $secondary-color;
+  background-color: $clr-secondary;
   text-align: center;
 
   .footer-text {
