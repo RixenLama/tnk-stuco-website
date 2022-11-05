@@ -95,6 +95,26 @@ p {
   background-color: $clr-gray;
 }
 
+
+
+// Hero page
+.hero-section{
+  background-image: url("./img/Hero\ Background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 742.75px;
+}
+
+.hero-container > h1 {
+
+  font-size: $fs-3xl;
+  color: #FFFFFF;
+}
+
+.hero-container > pre{
+  font-size: $fs-base;
+}
 // Footer
 
 .footer {
