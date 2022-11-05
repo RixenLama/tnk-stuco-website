@@ -122,8 +122,9 @@ p {
 }
 
 .hero-container > h1 {
+  width: 900px;
   font-size: $fs-2xl;
-  color: #ffffff;
+  color: $clr-primary;
 }
 
 .hero-container > p {
