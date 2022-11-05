@@ -79,7 +79,8 @@ p {
 }
 
 .hero-container > h1 {
-  font-size: clamp(3.05rem, 7.84vw + 1.48rem, 8.54rem);
+  width: 923.28px;
+  font-size: clamp(2.44rem, 4.65vw + 1.51rem, 5.7rem);
   color: #FFFFFF;
 }
 
