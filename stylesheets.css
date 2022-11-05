@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,24 +9,41 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: violet;
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 a {
   text-decoration: none;
   color: unset;
+  font-size: clamp(1rem, 0.18vw + 0.96rem, 1.13rem);
+}
+
+section {
+  padding-block: 2em;
+}
+
+h1 {
+  font-size: clamp(1.95rem, 2.63vw + 1.43rem, 3.8rem);
+}
+
+p {
+  font-size: clamp(1rem, 0.18vw + 0.96rem, 1.13rem);
 }
 
 .container {
   height: inherit;
-  width: 85%;
-  max-width: 1280px;
-  margin: 0 auto;
+  width: min(85%, 1280px);
+  margin-inline: auto;
+}
+
+.section-heading {
+  margin-bottom: 1em;
+  font-size: clamp(1.56rem, 1.38vw + 1.29rem, 2.53rem);
 }
 
 .header {
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
   height: 64px;
 }
 
@@ -38,11 +56,18 @@ a {
 
 .nav > ul {
   display: flex;
-  gap: 1em;
+  gap: 2em;
   list-style: none;
 }
-.nav > ul .active-nav-item {
+.nav > ul a {
+  font-size: clamp(1rem, 0.18vw + 0.96rem, 1.13rem);
+}
+.nav > ul .nav-item--active {
   font-weight: 700;
+}
+
+.quotes-section {
+  background-color: hsl(0deg, 0%, 95%);
 }
 
 .footer {
