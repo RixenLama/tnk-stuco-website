@@ -18,6 +18,8 @@ $fs-xl: clamp(1.95rem, 2.63vw + 1.43rem, 3.8rem);
 $fs-2xl: clamp(2.44rem, 4.65vw + 1.51rem, 5.7rem);
 $fs-3xl: clamp(3.05rem, 7.84vw + 1.48rem, 8.54rem);
 
+$header-height: 64px;
+
 // Base Styles
 
 * {
@@ -67,7 +69,7 @@ p {
 .header {
   background-color: $clr-secondary;
   color: $clr-primary;
-  height: 64px;
+  height: $header-height;
 }
 
 .header-container {
@@ -75,6 +77,20 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  img {
+    width: 2.5rem;
+  }
+
+  span {
+    font-weight: $fw-bold;
+  }
 }
 
 .nav > ul {
@@ -95,26 +111,36 @@ p {
   background-color: $clr-gray;
 }
 
+// Hero
 
-
-// Hero page
-.hero-section{
-  background-image: url("./img/Hero\ Background.png");
+.hero-section {
+  background-image: url("./img/hero-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 742.75px;
+  background-position: center;
+  height: calc(100vh - $header-height);
 }
 
 .hero-container > h1 {
-
-  font-size: $fs-3xl;
-  color: #FFFFFF;
+  font-size: $fs-2xl;
+  color: #ffffff;
 }
 
-.hero-container > pre{
+.hero-container > p {
   font-size: $fs-base;
 }
+
+.cta-container {
+  margin-top: 2em;
+  display: flex;
+  gap: 1em;
+
+  .cta-link {
+    background-color: $clr-primary;
+    padding: 1em;
+  }
+}
+
 // Footer
 
 .footer {
