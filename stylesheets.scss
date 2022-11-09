@@ -142,6 +142,20 @@ p {
   }
 }
 
+
+//About Us Section
+
+.about-link{
+  color: #8314DB;
+  font-size: $fs-sm;
+  font-weight: $fw-bold;
+}
+
+.about-link:hover{
+  zoom: 110%;
+  text-decoration: underline;
+}
+
 // Footer
 
 .footer {
