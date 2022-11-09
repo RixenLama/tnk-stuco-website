@@ -130,4 +130,10 @@ p {
 .footer .footer-text {
   font-size: 0.8rem;
   color: white;
+}
+
+.member-card {
+  padding: 15px;
+  background: #f3f3f3;
+  width: 235.9px;
 }/*# sourceMappingURL=stylesheets.css.map */
