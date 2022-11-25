@@ -152,7 +152,6 @@ p {
 }
 
 .about-link:hover{
-  zoom: 110%;
   text-decoration: underline;
 }
 
@@ -176,4 +175,19 @@ p {
   padding: 15px;
   background: #f3f3f3;
   width: 235.9px;
+}
+
+
+//Quote section
+
+.quote {
+  padding: 15px;
+  background:#FFFFFF;
+  width: 24rem;
+}
+
+.quote-name-class {
+  font-size: $fs-sm;
+  font-weight: $fw-bold;
+  color: #8314DB;
 }
