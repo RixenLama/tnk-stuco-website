@@ -196,3 +196,49 @@ p {
   font-weight: $fw-bold;
   color: #8314DB;
 }
+
+//Contact Page
+
+.insta-icon{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.insta-text{
+  position: absolute;
+  left: 10em;
+  top: 10em;
+  font-weight: $fw-bold;
+}
+
+.insta-link{
+  position: absolute;
+  left: 15.5em;
+  top: 10em;
+}
+
+.insta-link:hover{
+  color: #8314DB;
+}
+
+.tiktok-icon{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tiktok-text{
+  position: absolute;
+  left: 10em;
+  top: 13em;
+  font-weight: $fw-bold;
+}
+
+.tiktok-link{
+  position: absolute;
+  left: 13.9em;
+  top: 13em;
+}
+
+.tiktok-link:hover{
+  color: #8314DB;
+}

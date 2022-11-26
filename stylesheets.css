@@ -152,4 +152,48 @@ p {
   font-size: clamp(0.8rem, -0.07vw + 0.81rem, 0.75rem);
   font-weight: 700;
   color: #8314DB;
+}
+
+.insta-icon {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.insta-text {
+  position: absolute;
+  left: 10em;
+  top: 10em;
+  font-weight: 700;
+}
+
+.insta-link {
+  position: absolute;
+  left: 15.5em;
+  top: 10em;
+}
+
+.insta-link:hover {
+  color: #8314DB;
+}
+
+.tiktok-icon {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tiktok-text {
+  position: absolute;
+  left: 10em;
+  top: 13em;
+  font-weight: 700;
+}
+
+.tiktok-link {
+  position: absolute;
+  left: 13.9em;
+  top: 13em;
+}
+
+.tiktok-link:hover {
+  color: #8314DB;
 }/*# sourceMappingURL=stylesheets.css.map */
