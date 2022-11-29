@@ -196,4 +196,9 @@ p {
 
 .tiktok-link:hover {
   color: #8314DB;
+}
+
+.docs {
+  width: 50rem;
+  height: 80vh;
 }/*# sourceMappingURL=stylesheets.css.map */
