@@ -198,54 +198,41 @@ p {
 }
 
 //Contact Page
+.insta-container{
+  display: flex;
+  flex-direction: row;
+}
 
 .insta-icon{
   display: flex;
   justify-content: flex-start;
 }
 
-.insta-text{
-  position: absolute;
-  left: 10em;
-  top: 10em;
-  font-weight: $fw-bold;
-}
-
-.insta-link{
-  position: absolute;
-  left: 15.5em;
-  top: 10em;
-}
 
 .insta-link:hover{
   color: #8314DB;
 }
 
+.tiktok-container{
+  display: flex;
+  flex-direction: row;
+}
 .tiktok-icon{
   display: flex;
   justify-content: flex-start;
-}
-
-.tiktok-text{
-  position: absolute;
-  left: 10em;
-  top: 13em;
-  font-weight: $fw-bold;
-}
-
-.tiktok-link{
-  position: absolute;
-  left: 13.9em;
-  top: 13em;
-}
+}     
 
 .tiktok-link:hover{
   color: #8314DB;
 }
 
+.forms{
+  width: 100%;
+  height: 80vh;
+}
 //Rules
 
 .docs{
-  width: 50rem;
+  width: 100%;
   height: 80vh;
 }
