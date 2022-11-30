@@ -201,6 +201,7 @@ p {
 .insta-container{
   display: flex;
   flex-direction: row;
+  gap: 0.2em;
 }
 
 .insta-icon{
@@ -216,7 +217,9 @@ p {
 .tiktok-container{
   display: flex;
   flex-direction: row;
+  gap: 0.2em;
 }
+
 .tiktok-icon{
   display: flex;
   justify-content: flex-start;
