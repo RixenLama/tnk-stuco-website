@@ -124,18 +124,18 @@ p {
 }
 
 .about-link {
-  color: #8314DB;
+  color: #8314db;
   font-size: clamp(0.8rem, -0.07vw + 0.81rem, 0.75rem);
   font-weight: 700;
-  box-shadow: inset 0 0 0 0 #8314DB;
+  box-shadow: inset 0 0 0 0 #8314db;
   margin: 0 -0.25rem;
   padding: 0 0.25rem;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .about-link:hover {
-  box-shadow: inset 10rem 0 0 0 #8314DB;
-  color: #FFFFFF;
+  box-shadow: inset 10rem 0 0 0 #8314db;
+  color: #ffffff;
 }
 
 .footer {
@@ -149,22 +149,30 @@ p {
   color: white;
 }
 
+.member-card-container {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .member-card {
   padding: 15px;
   background: #f3f3f3;
-  width: 235.9px;
+  flex-basis: 250px;
+  flex-grow: 1;
 }
 
 .quote {
   padding: 15px;
-  background: #FFFFFF;
+  background: #ffffff;
   width: 20rem;
 }
 
 .quote-name-class {
   font-size: clamp(0.8rem, -0.07vw + 0.81rem, 0.75rem);
   font-weight: 700;
-  color: #8314DB;
+  color: #8314db;
 }
 
 .insta-container {
@@ -179,7 +187,7 @@ p {
 }
 
 .insta-link:hover {
-  color: #8314DB;
+  color: #8314db;
 }
 
 .tiktok-container {
@@ -194,7 +202,7 @@ p {
 }
 
 .tiktok-link:hover {
-  color: #8314DB;
+  color: #8314db;
 }
 
 .forms {

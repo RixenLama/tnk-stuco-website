@@ -111,17 +111,16 @@ p {
   background-color: $clr-gray;
 }
 
-#menu{
-  display: none;     
+#menu {
+  display: none;
 }
 
-
-#menu-nav{
+#menu-nav {
   height: calc(100vh - $header-height);
   display: none;
 }
 
-#exit-menu{
+#exit-menu {
   display: none;
 }
 // Hero
@@ -155,22 +154,21 @@ p {
   }
 }
 
-
 //About Us Section
 
-.about-link{
-  color: #8314DB;
+.about-link {
+  color: #8314db;
   font-size: $fs-sm;
   font-weight: $fw-bold;
-  box-shadow: inset 0 0 0 0 #8314DB;
-  margin: 0 -.25rem;
-  padding: 0 .25rem;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  box-shadow: inset 0 0 0 0 #8314db;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.about-link:hover{
-  box-shadow: inset 10rem 0 0 0 #8314DB;
-  color: #FFFFFF;
+.about-link:hover {
+  box-shadow: inset 10rem 0 0 0 #8314db;
+  color: #ffffff;
 }
 
 // Footer
@@ -189,89 +187,95 @@ p {
 
 //Members section
 
+.member-card-container {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .member-card {
   padding: 15px;
   background: #f3f3f3;
-  width: 235.9px;
+  flex-basis: 250px;
+  flex-grow: 1;
 }
-
 
 //Quote section
 
 .quote {
   padding: 15px;
-  background:#FFFFFF;
+  background: #ffffff;
   width: 20rem;
 }
 
 .quote-name-class {
   font-size: $fs-sm;
   font-weight: $fw-bold;
-  color: #8314DB;
+  color: #8314db;
 }
 
 //Contact Page
-.insta-container{
+.insta-container {
   display: flex;
   flex-direction: row;
   gap: 0.2em;
 }
 
-.insta-icon{
+.insta-icon {
   display: flex;
   justify-content: flex-start;
 }
 
-
-.insta-link:hover{
-  color: #8314DB;
+.insta-link:hover {
+  color: #8314db;
 }
 
-.tiktok-container{
+.tiktok-container {
   display: flex;
   flex-direction: row;
   gap: 0.2em;
 }
 
-.tiktok-icon{
+.tiktok-icon {
   display: flex;
   justify-content: flex-start;
-}     
-
-.tiktok-link:hover{
-  color: #8314DB;
 }
 
-.forms{
+.tiktok-link:hover {
+  color: #8314db;
+}
+
+.forms {
   width: 100%;
   height: 80vh;
 }
 //Rules
 
-.docs{
+.docs {
   width: 100%;
   height: 80vh;
 }
 
 @media only screen and (max-width: 700px) {
-  #menu{
+  #menu {
     display: block;
   }
 
-  #nav{
+  #nav {
     display: none;
   }
 
-  #menu-nav{
+  #menu-nav {
     display: none;
   }
 
-  #menu-nav{
+  #menu-nav {
     height: calc(100vh - $header-height);
     display: none;
     justify-content: center;
   }
-  #menu-nav > ul{
+  #menu-nav > ul {
     height: calc(100vh - $header-height);
     width: 100%;
     list-style: none;
