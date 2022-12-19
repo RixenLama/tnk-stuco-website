@@ -123,6 +123,8 @@ p {
 #exit-menu {
   display: none;
 }
+
+
 // Hero
 
 .hero-section {
@@ -141,6 +143,8 @@ p {
 
 .hero-container > p {
   font-size: $fs-base;
+  font-weight: $fw-bold;
+  width: 670px;
 }
 
 .cta-container {
@@ -151,6 +155,12 @@ p {
   .cta-link {
     background-color: $clr-primary;
     padding: 1em;
+    font-weight: $fw-bold;
+  }
+
+  .cta-link:hover{
+    background-color: black;
+    color: white;
   }
 }
 
@@ -201,10 +211,7 @@ p {
   flex-grow: 1;
 }
 
-.member-card:hover{
-  border-radius: 20px;
-  background: #F5F5DC;
-}
+
 //Quote section
 
 .quote {
@@ -290,3 +297,5 @@ p {
     justify-content: space-evenly;
   }
 }
+
+//Add a hover for the email links, becuase it looks kinda messy rn

@@ -111,6 +111,8 @@ p {
 
 .hero-container > p {
   font-size: clamp(1rem, 0.18vw + 0.96rem, 1.13rem);
+  font-weight: 700;
+  width: 670px;
 }
 
 .cta-container {
@@ -121,6 +123,11 @@ p {
 .cta-container .cta-link {
   background-color: hsl(0deg, 0%, 100%);
   padding: 1em;
+  font-weight: 700;
+}
+.cta-container .cta-link:hover {
+  background-color: black;
+  color: white;
 }
 
 .about-link {
@@ -161,11 +168,6 @@ p {
   background: #f3f3f3;
   flex-basis: 250px;
   flex-grow: 1;
-}
-
-.member-card:hover {
-  border-radius: 20px;
-  background: #F5F5DC;
 }
 
 .quote {
