@@ -17,7 +17,7 @@
               >TNK STUCO</span
             ></a
           >
-          <nav class="nav">
+          <nav id="nav" class="nav">
             <ul>
               <li>
                 <a href="index.html" class="nav-item nav-item--active">Home</a>
@@ -26,11 +26,31 @@
               <li><a href="event.html" class="nav-item">Events</a></li>
               <li><a href="rule.html" class="nav-item">Rules</a></li>
               <li><a href="contact.html" class="nav-item">Contact</a></li>
+              <li>
+                <button href="" id="sign-in-button" class="nav-item">
+                  Sign in
+                </button>
+              </li>
             </ul>
           </nav>
+          <a onclick="openNav()" id="menu"><img src="./img/mdi_menu.png" /></a>
+          <a onclick="closeNav()" id="exit-menu"
+            ><img src="./img/cross.png"
+          /></a>
         </div>
       </div>
     </header>
+    <div id="menu-content">
+      <nav id="menu-nav">
+        <ul>
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="member.html" class="nav-item">Members</a></li>
+          <li><a href="event.html" class="nav-item">Events</a></li>
+          <li><a href="rule.html" class="nav-item">Rules</a></li>
+          <li><a href="contact.html" class="nav-item">Contact</a></li>
+          <li><a href="" class="">sign in</a></li>
+        </ul>
+      </nav>
 
     <main class="main">
       <section>
@@ -55,5 +75,6 @@
         >
       </div>
     </footer>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
