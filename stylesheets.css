@@ -28,6 +28,7 @@ h1 {
 
 p {
   font-size: clamp(1rem, 0.18vw + 0.96rem, 1.13rem);
+  line-height: 1.5;
 }
 
 .container {
@@ -78,10 +79,6 @@ p {
   font-weight: 700;
 }
 
-.quotes-section {
-  background-color: hsl(0deg, 0%, 95%);
-}
-
 #menu {
   display: none;
 }
@@ -104,30 +101,35 @@ p {
 }
 
 .hero-container > h1 {
-  width: 900px;
+  max-width: 900px;
   font-size: clamp(2.44rem, 4.65vw + 1.51rem, 5.7rem);
   color: hsl(0deg, 0%, 100%);
 }
 
 .hero-container > p {
+  margin-top: 1em;
   font-size: clamp(1rem, 0.18vw + 0.96rem, 1.13rem);
   font-weight: 700;
-  width: 700px;
+  max-width: 700px;
 }
 
 .cta-container {
-  margin-top: 2em;
+  margin-top: 4em;
   display: flex;
+  flex-wrap: wrap;
   gap: 1em;
 }
 .cta-container .cta-link {
   background-color: hsl(0deg, 0%, 100%);
-  padding: 1em;
+  padding: 1em 1.5em;
   font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 .cta-container .cta-link:hover {
   background-color: black;
   color: white;
+  transition: 200ms;
 }
 
 .about-link {
@@ -170,6 +172,10 @@ p {
   flex-grow: 1;
 }
 
+.quotes-section {
+  background-color: hsl(0deg, 0%, 95%);
+}
+
 .quote {
   padding: 15px;
   background: #ffffff;
@@ -184,8 +190,8 @@ p {
 
 .insta-container {
   display: flex;
-  flex-direction: row;
-  gap: 0.2em;
+  align-items: center;
+  gap: 0.5em;
 }
 
 .insta-icon {
@@ -195,12 +201,13 @@ p {
 
 .insta-link:hover {
   color: #8314db;
+  text-decoration: underline;
 }
 
 .tiktok-container {
   display: flex;
-  flex-direction: row;
-  gap: 0.2em;
+  align-items: center;
+  gap: 0.5em;
 }
 
 .tiktok-icon {
@@ -210,6 +217,7 @@ p {
 
 .tiktok-link:hover {
   color: #8314db;
+  text-decoration: underline;
 }
 
 .forms {
