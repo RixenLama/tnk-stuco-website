@@ -185,6 +185,36 @@ p {
   color: #ffffff;
 }
 
+// Quotes Section
+
+.quotes-section {
+  background-color: $clr-gray;
+}
+
+.quotes-card-container {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.quote {
+  padding: 1rem;
+  background: $clr-primary;
+}
+
+.quote-cite {
+  display: block;
+  margin-top: 2em;
+  font-size: $fs-sm;
+  font-weight: $fw-bold;
+  color: $clr-accent;
+
+  &::before {
+    content: "\2013";
+    margin-right: 4px;
+  }
+}
+
 // Footer
 
 .footer {
@@ -213,24 +243,11 @@ p {
   background: #f3f3f3;
   flex-basis: 250px;
   flex-grow: 1;
-}
 
-// Quotes Section
-
-.quotes-section {
-  background-color: $clr-gray;
-}
-
-.quote {
-  padding: 15px;
-  background: #ffffff;
-  width: 20rem;
-}
-
-.quote-name-class {
-  font-size: $fs-sm;
-  font-weight: $fw-bold;
-  color: #8314db;
+  a:hover {
+    color: #8314db;
+    text-decoration: underline;
+  }
 }
 
 // Contact Page
