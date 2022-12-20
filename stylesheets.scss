@@ -19,6 +19,9 @@ $fs-2xl: clamp(2.44rem, 4.65vw + 1.51rem, 5.7rem);
 $fs-3xl: clamp(3.05rem, 7.84vw + 1.48rem, 8.54rem);
 
 $header-height: 64px;
+$max-container-width: 1280px;
+
+$transition-duration: 200ms;
 
 // Base Styles
 
@@ -51,11 +54,12 @@ h1 {
 
 p {
   font-size: $fs-base;
+  line-height: 1.5;
 }
 
 .container {
   height: inherit;
-  width: min(85%, 1280px);
+  width: min(85%, $max-container-width);
   margin-inline: auto;
 }
 
@@ -107,10 +111,6 @@ p {
   }
 }
 
-.quotes-section {
-  background-color: $clr-gray;
-}
-
 #menu {
   display: none;
 }
@@ -124,8 +124,7 @@ p {
   display: none;
 }
 
-
-// Hero
+// Hero Section
 
 .hero-section {
   background-image: url("./img/hero-background.jpg");
@@ -136,35 +135,40 @@ p {
 }
 
 .hero-container > h1 {
-  width: 900px;
+  max-width: 900px;
   font-size: $fs-2xl;
   color: $clr-primary;
 }
 
 .hero-container > p {
+  margin-top: 1em;
   font-size: $fs-base;
   font-weight: $fw-bold;
-  width: 700px;
+  max-width: 700px;
 }
 
 .cta-container {
-  margin-top: 2em;
+  margin-top: 4em;
   display: flex;
+  flex-wrap: wrap;
   gap: 1em;
 
   .cta-link {
     background-color: $clr-primary;
-    padding: 1em;
+    padding: 1em 1.5em;
     font-weight: $fw-bold;
+    font-size: 1rem;
+    text-transform: uppercase;
   }
 
-  .cta-link:hover{
+  .cta-link:hover {
     background-color: black;
     color: white;
+    transition: $transition-duration;
   }
 }
 
-//About Us Section
+// About Us Section
 
 .about-link {
   color: #8314db;
@@ -181,6 +185,36 @@ p {
   color: #ffffff;
 }
 
+// Quotes Section
+
+.quotes-section {
+  background-color: $clr-gray;
+}
+
+.quotes-card-container {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.quote {
+  padding: 1rem;
+  background: $clr-primary;
+}
+
+.quote-cite {
+  display: block;
+  margin-top: 2em;
+  font-size: $fs-sm;
+  font-weight: $fw-bold;
+  color: $clr-accent;
+
+  &::before {
+    content: "\2013";
+    margin-right: 4px;
+  }
+}
+
 // Footer
 
 .footer {
@@ -195,7 +229,7 @@ p {
   }
 }
 
-//Members section
+// Members Page
 
 .member-card-container {
   display: flex;
@@ -209,28 +243,19 @@ p {
   background: #f3f3f3;
   flex-basis: 250px;
   flex-grow: 1;
+
+  a:hover {
+    color: #8314db;
+    text-decoration: underline;
+  }
 }
 
+// Contact Page
 
-//Quote section
-
-.quote {
-  padding: 15px;
-  background: #ffffff;
-  width: 20rem;
-}
-
-.quote-name-class {
-  font-size: $fs-sm;
-  font-weight: $fw-bold;
-  color: #8314db;
-}
-
-//Contact Page
 .insta-container {
   display: flex;
-  flex-direction: row;
-  gap: 0.2em;
+  align-items: center;
+  gap: 0.5em;
 }
 
 .insta-icon {
@@ -240,12 +265,13 @@ p {
 
 .insta-link:hover {
   color: #8314db;
+  text-decoration: underline;
 }
 
 .tiktok-container {
   display: flex;
-  flex-direction: row;
-  gap: 0.2em;
+  align-items: center;
+  gap: 0.5em;
 }
 
 .tiktok-icon {
@@ -255,19 +281,22 @@ p {
 
 .tiktok-link:hover {
   color: #8314db;
+  text-decoration: underline;
 }
 
 .forms {
   width: 100%;
   height: 80vh;
 }
-//Rules
+
+// Rules Page
 
 .docs {
   width: 100%;
   height: 80vh;
 }
 
+// Media Queries
 
 @media only screen and (max-width: 700px) {
   #menu {
@@ -287,6 +316,7 @@ p {
     display: none;
     justify-content: center;
   }
+
   #menu-nav > ul {
     height: calc(100vh - $header-height);
     width: 100%;
