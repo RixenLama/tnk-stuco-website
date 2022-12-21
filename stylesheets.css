@@ -44,6 +44,12 @@ p {
   font-size: clamp(1.56rem, 1.38vw + 1.29rem, 2.53rem);
 }
 
+.iframe {
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
+
 .header {
   background-color: hsl(0deg, 0%, 0%);
   color: hsl(0deg, 0%, 100%);
@@ -205,46 +211,23 @@ p {
   text-decoration: underline;
 }
 
-.insta-container {
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.link {
   display: flex;
   align-items: center;
   gap: 0.5em;
 }
-
-.insta-icon {
-  display: flex;
-  justify-content: flex-start;
+.link a {
+  font-size: 1rem;
 }
-
-.insta-link:hover {
-  color: #8314db;
+.link a:hover {
+  color: hsl(273deg, 83%, 47%);
   text-decoration: underline;
-}
-
-.tiktok-container {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-}
-
-.tiktok-icon {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.tiktok-link:hover {
-  color: #8314db;
-  text-decoration: underline;
-}
-
-.forms {
-  width: 100%;
-  height: 80vh;
-}
-
-.docs {
-  width: 100%;
-  height: 80vh;
 }
 
 @media only screen and (max-width: 700px) {
