@@ -204,14 +204,17 @@ p {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
-.quote {
+.quote-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   padding: 1rem;
   background: $clr-primary;
 }
 
 .quote-cite {
   display: block;
-  margin-top: 2em;
+  margin-top: auto;
   font-size: $fs-sm;
   font-weight: $fw-bold;
   color: $clr-accent;

@@ -165,14 +165,17 @@ p {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
-.quote {
+.quote-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   padding: 1rem;
   background: hsl(0deg, 0%, 100%);
 }
 
 .quote-cite {
   display: block;
-  margin-top: 2em;
+  margin-top: auto;
   font-size: clamp(0.8rem, -0.07vw + 0.81rem, 0.75rem);
   font-weight: 700;
   color: hsl(273deg, 83%, 47%);
