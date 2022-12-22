@@ -44,6 +44,10 @@ p {
   font-size: clamp(1.56rem, 1.38vw + 1.29rem, 2.53rem);
 }
 
+.page-subtitle {
+  margin-top: 1rem;
+}
+
 .iframe {
   width: 100%;
   height: 100vh;
