@@ -283,6 +283,9 @@ p {
 }
 
 @media only screen and (max-width: 700px) {
+  .header-span {
+    display: none;
+  }
   .mobile-nav-button {
     display: block;
   }
