@@ -125,7 +125,7 @@ p {
 }
 
 .hero-section {
-  background-image: url("./img/hero-background.jpg");
+  background-image: url("./img/hero-background.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
