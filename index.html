@@ -4,18 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
     <title>Home | TNK STUCO</title>
+    <meta name="title" content="Home | TNK STUCO" />
     <meta
       name="description"
-      content="This is a personal website for the student council of Turun Normaalikoulu. 
-      This website is used to showcase upcoming events in the school, the members of stuco,
-      and the entire school as a whole."
+      content="This is the official website of the student council of Turun normaalikoulu. Here we showcase upcoming events in the school, the members of STUCO, and the entire school as a whole."
     />
-    <meta name="robots" content="noindex" />
-    <!--IDK if this is necessary also, but I added it just incase once again. :D-->
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Home | TNK STUCO" />
+    <meta
+      property="og:description"
+      content="This is the official website of the student council of Turun normaalikoulu. Here we showcase upcoming events in the school, the members of STUCO, and the entire school as a whole."
+    />
+    <meta property="og:image" content="/img/hero-background.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Home | TNK STUCO" />
+    <meta
+      property="twitter:description"
+      content="This is the official website of the student council of Turun normaalikoulu. Here we showcase upcoming events in the school, the members of STUCO, and the entire school as a whole."
+    />
+    <meta property="twitter:image" content="/img/hero-background.jpg" />
 
     <link rel="stylesheet" href="stylesheets.css" />
-    <script src="script.js" defer></script>
+    <script src="/js/script.js" defer></script>
 
     <!--Favicon-->
     <link
@@ -137,42 +154,58 @@
         <div class="container">
           <div class="quotes-container">
             <h2 class="section-heading">Quotes</h2>
-            <div class="quotes-card-container" data-aos="fade-up-right">
-              <blockquote class="quote-card">
+            <div class="quotes-card-container">
+              <blockquote
+                class="quote-card"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
                 <p>“the picnics organized by stuco have been so fun frfr.”</p>
                 <cite class="quote-cite">Bozo (L1IBkv)</cite>
               </blockquote>
-              <blockquote class="quote-card" data-aos="fade-up-right">
+              <blockquote
+                class="quote-card"
+                data-aos="fade-up"
+                data-aos-delay="50"
+              >
                 <p>“bro last night was a movie ong fr”</p>
                 <cite class="quote-cite">Rex (L1IBkv)</cite>
               </blockquote>
-              <blockquote class="quote-card" data-aos="fade-up-left">
+              <blockquote
+                class="quote-card"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <p>“imma be studious”</p>
                 <cite class="quote-cite">Zesty (L1IBkv)</cite>
               </blockquote>
-              <blockquote class="quote-card" data-aos="fade-up-left">
+              <blockquote
+                class="quote-card"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
                 <p>
                   "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Facere placeat commodi delectus dolor ab deserunt."
                 </p>
                 <cite class="quote-cite">Bozo (L1IBkv)</cite>
               </blockquote>
-              <blockquote class="quote-card" data-aos="fade-down-right">
+              <blockquote
+                class="quote-card"
+                data-aos="fade-up"
+                data-aos-delay="50"
+              >
                 <p>
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Culpa, perspiciatis."
                 </p>
                 <cite class="quote-cite">Bozo (L1IBkv)</cite>
               </blockquote>
-              <blockquote class="quote-card" data-aos="fade-down-right">
-                <p>"Lorem ipsum dolor sit amet."</p>
-                <cite class="quote-cite">Bozo (L1IBkv)</cite>
-              </blockquote>
-              <blockquote class="quote-card" data-aos="fade-down-left">
-                <p>"Lorem ipsum dolor sit amet."</p>
-                <cite class="quote-cite">Bozo (L1IBkv)</cite>
-              </blockquote>
-              <blockquote class="quote-card" data-aos="fade-down-left">
+              <blockquote
+                class="quote-card"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <p>"Lorem ipsum dolor sit amet."</p>
                 <cite class="quote-cite">Bozo (L1IBkv)</cite>
               </blockquote>
@@ -184,15 +217,15 @@
 
     <footer class="footer">
       <div class="container">
-        <span class="footer-text"
-          >© 2022 Turun Normaalikoulu High School Student Council</span
+        <span id="footer-text" class="footer-text"
+          >© 2022 Turun normaalikoulun lukio. All rights reserved.</span
         >
       </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({ once: true, offset: 100 });
     </script>
   </body>
 </html>
