@@ -129,6 +129,10 @@ p {
 
 .mobile-nav-button {
   display: none;
+
+  img {
+    width: 1.75rem;
+  }
 }
 
 #menu-content {
@@ -161,7 +165,7 @@ p {
 // Hero Section
 
 .hero-section {
-  background-image: url("./img/hero-background.png");
+  background-image: url("./img/hero-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -343,8 +347,7 @@ p {
 // Media Queries
 
 @media only screen and (max-width: 700px) {
-
-  .header-span{
+  .header-span {
     display: none;
   }
 

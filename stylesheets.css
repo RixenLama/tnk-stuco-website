@@ -96,6 +96,9 @@ p {
 .mobile-nav-button {
   display: none;
 }
+.mobile-nav-button img {
+  width: 1.75rem;
+}
 
 #menu-content {
   display: none;
@@ -125,7 +128,7 @@ p {
 }
 
 .hero-section {
-  background-image: url("./img/hero-background.png");
+  background-image: url("./img/hero-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
