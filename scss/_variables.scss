@@ -6,6 +6,13 @@ $clr-accent: hsl(273, 83%, 47%);
 $clr-gray: hsl(210, 14%, 95%);
 $clr-gray-dark: hsl(0, 0%, 20%);
 
+$clr-black: hsl(0, 0%, 0%);
+$clr-text--dark: hsl(240, 6%, 10%);
+$clr-text--light: hsl(240, 5%, 34%);
+$clr-gray--stroke: hsl(240, 6%, 90%);
+$clr-gray--bg: hsl(240, 5%, 96%);
+$clr-white: hsl(0, 0%, 100%);
+
 $fw-bold: 700;
 $fw-regular: 400;
 
@@ -21,3 +28,5 @@ $header-height: 64px;
 $max-container-width: 1280px;
 
 $transition-duration: 200ms;
+
+$border-radius: 4px;
