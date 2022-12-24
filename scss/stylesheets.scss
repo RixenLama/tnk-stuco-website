@@ -1,30 +1,6 @@
+@import "variables";
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-
-// Variables
-
-$clr-primary: hsl(0, 0%, 100%);
-$clr-secondary: hsl(0, 0%, 0%);
-$clr-accent: hsl(273, 83%, 47%);
-$clr-gray: hsl(210, 14%, 95%);
-$clr-gray-dark: hsl(0, 0%, 20%);
-
-$fw-bold: 700;
-$fw-regular: 400;
-
-$fs-sm: clamp(0.8rem, -0.07vw + 0.81rem, 0.75rem);
-$fs-base: clamp(1rem, 0.18vw + 0.96rem, 1.13rem);
-$fs-md: clamp(1.25rem, 0.63vw + 1.13rem, 1.69rem);
-$fs-lg: clamp(1.56rem, 1.38vw + 1.29rem, 2.53rem);
-$fs-xl: clamp(1.95rem, 2.63vw + 1.43rem, 3.8rem);
-$fs-2xl: clamp(2.44rem, 4.65vw + 1.51rem, 5.7rem);
-$fs-3xl: clamp(3.05rem, 7.84vw + 1.48rem, 8.54rem);
-
-$fs-base-static: 1rem;
-
-$header-height: 64px;
-$max-container-width: 1280px;
-
-$transition-duration: 200ms;
 
 // Base Styles
 
@@ -346,7 +322,7 @@ p {
 
 // Media Queries
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .header-span {
     display: none;
   }
