@@ -56,61 +56,97 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body data-mobile-nav-expanded="false">
     <header class="header">
       <div class="container">
         <div class="header-container">
-          <a class="header-logo" href="index.html"
-            ><img src="./img/tnk-logo.svg" alt="" /><span class="header-span"
-              >TNK STUCO</span
-            ></a
+          <a class="header__logo" href="index.html" aria-label="Home">
+            <img src="./img/tnk-logo.svg" alt="" aria-hidden="true" />
+            <span>TNK STUCO</span>
+          </a>
+          <nav
+            id="primary-nav"
+            class="primary-nav"
+            aria-label="primary navigation"
           >
-          <nav id="nav" class="nav">
             <ul>
               <li>
-                <a href="index.html" class="nav-item nav-item--active">Home</a>
+                <a
+                  href="index.html"
+                  class="primary-nav__link primary-nav__link--active"
+                  aria-current="page"
+                  >Home</a
+                >
               </li>
-              <li><a href="member.html" class="nav-item">Members</a></li>
-              <li><a href="event.html" class="nav-item">Events</a></li>
-              <li><a href="rule.html" class="nav-item">Rules</a></li>
-              <li><a href="contact.html" class="nav-item">Contact</a></li>
+              <li>
+                <a href="member.html" class="primary-nav__link">Members</a>
+              </li>
+              <li><a href="event.html" class="primary-nav__link">Events</a></li>
+              <li><a href="rule.html" class="primary-nav__link">Rules</a></li>
+              <li>
+                <a href="contact.html" class="primary-nav__link">Contact</a>
+              </li>
             </ul>
           </nav>
-          <div class="mobile-nav-button">
-            <a onclick="openNav()" id="menu"
-              ><img src="./img/icons/ic_menu.svg"
-            /></a>
-            <a onclick="closeNav()" id="exit-menu"
-              ><img src="./img/icons/ic_close.svg"
-            /></a>
-          </div>
+          <button
+            class="mobile-nav-button"
+            id="mobile-nav-button"
+            aria-controls="mobile-nav"
+            aria-expanded="false"
+            tabindex="0"
+          >
+            <span class="sr-only">Menu</span>
+            <img
+              src="./img/icons/ic_menu.svg"
+              class="mobile-nav-button__menu"
+            />
+            <img
+              src="./img/icons/ic_close.svg"
+              class="mobile-nav-button__exit"
+            />
+          </button>
         </div>
       </div>
-    </header>
-    <div id="menu-content">
-      <nav id="menu-nav">
-        <ul>
-          <li><a href="index.html" class="nav-item">Home</a></li>
-          <li><a href="member.html" class="nav-item">Members</a></li>
-          <li><a href="event.html" class="nav-item">Events</a></li>
-          <li><a href="rule.html" class="nav-item">Rules</a></li>
-          <li><a href="contact.html" class="nav-item">Contact</a></li>
-        </ul>
+      <nav id="mobile-nav" class="mobile-nav" aria-label="mobile navigation">
+        <div class="container">
+          <ul>
+            <li>
+              <a
+                href="index.html"
+                class="mobile-nav__link mobile-nav__link--active"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li><a href="member.html" class="mobile-nav__link">Members</a></li>
+            <li><a href="event.html" class="mobile-nav__link">Events</a></li>
+            <li><a href="rule.html" class="mobile-nav__link">Rules</a></li>
+            <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+          </ul>
+        </div>
       </nav>
-    </div>
+    </header>
+
     <main class="main">
-      <section class="hero-section">
+      <section class="hero-section | section--large">
         <div class="container">
           <div class="hero-container">
-            <h1>We Make School More Fun.</h1>
-            <p>
+            <h1 class="hero__heading">We Make School More Fun.</h1>
+            <p class="hero__description">
               We are the student council of Turun Normaalikoulu High School. We
               organize fun events for our students to make the school year more
               enjoyable.
             </p>
-            <div class="cta-container">
-              <a href="event.html" class="cta-link">Future Events</a
-              ><a href="contact.html" class="cta-link">Suggest Something</a>
+            <div class="hero__cta">
+              <a
+                href="event.html"
+                class="hero__cta-link | button button--primary"
+                >Future Events</a
+              ><a
+                href="contact.html"
+                class="hero__cta-link | button button--secondary"
+                >Suggest Something</a
+              >
             </div>
           </div>
         </div>
@@ -120,15 +156,14 @@
           <div class="about-container">
             <h2 class="section-heading">About Us</h2>
             <p>
-              The Student Council is a group of students who make up the student
-              body. Their main responsibility is to organize fun events for the
-              school and make it more enjoyable. We are a the student council of
-              our school. We consist of around 30 students, two from each class.
-              Our job is to organize fun events for our school through the
-              school year to make it more enjoyable. Examples of events
-              organized by us include picnics and parties. The Student Council
-              is made up of members from each class, so there are always two
-              people from each class on this committee. They meet once in a
+              We are the Student Council of Turun Normaalikoulu Upper Secondary
+              School. We are a group of students who are responsible for making
+              school more enjoyable. We consist of around 25 students, two from
+              each class. Our job is to organize fun events for our school
+              through the school year to make it more enjoyable. Examples of
+              events organized by us include picnics and parties. The Student
+              Council is made up of members from each class, so there are always
+              two people from each class on this committee. They meet once in a
               while to discuss how they can make things better at school and
               have fun activities for everyone to enjoy.
             </p>

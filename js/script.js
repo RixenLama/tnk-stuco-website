@@ -1,32 +1,20 @@
-function openNav() {
-  document.getElementById("exit-menu").style.display = "block";
-  document.getElementById("menu").style.display = "none";
-  document.getElementsByTagName("body")[0].dataset.open = "true";
-}
+// Responsive Navbar
 
-function closeNav() {
-  document.getElementById("exit-menu").style.display = "none";
-  document.getElementById("menu").style.display = "block";
-  document.getElementsByTagName("body")[0].dataset.open = "false";
-}
+const mobileNavButton = document.querySelector("#mobile-nav-button");
 
-// $(document).ready(function() {
-//   if (!window.matchMedia)
-//       return;
+mobileNavButton.addEventListener("click", () => {
+  const mobileNavExpanded = document.body.getAttribute(
+    "data-mobile-nav-expanded"
+  );
 
-//   var current = $('head > link[rel="icon"][media]');
-//   $.each(current, function(i, icon) {
-//       var match = window.matchMedia(icon.media);
-//       function swap() {
-//           if (match.matches) {
-//               current.remove();
-//               current = $(icon).appendTo('head');
-//           }
-//       }
-//       match.addListener(swap);
-//       swap();
-//   });
-// });
+  if (mobileNavExpanded === "true") {
+    mobileNavButton.setAttribute("aria-expanded", true);
+    document.body.setAttribute("data-mobile-nav-expanded", false);
+  } else if (mobileNavExpanded === "false") {
+    mobileNavButton.setAttribute("aria-expanded", false);
+    document.body.setAttribute("data-mobile-nav-expanded", true);
+  }
+});
 
 // Dynamic Copyright Year
 
