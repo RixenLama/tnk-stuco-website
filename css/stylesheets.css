@@ -56,6 +56,43 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.button {
+  padding: 1em 1.5em;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: background-color 200ms;
+}
+
+.button--primary {
+  background-color: hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+}
+.button--primary:hover {
+  background-color: #1a1a1a;
+}
+
+.button--secondary {
+  background-color: hsl(240deg, 6%, 90%);
+  color: hsl(0deg, 0%, 0%);
+}
+.button--secondary:hover {
+  background-color: #c9c9cf;
+}
+
+.button--tertiary {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 0%);
+}
+.button--tertiary:hover {
+  background-color: #e6e6e6;
+}
+
+.button--stroke {
+  border: 1px solid hsl(240deg, 6%, 90%);
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -94,40 +131,19 @@ p {
 
 .page-subtitle {
   margin-top: 1rem;
+  color: hsl(240deg, 5%, 34%);
+  max-width: 640px;
 }
 
 .section--large {
   padding-block: 4em;
 }
 
-.button {
-  padding: 1em 1.5em;
-  font-weight: 700;
-  font-size: 1rem;
-  text-transform: uppercase;
-  border-radius: 4px;
-}
-
-.button--primary {
-  background-color: hsl(0deg, 0%, 0%);
-  color: hsl(0deg, 0%, 100%);
-}
-
-.button--secondary {
-  background-color: hsl(240deg, 6%, 90%);
-  color: hsl(0deg, 0%, 0%);
-}
-
-.button--tertiary {
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(0deg, 0%, 0%);
-  border: 1px solid hsl(240deg, 6%, 90%);
-}
-
 .iframe {
   width: 100%;
   height: 100vh;
   border: 1px solid hsl(0deg, 0%, 80%);
+  border-radius: 4px;
 }
 
 .sr-only {
@@ -260,18 +276,22 @@ p {
   gap: 1em;
 }
 
-.about-link {
-  color: #8314db;
+.about__paragraph {
+  color: hsl(240deg, 5%, 34%);
+  margin-bottom: 2rem;
+}
+
+.about__link {
+  color: hsl(273deg, 83%, 47%);
   font-size: clamp(0.8rem, -0.07vw + 0.81rem, 0.75rem);
   font-weight: 700;
-  box-shadow: inset 0 0 0 0 #8314db;
+  box-shadow: inset 0 0 0 0 hsl(273deg, 83%, 47%);
   margin: 0 -0.25rem;
   padding: 0.8rem;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-
-.about-link:hover {
-  box-shadow: inset 10rem 0 0 0 #8314db;
+.about__link:hover {
+  box-shadow: inset 10rem 0 0 0 hsl(273deg, 83%, 47%);
   color: #ffffff;
 }
 

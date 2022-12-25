@@ -1,5 +1,6 @@
 @import "reset";
 @import "variables";
+@import "components";
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
@@ -41,40 +42,19 @@ p {
 
 .page-subtitle {
   margin-top: 1rem;
+  color: $clr-text--light;
+  max-width: calc($max-container-width / 2);
 }
 
 .section--large {
   padding-block: 4em;
 }
 
-.button {
-  padding: 1em 1.5em;
-  font-weight: $fw-bold;
-  font-size: 1rem;
-  text-transform: uppercase;
-  border-radius: $border-radius;
-}
-
-.button--primary {
-  background-color: $clr-black;
-  color: $clr-white;
-}
-
-.button--secondary {
-  background-color: $clr-gray--stroke;
-  color: $clr-black;
-}
-
-.button--tertiary {
-  background-color: $clr-white;
-  color: $clr-black;
-  border: 1px solid $clr-gray--stroke;
-}
-
 .iframe {
   width: 100%;
   height: 100vh;
   border: 1px solid hsl(0, 0%, 80%);
+  border-radius: $border-radius;
 }
 
 .sr-only {
@@ -224,19 +204,24 @@ p {
 
 // About Us Section
 
-.about-link {
-  color: #8314db;
+.about__paragraph {
+  color: $clr-text--light;
+  margin-bottom: 2rem;
+}
+
+.about__link {
+  color: $clr-accent;
   font-size: $fs-sm;
   font-weight: $fw-bold;
-  box-shadow: inset 0 0 0 0 #8314db;
+  box-shadow: inset 0 0 0 0 $clr-accent;
   margin: 0 -0.25rem;
   padding: 0.8rem;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
 
-.about-link:hover {
-  box-shadow: inset 10rem 0 0 0 #8314db;
-  color: #ffffff;
+  &:hover {
+    box-shadow: inset 10rem 0 0 0 $clr-accent;
+    color: #ffffff;
+  }
 }
 
 // Quotes Section
@@ -362,7 +347,7 @@ p {
 
 // Media Queries
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $bp-medium) {
   .primary-nav {
     display: none;
   }
