@@ -305,6 +305,18 @@ p {
   flex-basis: 250px;
   flex-grow: 1;
 
+  &__top{
+    //WE can change the fit-content later,
+    span{
+      padding: 4px 1rem;
+      background-color: $clr-accent;
+      border-radius: 100px;
+      font-weight: $fw-bold;
+      color: $clr-primary;
+      font-size: $fs-sm;
+    }
+  }
+
   p {
     margin-top: 0.5rem;
     font-size: $fs-base-static;

@@ -381,6 +381,14 @@ p {
   flex-basis: 250px;
   flex-grow: 1;
 }
+.member-card__top span {
+  padding: 4px 1rem;
+  background-color: hsl(273deg, 83%, 47%);
+  border-radius: 100px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 0.875rem;
+}
 .member-card p {
   margin-top: 0.5rem;
   font-size: 1rem;
