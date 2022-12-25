@@ -93,11 +93,25 @@ select {
   border: 1px solid hsl(240deg, 6%, 90%);
 }
 
+.link {
+  transition: color 200ms;
+}
+.link:hover {
+  color: hsl(273deg, 83%, 47%);
+  text-decoration: underline;
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  border: 1px solid hsl(240deg, 6%, 90%);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
 body {
   display: flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
-  overflow: auto;
 }
 
 a {
@@ -191,8 +205,8 @@ p {
   gap: 2em;
   list-style: none;
 }
-.primary-nav > ul .nav-item {
-  font-size: clamp(1rem, 0.18vw + 0.96rem, 1.13rem);
+.primary-nav > ul .primary-nav__link {
+  font-size: 1rem;
 }
 .primary-nav > ul .primary-nav__link--active {
   font-weight: 700;
@@ -253,6 +267,22 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   height: calc(100vh - 64px);
+  position: relative;
+  overflow: hidden;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: -200px;
+  width: max(50%, 600px);
+  aspect-ratio: 1/1;
+  background-color: hsla(273deg, 83%, 47%, 0.25);
+  z-index: 1;
+  border-radius: 100%;
+}
+.hero-section * {
+  z-index: 10;
+  position: relative;
 }
 
 .hero__heading {
@@ -283,7 +313,7 @@ p {
 
 .about__link {
   color: hsl(273deg, 83%, 47%);
-  font-size: clamp(0.8rem, -0.07vw + 0.81rem, 0.75rem);
+  font-size: 0.875rem;
   font-weight: 700;
   box-shadow: inset 0 0 0 0 hsl(273deg, 83%, 47%);
   margin: 0 -0.25rem;
@@ -301,7 +331,7 @@ p {
 
 .quotes-card-container {
   display: grid;
-  gap: 1em;
+  gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
@@ -309,16 +339,15 @@ p {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 1rem;
-  background: hsl(0deg, 0%, 100%);
 }
 
 .quote-cite {
   display: block;
   margin-top: auto;
-  font-size: clamp(0.8rem, -0.07vw + 0.81rem, 0.75rem);
+  font-size: 0.875rem;
   font-weight: 700;
   color: hsl(273deg, 83%, 47%);
+  font-style: normal;
 }
 .quote-cite::before {
   content: "–";
@@ -379,26 +408,29 @@ p {
   text-decoration: underline;
 }
 
-.links-container {
+.contact-links-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.link {
+.contact-link {
   display: flex;
   align-items: center;
   gap: 0.5em;
 }
-.link a {
+.contact-link a {
   font-size: 1rem;
 }
-.link a:hover {
+.contact-link a:hover {
   color: hsl(273deg, 83%, 47%);
   text-decoration: underline;
 }
 
 @media only screen and (max-width: 768px) {
+  .hero-section::before {
+    display: none;
+  }
   .primary-nav {
     display: none;
   }
@@ -425,5 +457,8 @@ p {
   }
   body[data-mobile-nav-expanded=false] .mobile-nav {
     transform: translateX(-100%);
+  }
+  [data-aos-delay] {
+    transition-delay: 0ms !important;
   }
 }/*# sourceMappingURL=stylesheets.css.map */

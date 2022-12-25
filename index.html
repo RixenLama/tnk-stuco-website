@@ -34,6 +34,7 @@
     <!-- CSS / JS -->
     <link rel="stylesheet" href="css/stylesheets.css" />
     <script src="js/script.js" defer></script>
+    <script src="js/quotes.js" defer></script>
 
     <!-- Favicon -->
     <link
@@ -156,32 +157,26 @@
           <div class="about-container">
             <h2 class="section-heading">About Us</h2>
             <p class="about__paragraph">
-              We are the Student Council of Turun Normaalikoulu Upper Secondary
-              School. We are a group of students who are responsible for making
-              school more enjoyable. We consist of around 25 students, two from
-              each class. Our job is to organize fun events for our school
-              through the school year to make it more enjoyable. Examples of
-              events organized by us include picnics and parties. The Student
-              Council is made up of members from each class, so there are always
-              two people from each class on this committee. They meet once in a
-              while to discuss how they can make things better at school and
-              have fun activities for everyone to enjoy.
+              We are the Student Council (STUCO) of Turun Normaalikoulu Upper
+              Secondary School. We are a group of students responsible for
+              making school more enjoyable. Our job is to organize fun events
+              for our school throughout the school years. Examples of events
+              organized by us include picnics and parties. We also help out in
+              other ways, such as organizing fundraisers or helping out with
+              sports teams. We are a fun group of people who enjoy being around
+              each other and making new friends. We love to have fun together,
+              which is why we always try to make sure that everyone has a good
+              time when they attend one of our parties or events!
             </p>
             <p class="about__paragraph">
-              Student council is the organization that keeps our school's
-              students in check. We are responsible for organizing many
-              different events for our school, including picnics and parties. We
-              also help out in other ways, such as organizing fundraisers for
-              our school or helping out with sports teams. We are a fun group of
-              people who enjoy being around each other and making new friends.
-              We love to have fun together, which is why we always try to make
-              sure that everyone has a good time when they attend one of our
-              parties or events!
-            </p>
-            <p class="about__paragraph">
-              STUCO is composed of 25 students. Representatives from each class
-              is chosen by voting. Representatives present their class as a
-              whole to the STUCO
+              This year, STUCO is composed of 25 students. The representative
+              and deputy are elected by each class. There are three grades in
+              our school. Each year group consists of the national lukio (AB)
+              and International Baccalaureate (IB) students. There are 2–3
+              groups of each. The elected representatives present their class as
+              a whole to STUCO. The members meet regularly to discuss how they
+              can make things better at school and have fun activities for
+              everyone to enjoy.
             </p>
             <a href="member.html" class="about__link">View Our Members</a>
           </div>
@@ -191,61 +186,14 @@
         <div class="container">
           <div class="quotes-container">
             <h2 class="section-heading">Quotes</h2>
-            <div class="quotes-card-container">
-              <blockquote
-                class="quote-card"
-                data-aos="fade-up"
-                data-aos-delay="0"
-              >
-                <p>“the picnics organized by stuco have been so fun frfr.”</p>
-                <cite class="quote-cite">Bozo (L1IBkv)</cite>
-              </blockquote>
-              <blockquote
-                class="quote-card"
-                data-aos="fade-up"
-                data-aos-delay="50"
-              >
-                <p>“bro last night was a movie ong fr”</p>
-                <cite class="quote-cite">Rex (L1IBkv)</cite>
-              </blockquote>
-              <blockquote
-                class="quote-card"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <p>“imma be studious”</p>
-                <cite class="quote-cite">Zesty (L1IBkv)</cite>
-              </blockquote>
-              <blockquote
-                class="quote-card"
-                data-aos="fade-up"
-                data-aos-delay="0"
-              >
-                <p>
-                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Facere placeat commodi delectus dolor ab deserunt."
-                </p>
-                <cite class="quote-cite">Bozo (L1IBkv)</cite>
-              </blockquote>
-              <blockquote
-                class="quote-card"
-                data-aos="fade-up"
-                data-aos-delay="50"
-              >
-                <p>
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Culpa, perspiciatis."
-                </p>
-                <cite class="quote-cite">Bozo (L1IBkv)</cite>
-              </blockquote>
-              <blockquote
-                class="quote-card"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <p>"Lorem ipsum dolor sit amet."</p>
-                <cite class="quote-cite">Bozo (L1IBkv)</cite>
-              </blockquote>
+            <div id="quote-card-container" class="quotes-card-container">
+              <!-- Quote Template -->
+              <template id="quote-card-template">
+                <blockquote class="quote-card | card" data-aos="fade-up">
+                  <p id="quote-content"></p>
+                  <cite id="quote-cite" class="quote-cite"></cite>
+                </blockquote>
+              </template>
             </div>
           </div>
         </div>

@@ -14,6 +14,8 @@ mobileNavButton.addEventListener("click", () => {
     mobileNavButton.setAttribute("aria-expanded", false);
     document.body.setAttribute("data-mobile-nav-expanded", true);
   }
+
+  window.scrollTo({ top: 0 });
 });
 
 // Dynamic Copyright Year

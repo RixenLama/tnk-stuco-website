@@ -20,7 +20,8 @@ $fw-regular: 400;
 
 // Font Sizes
 
-$fs-sm: clamp(0.8rem, -0.07vw + 0.81rem, 0.75rem);
+$fs-sm: 0.875rem;
+$fs-base-static: 1rem;
 $fs-base: clamp(1rem, 0.18vw + 0.96rem, 1.13rem);
 $fs-md: clamp(1.25rem, 0.63vw + 1.13rem, 1.69rem);
 $fs-lg: clamp(1.56rem, 1.38vw + 1.29rem, 2.53rem);
