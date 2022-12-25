@@ -360,7 +360,18 @@ p {
   margin-right: 4px;
 }
 
+.credits-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.credits-container .credits {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: hsl(240deg, 6%, 90%);
+}
+
 .footer {
+  display: flex;
   margin-top: auto;
   padding: 1em 0;
   background-color: hsl(0deg, 0%, 0%);

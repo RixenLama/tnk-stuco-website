@@ -68,6 +68,8 @@ p {
   border-width: 0;
 }
 
+
+
 // Header
 
 .header {
@@ -282,7 +284,19 @@ p {
 
 // Footer
 
+.credits-container{
+  display: flex;
+  justify-content: flex-end;
+
+  .credits{
+    font-size: 0.65rem;
+    font-weight: $fw-bold;
+    color: $clr-gray--stroke;
+  }
+}
+
 .footer {
+  display: flex;
   margin-top: auto;
   padding: 1em 0;
   background-color: $clr-secondary;
