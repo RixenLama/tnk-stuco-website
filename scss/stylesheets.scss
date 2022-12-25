@@ -106,8 +106,8 @@ p {
   gap: 2em;
   list-style: none;
 
-  .nav-item {
-    font-size: $fs-base;
+  .primary-nav__link {
+    font-size: 1rem;
   }
 
   .primary-nav__link--active {
@@ -179,6 +179,24 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   height: calc(100vh - $header-height);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -200px;
+    width: max(50%, 600px);
+    aspect-ratio: 1/1;
+    background-color: hsl(273, 83%, 47%, 0.25);
+    z-index: 1;
+    border-radius: 100%;
+  }
+
+  * {
+    z-index: 10;
+    position: relative;
+  }
 }
 
 .hero__heading {
@@ -348,6 +366,10 @@ p {
 // Media Queries
 
 @media only screen and (max-width: $bp-medium) {
+  .hero-section::before {
+    display: none;
+  }
+
   .primary-nav {
     display: none;
   }
