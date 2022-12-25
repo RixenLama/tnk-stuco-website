@@ -1,3 +1,5 @@
+// Colors
+
 $clr-primary: hsl(0, 0%, 100%);
 $clr-secondary: hsl(0, 0%, 0%);
 $clr-accent: hsl(273, 83%, 47%);
@@ -11,8 +13,12 @@ $clr-gray--stroke: hsl(240, 6%, 90%);
 $clr-gray--bg: hsl(240, 5%, 96%);
 $clr-white: hsl(0, 0%, 100%);
 
+// Font Weights
+
 $fw-bold: 700;
 $fw-regular: 400;
+
+// Font Sizes
 
 $fs-sm: clamp(0.8rem, -0.07vw + 0.81rem, 0.75rem);
 $fs-base: clamp(1rem, 0.18vw + 0.96rem, 1.13rem);
@@ -21,6 +27,12 @@ $fs-lg: clamp(1.56rem, 1.38vw + 1.29rem, 2.53rem);
 $fs-xl: clamp(1.95rem, 2.63vw + 1.43rem, 3.8rem);
 $fs-2xl: clamp(2.44rem, 4.65vw + 1.51rem, 5.7rem);
 $fs-3xl: clamp(3.05rem, 7.84vw + 1.48rem, 8.54rem);
+
+// Breakpoints
+
+$bp-medium: 768px;
+
+// Other Constants
 
 $header-height: 64px;
 $max-container-width: 1280px;
