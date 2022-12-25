@@ -178,7 +178,7 @@ p {
 .primary-nav > ul .nav-item {
   font-size: clamp(1rem, 0.18vw + 0.96rem, 1.13rem);
 }
-.primary-nav > ul .nav-item--active {
+.primary-nav > ul .primary-nav__link--active {
   font-weight: 700;
 }
 
