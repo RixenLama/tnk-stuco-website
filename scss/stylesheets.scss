@@ -221,6 +221,13 @@ p {
 
 // About Us Section
 
+
+.about-us-paragraph-container{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+}
+
 .about__paragraph {
   color: $clr-text--light;
   margin-bottom: 2rem;

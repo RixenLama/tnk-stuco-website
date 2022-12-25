@@ -306,6 +306,12 @@ p {
   gap: 1em;
 }
 
+.about-us-paragraph-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+}
+
 .about__paragraph {
   color: hsl(240deg, 5%, 34%);
   margin-bottom: 2rem;
