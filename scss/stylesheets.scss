@@ -8,7 +8,6 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
-  overflow: auto;
 }
 
 a {
@@ -96,7 +95,7 @@ p {
 
   span {
     font-weight: $fw-bold;
-    font-size: 0.875rem;
+    font-size: $fs-sm;
     letter-spacing: 0.5rem;
   }
 }
@@ -107,7 +106,7 @@ p {
   list-style: none;
 
   .primary-nav__link {
-    font-size: 1rem;
+    font-size: $fs-base-static;
   }
 
   .primary-nav__link--active {
@@ -250,7 +249,7 @@ p {
 
 .quotes-card-container {
   display: grid;
-  gap: 1em;
+  gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
@@ -258,8 +257,6 @@ p {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 1rem;
-  background: $clr-primary;
 }
 
 .quote-cite {
@@ -268,6 +265,7 @@ p {
   font-size: $fs-sm;
   font-weight: $fw-bold;
   color: $clr-accent;
+  font-style: normal;
 
   &::before {
     content: "\2013";
@@ -309,7 +307,7 @@ p {
 
   p {
     margin-top: 0.5rem;
-    font-size: 1rem;
+    font-size: $fs-base-static;
   }
 
   &__bottom {
@@ -342,13 +340,13 @@ p {
 
 // Contact Page
 
-.links-container {
+.contact-links-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.link {
+.contact-link {
   display: flex;
   align-items: center;
   gap: 0.5em;
@@ -404,5 +402,9 @@ p {
 
   body[data-mobile-nav-expanded="false"] .mobile-nav {
     transform: translateX(-100%);
+  }
+
+  [data-aos-delay] {
+    transition-delay: 0ms !important;
   }
 }

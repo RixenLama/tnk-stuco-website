@@ -39,3 +39,23 @@
 .button--stroke {
   border: 1px solid $clr-gray--stroke;
 }
+
+// Links
+
+.link {
+  transition: color $transition-duration;
+
+  &:hover {
+    color: $clr-accent;
+    text-decoration: underline;
+  }
+}
+
+// Cards
+
+.card {
+  background-color: $clr-white;
+  border: 1px solid $clr-gray--stroke;
+  padding: 1rem;
+  border-radius: $border-radius;
+}
