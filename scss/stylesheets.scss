@@ -330,15 +330,18 @@ p {
   flex-grow: 1;
 
   &__top {
-    span {
-      display: inline-block;
-      margin-top: 0.5rem;
-      padding: 0.25rem 1rem;
-      background-color: $clr-accent;
-      border-radius: 100px;
+    .member-card-role {
+      display: block;
+      padding: 0.5rem 1rem;
+      background-color: lighten($clr-accent, 45%);
       font-weight: $fw-bold;
-      color: $clr-primary;
-      font-size: $fs-sm;
+      color: $clr-accent;
+      font-size: $fs-xs;
+      margin: 1rem -1rem 0 -1rem;
+
+      &:empty {
+        display: none;
+      }
     }
   }
 
@@ -348,6 +351,7 @@ p {
   }
 
   &__bottom {
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
