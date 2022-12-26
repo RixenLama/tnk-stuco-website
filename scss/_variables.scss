@@ -20,6 +20,7 @@ $fw-regular: 400;
 
 // Font Sizes
 
+$fs-xs: 0.8125rem;
 $fs-sm: 0.875rem;
 $fs-base-static: 1rem;
 $fs-base: clamp(1rem, 0.18vw + 0.96rem, 1.13rem);
@@ -31,7 +32,8 @@ $fs-3xl: clamp(3.05rem, 7.84vw + 1.48rem, 8.54rem);
 
 // Breakpoints
 
-$bp-medium: 768px;
+$bp-md: 768px;
+$bp-lg: 1024px;
 
 // Other Constants
 
