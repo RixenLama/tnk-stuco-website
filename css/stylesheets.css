@@ -360,26 +360,20 @@ p {
   margin-right: 4px;
 }
 
-.credits-container {
-  display: flex;
-  justify-content: flex-end;
-}
-.credits-container .credits {
-  font-size: 0.65rem;
-  font-weight: 700;
-  color: hsl(240deg, 6%, 90%);
-}
-
 .footer {
-  display: flex;
   margin-top: auto;
   padding: 1em 0;
   background-color: hsl(0deg, 0%, 0%);
   text-align: center;
 }
-.footer .footer-text {
-  font-size: 0.8rem;
+.footer .copyright-text {
+  font-size: 0.875rem;
   color: white;
+}
+.footer .credits-text {
+  margin-top: 0.5em;
+  font-size: 0.8125rem;
+  color: #848490;
 }
 
 .member-card-container {

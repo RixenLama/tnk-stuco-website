@@ -68,8 +68,6 @@ p {
   border-width: 0;
 }
 
-
-
 // Header
 
 .header {
@@ -223,8 +221,7 @@ p {
 
 // About Us Section
 
-
-.about-us-paragraph-container{
+.about-us-paragraph-container {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
@@ -284,27 +281,21 @@ p {
 
 // Footer
 
-.credits-container{
-  display: flex;
-  justify-content: flex-end;
-
-  .credits{
-    font-size: 0.65rem;
-    font-weight: $fw-bold;
-    color: $clr-gray--stroke;
-  }
-}
-
 .footer {
-  display: flex;
   margin-top: auto;
   padding: 1em 0;
-  background-color: $clr-secondary;
+  background-color: $clr-black;
   text-align: center;
 
-  .footer-text {
-    font-size: 0.8rem;
+  .copyright-text {
+    font-size: $fs-sm;
     color: white;
+  }
+
+  .credits-text {
+    margin-top: 0.5em;
+    font-size: $fs-xs;
+    color: lighten($clr-text--light, 20%);
   }
 }
 
@@ -326,9 +317,9 @@ p {
   flex-basis: 250px;
   flex-grow: 1;
 
-  &__top{
+  &__top {
     //WE can change the fit-content later,
-    span{
+    span {
       padding: 4px 1rem;
       background-color: $clr-accent;
       border-radius: 100px;

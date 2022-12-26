@@ -22,6 +22,6 @@ mobileNavButton.addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const year = new Date().getFullYear();
-  const footerText = document.querySelector("#footer-text");
+  const footerText = document.querySelector("#copyright-text");
   footerText.innerText = `© ${year} Turun normaalikoulun lukio. All rights reserved.`;
 });
