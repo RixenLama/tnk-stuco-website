@@ -393,7 +393,9 @@ p {
   flex-grow: 1;
 }
 .member-card__top span {
-  padding: 4px 1rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 1rem;
   background-color: hsl(273deg, 83%, 47%);
   border-radius: 100px;
   font-weight: 700;

@@ -320,7 +320,9 @@ p {
   &__top {
     //WE can change the fit-content later,
     span {
-      padding: 4px 1rem;
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.25rem 1rem;
       background-color: $clr-accent;
       border-radius: 100px;
       font-weight: $fw-bold;
