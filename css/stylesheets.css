@@ -57,40 +57,77 @@ select {
   }
 }
 .button {
-  padding: 1em 1.5em;
   font-weight: 700;
-  font-size: 1rem;
   text-transform: uppercase;
   border-radius: 4px;
-  transition: background-color 200ms;
+  transition: background-color 200ms, color 200ms, box-shadow 200ms ease-in-out;
 }
 
-.button--primary {
+.button--neutral-primary {
   background-color: hsl(0deg, 0%, 0%);
   color: hsl(0deg, 0%, 100%);
 }
-.button--primary:hover {
+.button--neutral-primary:hover {
   background-color: #1a1a1a;
 }
 
-.button--secondary {
+.button--neutral-secondary {
   background-color: hsl(240deg, 6%, 90%);
   color: hsl(0deg, 0%, 0%);
 }
-.button--secondary:hover {
+.button--neutral-secondary:hover {
   background-color: #c9c9cf;
 }
 
-.button--tertiary {
+.button--neutral-tertiary {
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(0deg, 0%, 0%);
 }
-.button--tertiary:hover {
+.button--neutral-tertiary:hover {
   background-color: #e6e6e6;
 }
 
-.button--stroke {
+.button--accent-primary {
+  background-color: hsl(273deg, 83%, 47%);
+  color: hsl(0deg, 0%, 100%);
+}
+.button--accent-primary:hover {
+  background-color: #6610ad;
+}
+
+.button--accent-secondary {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(273deg, 83%, 47%);
+}
+.button--accent-secondary:hover {
+  background-color: hsl(273deg, 83%, 47%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+.button--large {
+  font-size: 1rem;
+  padding: 1em 1.5em;
+}
+
+.button--small {
+  font-size: 0.875rem;
+  padding: 0.875em 1em;
+}
+
+.button--accent-slide-hover {
+  box-shadow: inset 0 0 0 0 hsl(273deg, 83%, 47%);
+}
+.button--accent-slide-hover:hover {
+  background-color: unset;
+  box-shadow: inset 12rem 0 0 0 hsl(273deg, 83%, 47%);
+}
+
+.button--neutral-stroke {
   border: 1px solid hsl(240deg, 6%, 90%);
+}
+
+.button--accent-stroke {
+  border: 1px solid hsl(273deg, 83%, 47%);
 }
 
 .link {
@@ -331,16 +368,7 @@ p {
 }
 
 .about__link {
-  color: hsl(273deg, 83%, 47%);
-  font-size: 0.875rem;
-  font-weight: 700;
-  box-shadow: inset 0 0 0 0 hsl(273deg, 83%, 47%);
-  padding: 0.8rem;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.about__link:hover {
-  box-shadow: inset 12rem 0 0 0 hsl(273deg, 83%, 47%);
-  color: #ffffff;
+  display: inline-block;
 }
 
 .about__image {

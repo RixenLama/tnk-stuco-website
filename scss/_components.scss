@@ -1,15 +1,14 @@
 // Buttons
 
 .button {
-  padding: 1em 1.5em;
   font-weight: $fw-bold;
-  font-size: 1rem;
   text-transform: uppercase;
   border-radius: $border-radius;
-  transition: background-color $transition-duration;
+  transition: background-color $transition-duration, color $transition-duration,
+    box-shadow $transition-duration ease-in-out;
 }
 
-.button--primary {
+.button--neutral-primary {
   background-color: $clr-black;
   color: $clr-white;
 
@@ -18,7 +17,7 @@
   }
 }
 
-.button--secondary {
+.button--neutral-secondary {
   background-color: $clr-gray--stroke;
   color: $clr-black;
 
@@ -27,7 +26,7 @@
   }
 }
 
-.button--tertiary {
+.button--neutral-tertiary {
   background-color: $clr-white;
   color: $clr-black;
 
@@ -36,8 +35,52 @@
   }
 }
 
-.button--stroke {
+.button--accent-primary {
+  background-color: $clr-accent;
+  color: $clr-white;
+
+  &:hover {
+    background-color: darken($clr-accent, 10%);
+  }
+}
+
+.button--accent-secondary {
+  $hover-bg: $clr-accent;
+
+  background-color: $clr-white;
+  color: $clr-accent;
+
+  &:hover {
+    background-color: $clr-accent;
+    color: $clr-white;
+  }
+}
+
+.button--large {
+  font-size: $fs-base-static;
+  padding: 1em 1.5em;
+}
+
+.button--small {
+  font-size: $fs-sm;
+  padding: 0.875em 1em;
+}
+
+.button--accent-slide-hover {
+  box-shadow: inset 0 0 0 0 $clr-accent;
+
+  &:hover {
+    background-color: unset;
+    box-shadow: inset 12rem 0 0 0 $clr-accent;
+  }
+}
+
+.button--neutral-stroke {
   border: 1px solid $clr-gray--stroke;
+}
+
+.button--accent-stroke {
+  border: 1px solid $clr-accent;
 }
 
 // Links
