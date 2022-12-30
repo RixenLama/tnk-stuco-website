@@ -1,11 +1,12 @@
 const quoteCardContainer = document.querySelector("#quote-card-container");
 const quoteCardTemplate = document.querySelector("#quote-card-template");
 
-const minQuotesize = 280;
-const gridGap = 16;
+const MIN_QUOTE_WIDTH = 280;
+const GRID_GAP = 16;
+
 const containerWidth = quoteCardContainer.clientWidth;
 const columnNumber = Math.floor(
-  (containerWidth + gridGap) / (minQuotesize + gridGap)
+  (containerWidth + GRID_GAP) / (MIN_QUOTE_WIDTH + GRID_GAP)
 );
 
 fetch("/data/quotes.json")

@@ -1,42 +1,156 @@
 {
   "representatives": [
     {
-      "name": "Peetu",
-      "class": "L1IBkv",
-      "role": "Spokesperson",
-      "socials": { "email": "", "instagram": "" }
+      "name": "Fattu Hasmim",
+      "class": "L1AB1",
+      "role": "Public Affairs",
+      "socials": { "email": "fhamar@utu.fi", "instagram": "fattumarz" }
     },
     {
-      "name": "Peetu",
-      "class": "L1IBkv",
-      "role": "Spokesperson",
-      "socials": { "email": "", "instagram": "" }
+      "name": "Kevin Pham",
+      "class": "L1AB2",
+      "role": null,
+      "socials": { "email": "kepham@utu.fi", "instagram": "kevin.o_c" }
     },
     {
-      "name": "Peetu",
+      "name": "Sarah Al-Lami",
+      "class": "L1IBa",
+      "role": "Secretary",
+      "socials": { "email": "saalam@utu.fi", "instagram": "ssarahallami" }
+    },
+    {
+      "name": "Alina Vaarno",
+      "class": "L1IBb",
+      "role": "Sustainable Development",
+      "socials": { "email": "alviva@utu.fi", "instagram": "alinavaarno" }
+    },
+    {
+      "name": "Ramez Elmansouri",
       "class": "L1IBkv",
-      "role": "Spokesperson",
-      "socials": { "email": "", "instagram": "" }
+      "role": "Gym Manager",
+      "socials": { "email": "ramelm@utu.fi", "instagram": "paanman_" }
+    },
+    {
+      "name": "Sanah Muthana",
+      "class": "L2AB2",
+      "role": null,
+      "socials": { "email": "sanmut@utu.fi", "instagram": "0sanahmuthana0" }
+    },
+    {
+      "name": "Kimmi (Nguyen Khanh)",
+      "class": "L2AB3",
+      "role": null,
+      "socials": { "email": "hknguy@utu.fi", "instagram": "_kimmi_n" }
+    },
+    {
+      "name": "Silja Tiittanen",
+      "class": "L2IB",
+      "role": "Chairperson",
+      "socials": { "email": "sttiit@utu.fi", "instagram": "siljatiitt" }
+    },
+    {
+      "name": "Samira Zaman",
+      "class": "L2IBkv",
+      "role": "Media Manager",
+      "socials": { "email": "samzam@utu.fi", "instagram": "samirazaman.05" }
+    },
+    {
+      "name": "Aukusti Majasuo",
+      "class": "L3AB1",
+      "role": null,
+      "socials": { "email": "aomaja@utu.fi", "instagram": "aukustimajasuo" }
+    },
+    {
+      "name": "Amani Habib",
+      "class": "L3AB2",
+      "role": null,
+      "socials": { "email": "amadha@utu.fi", "instagram": "amaniaduli" }
+    },
+    {
+      "name": "Valo Mattson",
+      "class": "L3AB2",
+      "role": null,
+      "socials": { "email": "vmavar@utu.fi", "instagram": "local_light" }
+    },
+    {
+      "name": "Angelina Zaya",
+      "class": "L3IB",
+      "role": "Treasurer",
+      "socials": { "email": "akhzay@utu.fi", "instagram": "zaya__angelina" }
+    },
+    {
+      "name": "Talemwa Nanyange Kyambadde",
+      "class": "L3IBkv",
+      "role": null,
+      "socials": { "email": "tknany@utu.fi", "instagram": "talemwa_" }
     }
   ],
   "deputies": [
     {
-      "name": "Peetu",
-      "class": "L1IBkv",
-      "role": "Spokesperson",
-      "socials": { "email": "", "instagram": "" }
+      "name": "Yahua Jabar",
+      "class": "L1AB1",
+      "role": null,
+      "socials": { "email": "ygjaba@utu.fi", "instagram": "jahje_" }
     },
     {
-      "name": "Peetu",
-      "class": "L1IBkv",
-      "role": "Spokesperson",
-      "socials": { "email": "", "instagram": "" }
+      "name": "Jami Vehmas",
+      "class": "L1AB2",
+      "role": null,
+      "socials": { "email": "jsvehm@utu.fi", "instagram": "jami_vehmas" }
     },
     {
-      "name": "Peetu",
+      "name": "Adaora Kalto",
+      "class": "L1IBa",
+      "role": "Kitchen Manager",
+      "socials": { "email": "ackalt@sutu.fi", "instagram": "adaora_kalto" }
+    },
+    {
+      "name": "Sofie Mäkinen",
+      "class": "L1IBb",
+      "role": null,
+      "socials": { "email": "ygjaba@utu.fi", "instagram": null }
+    },
+    {
+      "name": "Finn Taylor",
       "class": "L1IBkv",
-      "role": "Spokesperson",
-      "socials": { "email": "", "instagram": "" }
+      "role": "Kitchen Manager",
+      "socials": { "email": "fjtayl@utu.fi", "instagram": "finku_pinku" }
+    },
+    {
+      "name": "Martta Jalava",
+      "class": "L2IB",
+      "role": "Deputy Chairperson",
+      "socials": { "email": "maalej@utu.fi", "instagram": "marttajalava" }
+    },
+    {
+      "name": "Sebastian Leino",
+      "class": "L2IBkv",
+      "role": null,
+      "socials": { "email": "seemle@utu.fi", "instagram": "sebastian.leino" }
+    },
+    {
+      "name": "Faisa Hassan",
+      "class": "L3AB2",
+      "role": null,
+      "socials": { "email": "fahass@utu.fi", "instagram": null }
+    },
+    {
+      "name": "Rakel Ronimus",
+      "class": "L3AB3",
+      "role": null,
+      "socials": { "email": "rkroni@utu.fi", "instagram": "rakelronimuss" }
+    },
+    {
+      "name": "Esther Holm",
+      "class": "L3IB",
+      "role": null,
+      "socials": { "email": "geholm@utu.fi", "instagram": null }
+    },
+    {
+      "name": "Antonette Patagan",
+      "class": "L3IBkv",
+      "role": null,
+      "socials": { "email": "antpat@utu.fi", "instagram": null }
     }
   ]
 }
