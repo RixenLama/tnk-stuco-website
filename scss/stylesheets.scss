@@ -325,9 +325,8 @@ p {
 
 .member-card-container {
   display: flex;
-  gap: 1em;
+  gap: 1rem;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .member-card {
@@ -339,7 +338,6 @@ p {
 
   &__top {
     .member-card-role {
-      display: block;
       padding: 0.5rem 1rem;
       background-color: lighten($clr-accent, 45%);
       font-weight: $fw-bold;
@@ -372,17 +370,12 @@ p {
     align-items: flex-start;
 
     span {
-      font-size: 0.8rem;
+      font-size: $fs-xs;
       color: $clr-gray-dark;
     }
 
     a {
-      font-size: 1rem;
-
-      &:hover {
-        color: $clr-accent;
-        text-decoration: underline;
-      }
+      font-size: $fs-base-static;
     }
   }
 }
@@ -402,11 +395,6 @@ p {
 
   a {
     font-size: 1rem;
-
-    &:hover {
-      color: $clr-accent;
-      text-decoration: underline;
-    }
   }
 }
 

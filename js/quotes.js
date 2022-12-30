@@ -15,12 +15,12 @@ fetch("/data/quotes.json")
     quotes.forEach((quote, idx) => {
       const { content, cite } = quote;
 
-      const delay = (idx % columnNumber) * 50;
+      const transitionDelay = (idx % columnNumber) * 50;
 
       const quoteClone = quoteCardTemplate.content.cloneNode(true);
       quoteClone
         .querySelector("#quote-card")
-        .setAttribute("data-aos-delay", delay);
+        .setAttribute("data-aos-delay", transitionDelay);
       quoteClone.querySelector("#quote-content").innerText = content;
       quoteClone.querySelector(
         "#quote-cite"

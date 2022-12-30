@@ -399,9 +399,8 @@ p {
 
 .member-card-container {
   display: flex;
-  gap: 1em;
+  gap: 1rem;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .member-card {
@@ -412,7 +411,6 @@ p {
   flex-grow: 1;
 }
 .member-card__top .member-card-role {
-  display: block;
   padding: 0.5rem 1rem;
   background-color: #ecdafc;
   font-weight: 700;
@@ -440,15 +438,11 @@ p {
   align-items: flex-start;
 }
 .member-card__link span {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: hsl(0deg, 0%, 20%);
 }
 .member-card__link a {
   font-size: 1rem;
-}
-.member-card__link a:hover {
-  color: hsl(273deg, 83%, 47%);
-  text-decoration: underline;
 }
 
 .contact-links-container {
@@ -464,10 +458,6 @@ p {
 }
 .contact-link a {
   font-size: 1rem;
-}
-.contact-link a:hover {
-  color: hsl(273deg, 83%, 47%);
-  text-decoration: underline;
 }
 
 @media only screen and (max-width: 1024px) {

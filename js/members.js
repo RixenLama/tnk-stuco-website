@@ -1,27 +1,27 @@
-const spokespersonContainer = document.querySelector("#spokesperson-container");
-const viceSpokespersonContainer = document.querySelector(
-  "#vice-spokesperson-container"
+const representativesContainer = document.querySelector(
+  "#representatives-container"
 );
+const deputiesContainer = document.querySelector("#deputies-container");
 const memberCardTemplate = document.querySelector("#member-card-template");
 
-const MIN_QUOTE_WIDTH = 250;
+const MIN_MEMBER_WIDTH = 250;
 const GRID_GAP = 16;
 
-const containerWidth = spokespersonContainer.clientWidth;
+const containerWidth = representativesContainer.clientWidth;
 const columnNumber = Math.floor(
-  (containerWidth + GRID_GAP) / (MIN_QUOTE_WIDTH + GRID_GAP)
+  (containerWidth + GRID_GAP) / (MIN_MEMBER_WIDTH + GRID_GAP)
 );
 
 const populateMember = (member, idx) => {
   const { name, class: _class, role, socials } = member;
 
-  const delay = (idx % columnNumber) * 50;
+  const transitionDelay = (idx % columnNumber) * 50;
 
   const memberClone = memberCardTemplate.content.cloneNode(true);
 
   memberClone
     .querySelector("#member-card")
-    .setAttribute("data-aos-delay", delay);
+    .setAttribute("data-aos-delay", transitionDelay);
 
   memberClone.querySelector("#member-name").innerText = name;
   memberClone.querySelector("#member-class").innerText = _class;
@@ -55,14 +55,12 @@ fetch("/data/members.json")
     const { representatives, deputies } = members;
 
     representatives.forEach((member, idx) => {
-      const element = populateMember(member, idx);
-
-      spokespersonContainer.appendChild(element);
+      const memberElement = populateMember(member, idx);
+      representativesContainer.appendChild(memberElement);
     });
 
     deputies.forEach((member, idx) => {
-      const element = populateMember(member, idx);
-
-      viceSpokespersonContainer.appendChild(element);
+      const memberElement = populateMember(member, idx);
+      deputiesContainer.appendChild(memberElement);
     });
   });
