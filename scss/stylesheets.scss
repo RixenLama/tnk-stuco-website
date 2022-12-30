@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -49,11 +50,21 @@ p {
   padding-block: 4em;
 }
 
+.iframe-container {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: auto;
+}
+
 .iframe {
   width: 100%;
   height: 100vh;
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: $border-radius;
+
+  &--min-width {
+    min-width: 36rem;
+  }
 }
 
 .sr-only {
@@ -241,7 +252,6 @@ p {
   font-size: $fs-sm;
   font-weight: $fw-bold;
   box-shadow: inset 0 0 0 0 $clr-accent;
-  margin: 0 -0.25rem;
   padding: 0.8rem;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
@@ -315,23 +325,19 @@ p {
 
 .member-card-container {
   display: flex;
-  gap: 1em;
+  gap: 1rem;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .member-card {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 1rem;
-  background-color: $clr-gray;
   flex-basis: 250px;
   flex-grow: 1;
 
   &__top {
     .member-card-role {
-      display: block;
       padding: 0.5rem 1rem;
       background-color: lighten($clr-accent, 45%);
       font-weight: $fw-bold;
@@ -364,17 +370,12 @@ p {
     align-items: flex-start;
 
     span {
-      font-size: 0.8rem;
+      font-size: $fs-xs;
       color: $clr-gray-dark;
     }
 
     a {
-      font-size: 1rem;
-
-      &:hover {
-        color: $clr-accent;
-        text-decoration: underline;
-      }
+      font-size: $fs-base-static;
     }
   }
 }
@@ -394,11 +395,6 @@ p {
 
   a {
     font-size: 1rem;
-
-    &:hover {
-      color: $clr-accent;
-      text-decoration: underline;
-    }
   }
 }
 

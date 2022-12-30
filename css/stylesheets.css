@@ -112,6 +112,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -153,11 +154,20 @@ p {
   padding-block: 4em;
 }
 
+.iframe-container {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: auto;
+}
+
 .iframe {
   width: 100%;
   height: 100vh;
   border: 1px solid hsl(0deg, 0%, 80%);
   border-radius: 4px;
+}
+.iframe--min-width {
+  min-width: 36rem;
 }
 
 .sr-only {
@@ -325,7 +335,6 @@ p {
   font-size: 0.875rem;
   font-weight: 700;
   box-shadow: inset 0 0 0 0 hsl(273deg, 83%, 47%);
-  margin: 0 -0.25rem;
   padding: 0.8rem;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -390,22 +399,18 @@ p {
 
 .member-card-container {
   display: flex;
-  gap: 1em;
+  gap: 1rem;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .member-card {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 1rem;
-  background-color: hsl(210deg, 14%, 95%);
   flex-basis: 250px;
   flex-grow: 1;
 }
 .member-card__top .member-card-role {
-  display: block;
   padding: 0.5rem 1rem;
   background-color: #ecdafc;
   font-weight: 700;
@@ -433,15 +438,11 @@ p {
   align-items: flex-start;
 }
 .member-card__link span {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: hsl(0deg, 0%, 20%);
 }
 .member-card__link a {
   font-size: 1rem;
-}
-.member-card__link a:hover {
-  color: hsl(273deg, 83%, 47%);
-  text-decoration: underline;
 }
 
 .contact-links-container {
@@ -457,10 +458,6 @@ p {
 }
 .contact-link a {
   font-size: 1rem;
-}
-.contact-link a:hover {
-  color: hsl(273deg, 83%, 47%);
-  text-decoration: underline;
 }
 
 @media only screen and (max-width: 1024px) {
