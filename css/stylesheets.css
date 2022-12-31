@@ -394,6 +394,12 @@ p {
   flex-direction: column;
   gap: 1.5rem;
 }
+.quote-card p::before {
+  content: "“";
+}
+.quote-card p::after {
+  content: "”";
+}
 
 .quote-cite {
   display: block;

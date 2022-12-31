@@ -263,6 +263,14 @@ p {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  p::before {
+    content: "\201C";
+  }
+
+  p::after {
+    content: "\201D";
+  }
 }
 
 .quote-cite {
