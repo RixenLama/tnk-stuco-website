@@ -1,5 +1,6 @@
 @import "reset";
 @import "variables";
+@import "utilities";
 @import "components";
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
@@ -8,7 +9,6 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
-  overflow-x: hidden;
 }
 
 a {
@@ -65,18 +65,6 @@ p {
   &--min-width {
     min-width: 36rem;
   }
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
 }
 
 // Header
@@ -188,7 +176,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: calc(100vh - $header-height);
+  min-height: calc(100vh - $header-height);
   position: relative;
   overflow: hidden;
 
