@@ -70,8 +70,8 @@ p {
 // Header
 
 .header {
-  background-color: $clr-secondary;
-  color: $clr-primary;
+  background-color: $clr-black;
+  color: $clr-white;
   height: $header-height;
   position: relative;
 }
@@ -200,7 +200,7 @@ p {
 .hero__heading {
   max-width: 800px;
   font-size: $fs-2xl;
-  color: $clr-primary;
+  color: $clr-white;
   line-height: 1;
 }
 
@@ -250,7 +250,7 @@ p {
 // Quotes Section
 
 .quotes-section {
-  background-color: $clr-gray;
+  background-color: $clr-gray--bg;
 }
 
 .quotes-card-container {
@@ -357,7 +357,7 @@ p {
 
     span {
       font-size: $fs-xs;
-      color: $clr-gray-dark;
+      color: $clr-text--light;
     }
 
     a {
