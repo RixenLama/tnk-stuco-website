@@ -1,5 +1,6 @@
 @import "reset";
 @import "variables";
+@import "mixins";
 @import "utilities";
 @import "components";
 
@@ -84,9 +85,8 @@ p {
 }
 
 .header__logo {
-  display: flex;
+  @include flex-row-flow(1rem);
   align-items: center;
-  gap: 1rem;
 
   img {
     width: 2.5rem;
@@ -100,8 +100,7 @@ p {
 }
 
 .primary-nav > ul {
-  display: flex;
-  gap: 2em;
+  @include flex-row-flow(2em);
   list-style: none;
 
   .primary-nav__link {
@@ -137,35 +136,31 @@ p {
   width: 100%;
   position: absolute;
   left: 0;
-  top: 64px;
+  top: $header-height;
   z-index: 100;
   transition: transform 500ms;
-  background-color: white;
+  background-color: $clr-white;
   transform: translateX(-100%);
   display: none;
   padding-block: 2rem;
 }
 
 .mobile-nav ul {
+  @include flex-column-flow(2em);
   height: calc(100vh - $header-height);
   list-style: none;
-  display: flex;
-  flex-direction: column;
-
-  color: black;
-  width: 100%;
-  gap: 2em;
+  color: $clr-black;
 
   a {
     font-size: $fs-lg;
 
-    &:hover {
-      color: #8314db;
+    &.mobile-nav__link--active {
+      font-weight: $fw-bold;
     }
-  }
 
-  .mobile-nav__link--active {
-    font-weight: 700;
+    &:hover {
+      color: $clr-accent;
+    }
   }
 }
 
@@ -212,10 +207,9 @@ p {
 }
 
 .hero__cta {
+  @include flex-row-flow(1em);
   margin-top: 4em;
-  display: flex;
   flex-wrap: wrap;
-  gap: 1em;
 }
 
 // About Us Section
@@ -260,9 +254,7 @@ p {
 }
 
 .quote-card {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  @include flex-column-flow(2rem);
 
   p::before {
     content: "\201C";
@@ -310,15 +302,12 @@ p {
 // Members Page
 
 .member-card-container {
-  display: flex;
-  gap: 1rem;
+  @include flex-row-flow(1rem);
   flex-wrap: wrap;
 }
 
 .member-card {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  @include flex-column-flow(2rem);
   flex-basis: 250px;
   flex-grow: 1;
 
@@ -343,16 +332,12 @@ p {
   }
 
   &__bottom {
+    @include flex-column-flow(1rem);
     margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
   }
 
   &__link {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    @include flex-column-flow(0.5rem);
     align-items: flex-start;
 
     span {
@@ -369,18 +354,15 @@ p {
 // Contact Page
 
 .contact-links-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  @include flex-column-flow(1rem);
 }
 
 .contact-link {
-  display: flex;
+  @include flex-row-flow(1rem);
   align-items: center;
-  gap: 0.5em;
 
   a {
-    font-size: 1rem;
+    font-size: $fs-base-static;
   }
 }
 
@@ -388,8 +370,7 @@ p {
 
 @media only screen and (max-width: $bp-lg) {
   .about__content {
-    flex-direction: column;
-    gap: 2rem;
+    @include flex-column-flow(2rem);
   }
 }
 
