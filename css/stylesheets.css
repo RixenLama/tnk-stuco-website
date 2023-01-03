@@ -146,8 +146,11 @@ select {
   transition: color 200ms;
 }
 .link:hover {
-  color: hsl(273deg, 83%, 47%);
   text-decoration: underline;
+}
+.link:visited {
+  text-decoration: none;
+  color: hsl(300deg, 32.6%, 37.8%);
 }
 
 .card {
@@ -167,6 +170,10 @@ a {
   text-decoration: none;
   color: unset;
   font-size: clamp(1rem, 0.18vw + 0.96rem, 1.13rem);
+}
+
+a.link {
+  color: hsl(193.5deg, 98.7%, 30%);
 }
 
 section {

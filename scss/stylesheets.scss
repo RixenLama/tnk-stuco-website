@@ -18,6 +18,10 @@ a {
   font-size: $fs-base;
 }
 
+a.link {
+  color: $clr-link--inactive;
+}
+
 section {
   padding-block: 2em;
 }

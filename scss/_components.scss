@@ -89,8 +89,12 @@
   transition: color $transition-duration;
 
   &:hover {
-    color: $clr-accent;
     text-decoration: underline;
+  }
+
+  &:visited {
+    text-decoration: none;
+    color: $clr-link--visited;
   }
 }
 
