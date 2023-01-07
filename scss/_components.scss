@@ -86,15 +86,13 @@
 // Links
 
 .link {
+  color: $clr-link--inactive;
   transition: color $transition-duration;
 
-  &:hover {
+  &:hover,
+  &:focus {
+    color: darken($clr-link--inactive, 10%);
     text-decoration: underline;
-  }
-
-  &:visited {
-    text-decoration: none;
-    color: $clr-link--visited;
   }
 }
 
