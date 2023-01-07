@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=z, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
     <title>Members | TNK STUCO</title>
@@ -61,7 +61,15 @@
     />
 
     <!--AOS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="preload"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    </noscript>
   </head>
   <body data-mobile-nav-expanded="false">
     <header class="header">
@@ -105,10 +113,12 @@
             <span class="sr-only">Menu</span>
             <img
               src="./img/icons/ic_menu.svg"
+              alt=""
               class="mobile-nav-button__menu"
             />
             <img
               src="./img/icons/ic_close.svg"
+              alt=""
               class="mobile-nav-button__exit"
             />
           </button>
@@ -167,11 +177,11 @@
                 <div class="member-card__bottom">
                   <div id="member-email" class="member-card__link">
                     <span>Email</span>
-                    <a href="" class="link"></a>
+                    <a href="#" class="link"></a>
                   </div>
                   <div id="member-instagram" class="member-card__link">
                     <span>Instagram</span>
-                    <a href="" target="_blank" class="link"></a>
+                    <a href="#" target="_blank" class="link"></a>
                   </div>
                 </div>
               </article>

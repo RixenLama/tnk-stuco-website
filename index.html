@@ -60,7 +60,15 @@
     />
 
     <!--AOS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="preload"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    </noscript>
   </head>
 
   <body data-mobile-nav-expanded="false">
@@ -105,10 +113,12 @@
             <span class="sr-only">Menu</span>
             <img
               src="./img/icons/ic_menu.svg"
+              alt=""
               class="mobile-nav-button__menu"
             />
             <img
               src="./img/icons/ic_close.svg"
+              alt=""
               class="mobile-nav-button__exit"
             />
           </button>
