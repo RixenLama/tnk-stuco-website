@@ -195,7 +195,7 @@ p {
 
 .page-subtitle {
   margin-top: 1rem;
-  color: hsl(240deg, 5%, 34%);
+  color: hsl(240deg, 5%, 26%);
   max-width: 640px;
 }
 
@@ -365,7 +365,7 @@ p {
 
 .about__paragraph {
   font-size: 1rem;
-  color: hsl(240deg, 5%, 34%);
+  color: hsl(240deg, 5%, 26%);
   margin-bottom: 2rem;
 }
 
@@ -430,7 +430,7 @@ p {
 .footer .credits-text {
   margin-top: 0.5em;
   font-size: 0.8125rem;
-  color: #848490;
+  color: #6f6f7b;
 }
 
 .member-card-container {
@@ -476,7 +476,7 @@ p {
 }
 .member-card__link span {
   font-size: 0.8125rem;
-  color: hsl(240deg, 5%, 34%);
+  color: hsl(240deg, 5%, 26%);
 }
 .member-card__link a {
   font-size: 1rem;
