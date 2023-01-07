@@ -60,7 +60,7 @@ p {
 .iframe {
   width: 100%;
   height: 100vh;
-  border: 1px solid hsl(0, 0%, 80%);
+  border: 1px solid $clr-gray--stroke;
   border-radius: $border-radius;
 
   &--min-width {

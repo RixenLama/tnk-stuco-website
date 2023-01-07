@@ -18,6 +18,16 @@ mobileNavButton.addEventListener("click", () => {
   window.scrollTo({ top: 0 });
 });
 
+// Always Show Expanded Mobile Nav
+window.addEventListener("resize", () => {
+  if (
+    window.innerWidth <= 768 &&
+    document.body.getAttribute("data-mobile-nav-expanded") === "true"
+  ) {
+    window.scrollTo({ top: 0 });
+  }
+});
+
 // Dynamic Copyright Year
 
 document.addEventListener("DOMContentLoaded", () => {
