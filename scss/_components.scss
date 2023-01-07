@@ -91,7 +91,7 @@
 
   &:hover,
   &:focus {
-    color: darken($clr-link--inactive, 10%);
+    color: darken($clr-link--inactive, 15%);
     text-decoration: underline;
   }
 }

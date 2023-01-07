@@ -147,7 +147,7 @@ select {
   transition: color 200ms;
 }
 .link:hover, .link:focus {
-  color: #003b4d;
+  color: #002733;
   text-decoration: underline;
 }
 
