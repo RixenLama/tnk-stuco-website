@@ -10,36 +10,57 @@
     <meta name="title" content="Events | TNK STUCO" />
     <meta
       name="description"
-      content="This is the events page of the webst. Here you can view the various fun events we are organizing
+      content="Here you can view the various fun events we are organizing
       throughout this school year in a calendar. Click on the events to
       see more information."
     />
     <meta
       name="keywords"
-      content="TNK, TNK STUCO, Turun Normaalikoulu, Turun Normaalikoulu Stuco, Stuco, TNK OPKH, TNK STUCO website, 
-    TNK website, Turun Normaalikoulu webstie, Normaalikoulu website "
+      content="TNK, TNK STUCO, Turun Normaalikoulu, Turun Normaalikoulu STUCO, STUCO, TNK OPKH, TNK STUCO website, TNK website, Turun Normaalikoulu website"
     />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://tnk-stuco.netlify.app/event.html"
+    />
     <meta property="og:title" content="Events | TNK STUCO" />
     <meta
       property="og:description"
-      content="This is the official website of the student council of Turun normaalikoulu. Here we showcase upcoming events in the school, the members of STUCO, and the entire school as a whole."
+      content="Here you can view the various fun events we are organizing
+      throughout this school year in a calendar. Click on the events to
+      see more information."
     />
     <meta property="og:image" content="/img/hero-background.jpg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://tnk-stuco.netlify.app/event.html"
+    />
     <meta property="twitter:title" content="Events | TNK STUCO" />
     <meta
       property="twitter:description"
-      content="This is the official website of the student council of Turun normaalikoulu. Here we showcase upcoming events in the school, the members of STUCO, and the entire school as a whole."
+      content="Here you can view the various fun events we are organizing
+      throughout this school year in a calendar. Click on the events to
+      see more information."
     />
     <meta property="twitter:image" content="/img/hero-background.jpg" />
 
-    <!-- CSS / JS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/stylesheets.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
     <script src="js/script.js" defer></script>
 
     <!-- Favicon -->
@@ -64,8 +85,14 @@
       <div class="container">
         <div class="header-container">
           <a class="header__logo" href="index.html" aria-label="Home">
-            <img src="./img/tnk-logo.svg" alt="" aria-hidden="true" />
-            <span>TNK STUCO</span>
+            <img
+              src="./img/tnk-logo.svg"
+              alt=""
+              height="40"
+              width="40"
+              aria-hidden="true"
+            />
+            TNK STUCO
           </a>
           <nav
             id="primary-nav"
@@ -155,6 +182,7 @@
             src="https://airtable.com/embed/shrCe6hD6xDqB1Bhk?backgroundColor=pink"
             frameborder="0"
             onmousewheel=""
+            loading="lazy"
             width="100%"
             height="600"
             title="Airtable Event Calendar"
@@ -169,6 +197,7 @@
             src="https://airtable.com/embed/shrM62yIPLehN83OR?backgroundColor=pink&layout=card"
             frameborder="0"
             onmousewheel=""
+            loading="lazy"
             width="100%"
             height="600"
             title="Airtable Event List"

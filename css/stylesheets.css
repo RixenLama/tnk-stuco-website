@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -167,15 +166,15 @@ body {
 a {
   text-decoration: none;
   color: unset;
-  font-size: clamp(1rem, 0.18vw + 0.96rem, 1.13rem);
-}
-
-section {
-  padding-block: 2em;
+  font-size: 1rem;
 }
 
 h1 {
   font-size: clamp(1.95rem, 2.63vw + 1.43rem, 3.8rem);
+}
+
+section {
+  padding-block: 2em;
 }
 
 p {
@@ -188,15 +187,19 @@ p {
   margin-inline: auto;
 }
 
-.section-heading {
-  margin-bottom: 1em;
-  font-size: clamp(1.56rem, 1.38vw + 1.29rem, 2.53rem);
+.page-heading {
+  font-size: clamp(1.95rem, 2.63vw + 1.43rem, 3.8rem);
 }
 
 .page-subtitle {
   margin-top: 1rem;
   color: hsl(240deg, 5%, 26%);
-  max-width: 640px;
+  max-width: 50ch;
+}
+
+.section-heading {
+  margin-bottom: 1em;
+  font-size: clamp(1.56rem, 1.38vw + 1.29rem, 2.53rem);
 }
 
 .section--large {
@@ -238,14 +241,12 @@ p {
   flex-direction: row;
   gap: 1rem;
   align-items: center;
-}
-.header__logo img {
-  width: 2.5rem;
-}
-.header__logo span {
   font-weight: 700;
   font-size: 0.875rem;
   letter-spacing: 0.5rem;
+}
+.header__logo img {
+  width: 2.5rem;
 }
 
 .primary-nav > ul {
@@ -310,23 +311,20 @@ p {
 }
 
 .hero-section {
-  background-image: url("/img/hero-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: hsl(194deg, 36%, 55%) url("/img/hero-background.webp") center/cover no-repeat;
   min-height: calc(100vh - 64px);
   position: relative;
   overflow: hidden;
 }
 .hero-section::before {
   content: "";
+  width: max(50%, 600px);
+  background-color: hsla(273deg, 83%, 47%, 0.25);
+  aspect-ratio: 1/1;
+  border-radius: 100%;
   position: absolute;
   inset: -200px;
-  width: max(50%, 600px);
-  aspect-ratio: 1/1;
-  background-color: hsla(273deg, 83%, 47%, 0.25);
   z-index: 1;
-  border-radius: 100%;
 }
 .hero-section * {
   z-index: 10;
@@ -344,7 +342,7 @@ p {
   margin-top: 1em;
   font-size: clamp(1rem, 0.18vw + 0.96rem, 1.13rem);
   font-weight: 700;
-  max-width: 700px;
+  max-width: 50ch;
 }
 
 .hero__cta {
@@ -419,18 +417,18 @@ p {
 
 .footer {
   margin-top: auto;
-  padding: 1em 0;
+  padding: 1rem 0;
   background-color: hsl(0deg, 0%, 0%);
   text-align: center;
 }
 .footer .copyright-text {
   font-size: 0.875rem;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
 }
 .footer .credits-text {
   margin-top: 0.5em;
   font-size: 0.8125rem;
-  color: #6f6f7b;
+  color: #9797a1;
 }
 
 .member-card-container {

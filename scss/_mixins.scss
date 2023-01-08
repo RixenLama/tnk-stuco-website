@@ -9,3 +9,10 @@
   flex-direction: column;
   gap: $gap;
 }
+
+@mixin circle($diameter, $bg-color) {
+  width: $diameter;
+  background-color: $bg-color;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+}
