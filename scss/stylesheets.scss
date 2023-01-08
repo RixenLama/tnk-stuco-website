@@ -13,15 +13,15 @@ body {
 a {
   text-decoration: none;
   color: unset;
-  font-size: $fs-base;
-}
-
-section {
-  padding-block: 2em;
+  font-size: $fs-base-static;
 }
 
 h1 {
   font-size: $fs-xl;
+}
+
+section {
+  padding-block: 2em;
 }
 
 p {
@@ -34,15 +34,19 @@ p {
   margin-inline: auto;
 }
 
-.section-heading {
-  margin-bottom: 1em;
-  font-size: $fs-lg;
+.page-heading {
+  font-size: $fs-xl;
 }
 
 .page-subtitle {
   margin-top: 1rem;
   color: $clr-text--light;
-  max-width: calc($max-container-width / 2);
+  max-width: 50ch;
+}
+
+.section-heading {
+  margin-bottom: 1em;
+  font-size: $fs-lg;
 }
 
 .section--large {
@@ -170,13 +174,10 @@ p {
 
   &::before {
     content: "";
+    @include circle(max(50%, 600px), hsl(273, 83%, 47%, 0.25));
     position: absolute;
     inset: -200px;
-    width: max(50%, 600px);
-    aspect-ratio: 1/1;
-    background-color: hsl(273, 83%, 47%, 0.25);
     z-index: 1;
-    border-radius: 100%;
   }
 
   * {
@@ -196,7 +197,7 @@ p {
   margin-top: 1em;
   font-size: $fs-base;
   font-weight: $fw-bold;
-  max-width: 700px;
+  max-width: 50ch;
 }
 
 .hero__cta {
@@ -276,19 +277,19 @@ p {
 
 .footer {
   margin-top: auto;
-  padding: 1em 0;
+  padding: 1rem 0;
   background-color: $clr-black;
   text-align: center;
 
   .copyright-text {
     font-size: $fs-sm;
-    color: white;
+    color: $clr-white;
   }
 
   .credits-text {
     margin-top: 0.5em;
     font-size: $fs-xs;
-    color: lighten($clr-text--light, 20%);
+    color: lighten($clr-text--light, 35%);
   }
 }
 
