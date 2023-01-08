@@ -85,15 +85,12 @@ p {
 .header__logo {
   @include flex-row-flow(1rem);
   align-items: center;
+  font-weight: $fw-bold;
+  font-size: $fs-sm;
+  letter-spacing: 0.5rem;
 
   img {
     width: 2.5rem;
-  }
-
-  span {
-    font-weight: $fw-bold;
-    font-size: $fs-sm;
-    letter-spacing: 0.5rem;
   }
 }
 

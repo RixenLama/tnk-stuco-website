@@ -237,14 +237,12 @@ p {
   flex-direction: row;
   gap: 1rem;
   align-items: center;
-}
-.header__logo img {
-  width: 2.5rem;
-}
-.header__logo span {
   font-weight: 700;
   font-size: 0.875rem;
   letter-spacing: 0.5rem;
+}
+.header__logo img {
+  width: 2.5rem;
 }
 
 .primary-nav > ul {
