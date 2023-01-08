@@ -167,10 +167,8 @@ p {
 // Hero Section
 
 .hero-section {
-  background-image: url("/img/hero-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: hsl(194, 36%, 55%) url("/img/hero-background.webp") center/cover
+    no-repeat;
   min-height: calc(100vh - $header-height);
   position: relative;
   overflow: hidden;

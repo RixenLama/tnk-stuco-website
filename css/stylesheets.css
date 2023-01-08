@@ -310,10 +310,7 @@ p {
 }
 
 .hero-section {
-  background-image: url("/img/hero-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: hsl(194deg, 36%, 55%) url("/img/hero-background.webp") center/cover no-repeat;
   min-height: calc(100vh - 64px);
   position: relative;
   overflow: hidden;
