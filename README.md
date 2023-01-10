@@ -17,6 +17,7 @@ _Developed 31 October 2022 – 30 December 2022_
   - Sass
 - JavaScript
   - [AOS](https://github.com/michalsnik/aos) for scrolling animations
+  - JSON
 
 ### Deployment
 
