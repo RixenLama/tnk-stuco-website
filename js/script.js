@@ -8,36 +8,40 @@ const BP_MEDIUM = 768;
 const openMobileNav = () => {
   document.body.setAttribute("data-mobile-nav-expanded", true);
   mobileNavButton.setAttribute("aria-expanded", true);
-  mobileNav.setAttribute("data-state", "opening");
+  // mobileNav.setAttribute("data-state", "opening");
 
-  mobileNav.addEventListener(
-    "animationend",
-    () => {
-      mobileNav.setAttribute("data-state", "opened");
-    },
-    { once: true }
-  );
+  // mobileNav.addEventListener(
+  //   "animationend",
+  //   () => {
+  //     mobileNav.setAttribute("data-state", "opened");
+  //   },
+  //   { once: true }
+  // );
 };
 
 const closeMobileNav = () => {
   document.body.setAttribute("data-mobile-nav-expanded", false);
   mobileNavButton.setAttribute("aria-expanded", false);
-  mobileNav.setAttribute("data-state", "closing");
+  // mobileNav.setAttribute("data-state", "closing");
 
-  mobileNav.addEventListener(
-    "animationend",
-    () => {
-      mobileNav.setAttribute("data-state", "closed");
-    },
-    { once: true }
-  );
+  // mobileNav.addEventListener(
+  //   "animationend",
+  //   () => {
+  //     mobileNav.setAttribute("data-state", "closed");
+  //   },
+  //   { once: true }
+  // );
 };
 
 mobileNavButton.addEventListener("click", () => {
   const isMobileNavExpanded =
     document.body.getAttribute("data-mobile-nav-expanded") === "true";
 
-  isMobileNavExpanded ? closeMobileNav() : openMobileNav();
+  if (isMobileNavExpanded) {
+    closeMobileNav();
+  } else {
+    openMobileNav();
+  }
 
   window.scrollTo({ top: 0 });
 });

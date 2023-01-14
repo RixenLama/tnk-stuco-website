@@ -139,6 +139,7 @@ p {
   top: $header-height;
   z-index: 100;
   background-color: $clr-white;
+  transition: transform $mobile-nav-transition-duration;
   transform: translateX(-100%);
   display: none;
   padding-block: 2rem;
@@ -401,28 +402,36 @@ p {
     display: none;
   }
 
-  .mobile-nav {
-    display: none;
-  }
-
-  .mobile-nav[data-state="opening"] {
-    animation: slidein $mobile-nav-transition-duration ease forwards;
-    display: block;
-  }
-
-  .mobile-nav[data-state="opened"] {
+  body[data-mobile-nav-expanded="true"] .mobile-nav {
     transform: translateX(0%);
-    display: block;
   }
 
-  .mobile-nav[data-state="closing"] {
-    animation: slideout $mobile-nav-transition-duration ease forwards;
-    display: block;
+  body[data-mobile-nav-expanded="false"] .mobile-nav {
+    transform: translateX(-100%);
   }
 
-  .mobile-nav[data-state="closed"] {
-    display: none;
-  }
+  // .mobile-nav {
+  //   display: none;
+  // }
+
+  // .mobile-nav[data-state="opening"] {
+  //   animation: slidein $mobile-nav-transition-duration ease forwards;
+  //   display: block;
+  // }
+
+  // .mobile-nav[data-state="opened"] {
+  //   transform: translateX(0%);
+  //   display: block;
+  // }
+
+  // .mobile-nav[data-state="closing"] {
+  //   animation: slideout $mobile-nav-transition-duration ease forwards;
+  //   display: block;
+  // }
+
+  // .mobile-nav[data-state="closed"] {
+  //   display: none;
+  // }
 
   [data-aos-delay] {
     transition-delay: 0ms !important;
