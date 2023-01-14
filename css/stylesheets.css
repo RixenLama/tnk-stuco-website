@@ -559,6 +559,9 @@ p {
   body[data-mobile-nav-expanded=false] .mobile-nav-button__close {
     display: none;
   }
+  .mobile-nav {
+    display: none;
+  }
   .mobile-nav[data-state=opening] {
     -webkit-animation: slidein 500ms ease forwards;
             animation: slidein 500ms ease forwards;
@@ -566,10 +569,12 @@ p {
   }
   .mobile-nav[data-state=opened] {
     transform: translateX(0%);
+    display: block;
   }
   .mobile-nav[data-state=closing] {
     -webkit-animation: slideout 500ms ease forwards;
             animation: slideout 500ms ease forwards;
+    display: block;
   }
   .mobile-nav[data-state=closed] {
     display: none;

@@ -401,6 +401,10 @@ p {
     display: none;
   }
 
+  .mobile-nav {
+    display: none;
+  }
+
   .mobile-nav[data-state="opening"] {
     animation: slidein $mobile-nav-transition-duration ease forwards;
     display: block;
@@ -408,10 +412,12 @@ p {
 
   .mobile-nav[data-state="opened"] {
     transform: translateX(0%);
+    display: block;
   }
 
   .mobile-nav[data-state="closing"] {
     animation: slideout $mobile-nav-transition-duration ease forwards;
+    display: block;
   }
 
   .mobile-nav[data-state="closed"] {
