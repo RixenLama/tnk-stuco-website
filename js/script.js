@@ -57,11 +57,13 @@ window.addEventListener("resize", () => {
   }
 });
 
+window.addEventListener("pageshow", () => {
+  closeMobileNav();
+});
+
 // Dynamic Copyright Year
 
 document.addEventListener("DOMContentLoaded", () => {
-  closeMobileNav();
-
   const year = new Date().getFullYear();
   const footerText = document.querySelector("#copyright-text");
   footerText.innerText = `© ${year} Turun normaalikoulun lukio. All rights reserved.`;
