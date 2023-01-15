@@ -285,8 +285,8 @@ p {
   left: 0;
   top: 64px;
   z-index: 100;
-  transition: transform 500ms;
   background-color: hsl(0deg, 0%, 100%);
+  transition: transform 500ms;
   transform: translateX(-100%);
   display: none;
   padding-block: 2rem;
@@ -522,10 +522,10 @@ p {
   body[data-mobile-nav-expanded=false] {
     overflow: auto;
   }
-  body[data-mobile-nav-expanded=true] .mobile-nav-button__menu {
+  body[data-mobile-nav-expanded=true] .mobile-nav-button__open {
     display: none;
   }
-  body[data-mobile-nav-expanded=false] .mobile-nav-button__exit {
+  body[data-mobile-nav-expanded=false] .mobile-nav-button__close {
     display: none;
   }
   body[data-mobile-nav-expanded=true] .mobile-nav {

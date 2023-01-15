@@ -131,17 +131,24 @@
             <img
               src="./img/icons/ic_menu.svg"
               alt=""
-              class="mobile-nav-button__menu"
+              class="mobile-nav-button__open"
+              aria-hidden="true"
             />
             <img
               src="./img/icons/ic_close.svg"
               alt=""
-              class="mobile-nav-button__exit"
+              class="mobile-nav-button__close"
+              aria-hidden="true"
             />
           </button>
         </div>
       </div>
-      <nav id="mobile-nav" class="mobile-nav" aria-label="mobile navigation">
+      <nav
+        data-state="closed"
+        id="mobile-nav"
+        class="mobile-nav"
+        aria-label="mobile navigation"
+      >
         <div class="container">
           <ul>
             <li>
@@ -212,7 +219,7 @@
           <p id="copyright-text" class="copyright-text">
             © 2022 Turun normaalikoulun lukio. All rights reserved.
           </p>
-          <p class="credits-text">Developed by Rex &amp; Rajan</p>
+          <p class="credits-text">Developed by Raiyan S. &amp; Rixen L.</p>
         </div>
       </div>
     </footer>

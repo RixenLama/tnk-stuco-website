@@ -1,5 +1,6 @@
 @import "reset";
 @import "variables";
+@import "animations";
 @import "mixins";
 @import "utilities";
 @import "components";
@@ -137,8 +138,8 @@ p {
   left: 0;
   top: $header-height;
   z-index: 100;
-  transition: transform 500ms;
   background-color: $clr-white;
+  transition: transform $mobile-nav-transition-duration;
   transform: translateX(-100%);
   display: none;
   padding-block: 2rem;
@@ -393,11 +394,11 @@ p {
     overflow: auto;
   }
 
-  body[data-mobile-nav-expanded="true"] .mobile-nav-button__menu {
+  body[data-mobile-nav-expanded="true"] .mobile-nav-button__open {
     display: none;
   }
 
-  body[data-mobile-nav-expanded="false"] .mobile-nav-button__exit {
+  body[data-mobile-nav-expanded="false"] .mobile-nav-button__close {
     display: none;
   }
 
@@ -408,6 +409,29 @@ p {
   body[data-mobile-nav-expanded="false"] .mobile-nav {
     transform: translateX(-100%);
   }
+
+  // .mobile-nav {
+  //   display: none;
+  // }
+
+  // .mobile-nav[data-state="opening"] {
+  //   animation: slidein $mobile-nav-transition-duration ease forwards;
+  //   display: block;
+  // }
+
+  // .mobile-nav[data-state="opened"] {
+  //   transform: translateX(0%);
+  //   display: block;
+  // }
+
+  // .mobile-nav[data-state="closing"] {
+  //   animation: slideout $mobile-nav-transition-duration ease forwards;
+  //   display: block;
+  // }
+
+  // .mobile-nav[data-state="closed"] {
+  //   display: none;
+  // }
 
   [data-aos-delay] {
     transition-delay: 0ms !important;
