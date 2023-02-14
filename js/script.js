@@ -8,29 +8,35 @@ const BP_MEDIUM = 768;
 const openMobileNav = () => {
   document.body.setAttribute("data-mobile-nav-expanded", true);
   mobileNavButton.setAttribute("aria-expanded", true);
-  // mobileNav.setAttribute("data-state", "opening");
+  mobileNav.setAttribute("data-state", "opening");
 
-  // mobileNav.addEventListener(
-  //   "animationend",
-  //   () => {
-  //     mobileNav.setAttribute("data-state", "opened");
-  //   },
-  //   { once: true }
-  // );
+  mobileNav.addEventListener(
+    "animationend",
+    () => {
+      mobileNav.setAttribute("data-state", "opened");
+    },
+    { once: true }
+  );
 };
 
 const closeMobileNav = () => {
   document.body.setAttribute("data-mobile-nav-expanded", false);
   mobileNavButton.setAttribute("aria-expanded", false);
-  // mobileNav.setAttribute("data-state", "closing");
+  mobileNav.setAttribute("data-state", "closing");
 
-  // mobileNav.addEventListener(
-  //   "animationend",
-  //   () => {
-  //     mobileNav.setAttribute("data-state", "closed");
-  //   },
-  //   { once: true }
-  // );
+  mobileNav.addEventListener(
+    "animationend",
+    () => {
+      mobileNav.setAttribute("data-state", "closed");
+    },
+    { once: true }
+  );
+};
+
+const hideMobileNav = () => {
+  document.body.setAttribute("data-mobile-nav-expanded", false);
+  mobileNavButton.setAttribute("aria-expanded", false);
+  mobileNav.setAttribute("data-state", "closed");
 };
 
 mobileNavButton.addEventListener("click", () => {
@@ -57,8 +63,10 @@ window.addEventListener("resize", () => {
   }
 });
 
+// Hide Mobile Nav By Default
+
 window.addEventListener("pageshow", () => {
-  closeMobileNav();
+  hideMobileNav();
 });
 
 // Dynamic Copyright Year
