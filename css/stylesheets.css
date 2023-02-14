@@ -45,14 +45,28 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideout {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }
 .sr-only {
@@ -528,11 +542,18 @@ p {
   body[data-mobile-nav-expanded=false] .mobile-nav-button__close {
     display: none;
   }
-  body[data-mobile-nav-expanded=true] .mobile-nav {
+  .mobile-nav[data-state=opening] {
+    animation: slidein 500ms ease forwards;
+    display: block;
+  }
+  .mobile-nav[data-state=opened] {
     transform: translateX(0%);
   }
-  body[data-mobile-nav-expanded=false] .mobile-nav {
-    transform: translateX(-100%);
+  .mobile-nav[data-state=closing] {
+    animation: slideout 500ms ease forwards;
+  }
+  .mobile-nav[data-state=closed] {
+    display: none;
   }
   [data-aos-delay] {
     transition-delay: 0ms !important;
