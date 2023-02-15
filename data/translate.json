@@ -1,0 +1,28 @@
+{
+  "en": {
+    "common": {
+      "name": "TNK STUCO",
+      "header": {
+        "home": "Home",
+        "members": "Members",
+        "events": "Events",
+        "rules": "Rules",
+        "contact": "Contact"
+      },
+      "footer": {}
+    }
+  },
+  "fi": {
+    "common": {
+      "name": "TNK OPKH",
+      "header": {
+        "home": "Koti",
+        "members": "Jäsenet",
+        "events": "Tapahtumat",
+        "rules": "Säännöt",
+        "contact": "Yhteystiedot"
+      },
+      "footer": {}
+    }
+  }
+}
