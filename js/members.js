@@ -1,13 +1,10 @@
-const representativesContainer = document.querySelector(
-  "#representatives-container"
-);
-const deputiesContainer = document.querySelector("#deputies-container");
+const membersContainer = document.querySelector("#members-container");
 const memberCardTemplate = document.querySelector("#member-card-template");
 
 const MIN_MEMBER_WIDTH = 250;
 const GRID_GAP = 16;
 
-const containerWidth = representativesContainer.clientWidth;
+const containerWidth = membersContainer.clientWidth;
 const columnNumber = Math.floor(
   (containerWidth + GRID_GAP) / (MIN_MEMBER_WIDTH + GRID_GAP)
 );
@@ -52,15 +49,8 @@ const populateMember = (member, idx) => {
 fetch("/data/members.json")
   .then((res) => res.json())
   .then((members) => {
-    const { representatives, deputies } = members;
-
-    representatives.forEach((member, idx) => {
+    members.forEach((member, idx) => {
       const memberElement = populateMember(member, idx);
-      representativesContainer.appendChild(memberElement);
-    });
-
-    deputies.forEach((member, idx) => {
-      const memberElement = populateMember(member, idx);
-      deputiesContainer.appendChild(memberElement);
+      membersContainer.appendChild(memberElement);
     });
   });

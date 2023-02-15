@@ -92,7 +92,7 @@
               width="40"
               aria-hidden="true"
             />
-            TNK STUCO
+            <span data-locale-id="common-name">TNK STUCO</span>
           </a>
           <nav
             id="primary-nav"
@@ -101,22 +101,45 @@
           >
             <ul>
               <li>
-                <a href="index.html" class="primary-nav__link">Home</a>
+                <a
+                  href="index.html"
+                  class="primary-nav__link primary-nav__link--active"
+                  aria-current="page"
+                  data-locale-id="common-header-home"
+                  >Home</a
+                >
               </li>
               <li>
-                <a href="member.html" class="primary-nav__link">Members</a>
+                <a
+                  href="member.html"
+                  class="primary-nav__link"
+                  data-locale-id="common-header-members"
+                  >Members</a
+                >
               </li>
               <li>
                 <a
                   href="event.html"
-                  class="primary-nav__link primary-nav__link--active"
-                  aria-current="page"
+                  class="primary-nav__link"
+                  data-locale-id="common-header-events"
                   >Events</a
                 >
               </li>
-              <li><a href="rule.html" class="primary-nav__link">Rules</a></li>
               <li>
-                <a href="contact.html" class="primary-nav__link">Contact</a>
+                <a
+                  href="rule.html"
+                  class="primary-nav__link"
+                  data-locale-id="common-header-rules"
+                  >Rules</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="primary-nav__link"
+                  data-locale-id="common-header-contact"
+                  >Contact</a
+                >
               </li>
             </ul>
           </nav>
@@ -220,6 +243,22 @@
             © 2022 Turun normaalikoulun lukio. All rights reserved.
           </p>
           <p class="credits-text">Developed by Raiyan S. &amp; Rixen L.</p>
+          <div class="translation-buttons">
+            <button
+              id="en-button"
+              class="translation-button | link"
+              aria-label="translate to english"
+            >
+              English
+            </button>
+            <button
+              id="fi-button"
+              class="translation-button | link"
+              aria-label="käännä suomeksi"
+            >
+              Suomi
+            </button>
+          </div>
         </div>
       </div>
     </footer>
