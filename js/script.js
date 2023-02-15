@@ -1,3 +1,52 @@
+const DEFAULT_LOCALE = "en";
+
+const enButton = document.querySelector("#en-button");
+const fiButton = document.querySelector("#fi-button");
+
+const traverseObject = (object, root, array) => {
+  return Object.keys(object).forEach((key) => {
+    const keyPath = `${root}-${key}`;
+
+    if (typeof object[key] === "object") {
+      traverseObject(object[key], keyPath, array);
+    } else {
+      return array.push([keyPath.slice(1), object[key]]);
+    }
+  });
+};
+
+const translatePage = (translations) => {
+  const keys = [];
+
+  traverseObject(translations, "", keys);
+
+  keys.forEach(([key, value]) => {
+    const element = document.querySelector(`[data-locale-id="${key}"]`);
+    if (element) {
+      console.log(element);
+      element.textContent = value;
+    }
+  });
+};
+
+const switchLocale = (locale) => {
+  console.log(`Locale: ${locale}`);
+  localStorage.setItem("tnk-stuco_locale", locale);
+
+  fetch("/data/translate.json")
+    .then((res) => res.json())
+    .then((translations) => {
+      translatePage(translations[locale]);
+    });
+};
+
+enButton.addEventListener("click", () => {
+  switchLocale("en");
+});
+fiButton.addEventListener("click", () => {
+  switchLocale("fi");
+});
+
 // Responsive Navbar
 
 const mobileNavButton = document.querySelector("#mobile-nav-button");
@@ -72,6 +121,9 @@ window.addEventListener("pageshow", () => {
 // Dynamic Copyright Year
 
 document.addEventListener("DOMContentLoaded", () => {
+  const locale = localStorage.getItem("tnk-stuco_locale") || DEFAULT_LOCALE;
+  switchLocale(locale);
+
   const year = new Date().getFullYear();
   const footerText = document.querySelector("#copyright-text");
   footerText.innerText = `© ${year} Turun normaalikoulun lukio. All rights reserved.`;

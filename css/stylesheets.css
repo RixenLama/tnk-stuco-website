@@ -431,7 +431,7 @@ p {
 
 .footer {
   margin-top: auto;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   background-color: hsl(0deg, 0%, 0%);
   text-align: center;
 }
@@ -443,6 +443,18 @@ p {
   margin-top: 0.5em;
   font-size: 0.8125rem;
   color: #9797a1;
+}
+.footer .translation-buttons {
+  margin-top: 2em;
+  font-size: 0.875rem;
+}
+.footer .translation-button {
+  background: none;
+  margin-inline: 0.5em;
+  color: white;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 .member-card-container {
