@@ -12,25 +12,51 @@
       "footer": {
         "copyright":"© 2022 Turun normaalikoulun lukio. All rights reserved.",
         "credits":"Developed by Raiyan S. &amp; Rixen L."
+      },
+      "snippets":{
+        "email":"Email",
+        "instagram":"Instagram",
+        "tiktok": "Tiktok"
       }
     },
-    "index": {
-      "index-hero-header": "We Make School More Fun",
-      "index-description": "We are the student council of Turun Normaalikoulu Upper Secondary School. Our task is to organize fun events for our students to make the school year more enjoyable.",
-      "index-links":{
+
+    "home-page": {
+      "home-hero-header": "We Make School More Fun",
+      "home-description": "We are the student council of Turun Normaalikoulu Upper Secondary School. Our task is to organize fun events for our students to make the school year more enjoyable.",
+      "home-links":{
         "cta-link-1": "Future Events",
         "cta-link-2": "Suggest Something"
       },
-      "index-about-us": {
-        "index-about-us-header":"About Us",
-        "index-about-us-text":{
+      "home-about-us": {
+        "home-about-us-header":"About Us",
+        "home-about-us-text":{
           "about-us-paragaph-1": "We are the Student Council (STUCO) of Turun Normaalikoulu Upper Secondary School. We are a group of students responsible for making school more enjoyable. Our job is to organize fun events for our school throughout the school years. Examples of events organized by us include picnics and parties. We alsohelp out in other ways, such as organizing fundraisers or helping out with sports teams. We are a fun group of people who enjoy being around each other and making new friends. We love to have fun together, which is why we always try to make sure that everyone has a good time when they attend one of our parties or events!",
           "about-us-paragaph-2": "This year, STUCO is composed of 25 students. The representative and deputy are elected by each class. There are three grades in our school. Each year group consists of the national lukio (AB) and International Baccalaureate (IB) students. There are 2–3 groups of each. The elected representatives present their class as a whole to STUCO. The members meet regularly to discuss how they can make things better at school and have fun activities for everyone to enjoy."
         },
-      "index-about-us-link": "View Our Members",
-      "index-quotes":"Quotes"
+      "home-about-us-link": "View Our Members",
+      "home-quotes":"Quotes"
+    },
+
+    "event-page":{
+      "event-page-title":"Events",
+      "event-page-description":"Here you can view the various fun events we are organizingv throughout this school year in a calendar. Click on the events to see more information.",
+      "event-page-calendar":"Calendar",
+      "event-page-event-list":"Event List"
+    },
+
+    "member-page":{
+      "member-page-title":"Members",
+      "members-page-description":"Here you can view and contact the 25 members of STUCO during the academic year 2022-2023. Some members have special responsibilities that are also presented here."
+    },
+
+    "rules-page":{
+      "rules-page-title":"Rules",
+      "rules-page-description":"Here you can view the legal rules and regulations of the student body which describe STUCO's function in detail both in Finnish and English."
     }
   },
+
+
+
   "fi": {
     "common": {
       "name": "TNK OPKH",
@@ -44,22 +70,56 @@
       "footer": {
         "copyright": "© 2022 Turun normaalikoulun lukio. Kaikki oikeudet pidätetään.",
         "credits": "Kehittäjä Raiyan S. &amp; Rixen L."
+      },
+      "snippets":{
+        "email":"Sähköposti",
+        "instagram":"Instagram",
+        "tiktok":"Tiktok"
       }
     },
-    "index": {
-      "index-hero-header":"Teemme Koulusta Hauskempaa",
-      "index-description": "Olemme Turun Normaalikoulun lukion oppilaskunta. Tehtävänämme on järjestää opiskelijoillemme hauskoja tapahtumia kouluvuoden iloksi.",
-      "index-links":{
+
+
+    "home-page": {
+      "home-hero-header":"Teemme Koulusta Hauskempaa",
+      "home-description": "Olemme Turun Normaalikoulun lukion oppilaskunta. Tehtävänämme on järjestää opiskelijoillemme hauskoja tapahtumia kouluvuoden iloksi.",
+      "home-links":{
         "cta-link-1": "Tulevat tapahtumat",
         "cta-link-2": "Ehdota jotain"
       },
-      "index-about-us": {
-        "index-about-us-header":"About Us",
-        "index-about-us-text":{
+      "home-about-us": {
+        "home-about-us-header":"About Us",
+        "home-about-us-text":{
           "about-us-paragaph-1": "Olemme Turun Normaalikoulun lukion oppilaskunta (STUCO). Olemme ryhmä opiskelijoita, joiden tehtävänä on tehdä koulusta hauskempaa. Tehtävänämme on järjestää koulullemme hauskoja tapahtumia lukuvuosien ajan. Esimerkkejä järjestämistämme tapahtumista ovat piknikit ja juhlat. Autamme myös muilla tavoilla, kuten järjestämällä varainkeräyksiä tai auttamalla urheilujoukkueiden kanssa. Olemme hauska joukko ihmisiä, jotka nauttivat toistensa seurasta ja uusien ystävien saamisesta. Rakastamme pitää hauskaa yhdessä, minkä vuoksi pyrimme aina varmistamaan, että kaikilla on hauskaa osallistuessaan johonkin juhliimme tai tapahtumaamme!",
           "about-us-paragaph-2": "Tänä vuonna STUCOssa on 25 opiskelijaa. Kukin luokka valitsee edustajan ja varajäsenen. Koulussamme on kolme luokkaa. Kukin vuosiryhmä koostuu kansallisista lukio- (AB) ja International Baccalaureate (IB) -opiskelijoista. Jokaisessa on 2-3 ryhmää. Valitut edustajat esittelevät luokkansa kokonaisuutena STUCOlle. Jäsenet kokoontuvat säännöllisesti keskustelemaan siitä, kuinka he voivat parantaa koulun asioita ja järjestää hauskoja aktiviteetteja, joista kaikki voivat nauttia."
         },
-      "index-about-us-link":"Katso Jäseniämme",
-      "index-quotes":"Lainausmerkit"
+      "home-about-us-link":"Katso Jäseniämme",
+      "home-quotes":"Lainausmerkit"
+      },
+
+
+    "event-page":{
+      "event-page-title":"Tapahtumat",
+      "event-page-description":"Täältä voit katsella erilaisia ​​hauskoja tapahtumia, joita järjestämme kalenterissa koko tämän lukuvuoden ajan. Klikkaa tapahtumia katso lisätietoja.",
+      "event-page-calendar":"Kalenteri",
+      "event-page-event-list":"Tapahtumaluettelo"
+    },
+
+
+    "member-page":{
+      "member-page-title":"Jäsen",
+      "members-page-description":"Täältä voit tarkastella ja ottaa yhteyttä STUCO:n 25 jäseneen lukuvuonna 2022-2023. Joillakin jäsenillä on erityisiä velvollisuuksia, jotka on myös esitetty tässä."
+    },
+
+
+    "rules-page":{
+      "rules-page-title":"säännöt",
+      "rules-page-description":"Täältä voit tutustua opiskelijan laillisiin sääntöihin ja määräyksiin laitos, joka kuvaa STUCOn toimintaa yksityiskohtaisesti sekä suomeksi että Englanti."
+    },
+
+
+    "contact-page":{
+      "contact-page-title":"Contact",
+      "contact-page-description":"Here you can visit our social media accounts or write a comment to us directly about suggestions or feedback."
+    }
   }
 }
