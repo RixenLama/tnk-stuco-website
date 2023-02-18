@@ -80,14 +80,14 @@
 
 
     "home-page": {
-      "home-hero-header":"Teemme Koulusta Hauskempaa",
+      "home-hero-header":"Teemme Koulusta Hauskempaa.",
       "home-description": "Olemme Turun Normaalikoulun lukion oppilaskunta. Tehtävänämme on järjestää opiskelijoillemme hauskoja tapahtumia kouluvuoden iloksi.",
       "home-links":{
         "cta-link-1": "Tulevat tapahtumat",
         "cta-link-2": "Ehdota jotain"
       },
       "home-about-us": {
-        "home-about-us-header":"About Us",
+        "home-about-us-header":"Meistä",
         "home-about-us-text":{
           "about-us-paragaph-1": "Olemme Turun Normaalikoulun lukion oppilaskunta (STUCO). Olemme ryhmä opiskelijoita, joiden tehtävänä on tehdä koulusta hauskempaa. Tehtävänämme on järjestää koulullemme hauskoja tapahtumia lukuvuosien ajan. Esimerkkejä järjestämistämme tapahtumista ovat piknikit ja juhlat. Autamme myös muilla tavoilla, kuten järjestämällä varainkeräyksiä tai auttamalla urheilujoukkueiden kanssa. Olemme hauska joukko ihmisiä, jotka nauttivat toistensa seurasta ja uusien ystävien saamisesta. Rakastamme pitää hauskaa yhdessä, minkä vuoksi pyrimme aina varmistamaan, että kaikilla on hauskaa osallistuessaan johonkin juhliimme tai tapahtumaamme!",
           "about-us-paragaph-2": "Tänä vuonna STUCOssa on 25 opiskelijaa. Kukin luokka valitsee edustajan ja varajäsenen. Koulussamme on kolme luokkaa. Kukin vuosiryhmä koostuu kansallisista lukio- (AB) ja International Baccalaureate (IB) -opiskelijoista. Jokaisessa on 2-3 ryhmää. Valitut edustajat esittelevät luokkansa kokonaisuutena STUCOlle. Jäsenet kokoontuvat säännöllisesti keskustelemaan siitä, kuinka he voivat parantaa koulun asioita ja järjestää hauskoja aktiviteetteja, joista kaikki voivat nauttia."
@@ -112,14 +112,14 @@
 
 
     "rules-page":{
-      "rules-page-title":"säännöt",
+      "rules-page-title":"Säännöt",
       "rules-page-description":"Täältä voit tutustua opiskelijan laillisiin sääntöihin ja määräyksiin laitos, joka kuvaa STUCOn toimintaa yksityiskohtaisesti sekä suomeksi että Englanti."
     },
 
 
     "contact-page":{
-      "contact-page-title":"Contact",
-      "contact-page-description":"Here you can visit our social media accounts or write a comment to us directly about suggestions or feedback."
+      "contact-page-title":"Yhteyshenkilö",
+      "contact-page-description":"Täällä voit vierailla sosiaalisen median tileillämme tai kirjoittaa meille kommentin ehdotuksista tai palautteesta."
     }
   }
 }
