@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Home | TNK STUCO</title>
+    <meta name="title" content="Home | TNK STUCO" />
+    <meta
+      name="description"
+      content="This is the official website of the student council of Turun normaalikoulu. Here we showcase upcoming events in the school, the members of STUCO, and the entire school as a whole."
+    />
+    <meta
+      name="keywords"
+      content="TNK, TNK STUCO, Turun Normaalikoulu, Turun Normaalikoulu STUCO, STUCO, TNK OPKH, TNK STUCO website, TNK website, Turun Normaalikoulu website"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tnk-stuco.netlify.app/" />
+    <meta property="og:title" content="Home | TNK STUCO" />
+    <meta
+      property="og:description"
+      content="This is the official website of the student council of Turun normaalikoulu. Here we showcase upcoming events in the school, the members of STUCO, and the entire school as a whole."
+    />
+    <meta property="og:image" content="/img/hero-background.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://tnk-stuco.netlify.app/" />
+    <meta property="twitter:title" content="Home | TNK STUCO" />
+    <meta
+      property="twitter:description"
+      content="This is the official website of the student council of Turun normaalikoulu. Here we showcase upcoming events in the school, the members of STUCO, and the entire school as a whole."
+    />
+    <meta property="twitter:image" content="/img/hero-background.jpg" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/stylesheets.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+    <script src="js/script.js" defer></script>
+    <script src="js/quotes.js" defer></script>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="./img/tnk-logo-light.svg"
+      media="(prefers-color-scheme:no-preference)"
+    />
+    <link
+      rel="icon"
+      href="./img/tnk-logo.svg"
+      media="(prefers-color-scheme:dark)"
+    />
+    <link
+      rel="icon"
+      href="/./img/tnk-logo-light.svg"
+      media="(prefers-color-scheme:light)"
+    />
+
+    <!-- AOS -->
+    <link
+      rel="preload"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    </noscript>
+  </head>
+
+  <body data-mobile-nav-expanded="false">
+    <header class="header">
+      <div class="container">
+        <div class="header-container">
+          <a class="header__logo" href="index.html" aria-label="Home">
+            <img
+              src="./img/tnk-logo.svg"
+              alt=""
+              height="40"
+              width="40"
+              aria-hidden="true"
+            />
+            TNK STUCO
+          </a>
+          <nav
+            id="primary-nav"
+            class="primary-nav"
+            aria-label="primary navigation"
+          >
+            <ul>
+              <li>
+                <a
+                  href="index.html"
+                  class="primary-nav__link primary-nav__link--active"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="member.html" class="primary-nav__link">Members</a>
+              </li>
+              <li><a href="event.html" class="primary-nav__link">Events</a></li>
+              <li><a href="rule.html" class="primary-nav__link">Rules</a></li>
+              <li>
+                <a href="contact.html" class="primary-nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button
+            class="mobile-nav-button"
+            id="mobile-nav-button"
+            aria-controls="mobile-nav"
+            aria-expanded="false"
+            tabindex="0"
+          >
+            <span class="sr-only">Menu</span>
+            <img
+              src="./img/icons/ic_menu.svg"
+              alt=""
+              class="mobile-nav-button__open"
+              aria-hidden="true"
+            />
+            <img
+              src="./img/icons/ic_close.svg"
+              alt=""
+              class="mobile-nav-button__close"
+              aria-hidden="true"
+            />
+          </button>
+        </div>
+      </div>
+      <nav
+        data-state="closed"
+        id="mobile-nav"
+        class="mobile-nav"
+        aria-label="mobile navigation"
+      >
+        <div class="container">
+          <ul>
+            <li>
+              <a
+                href="index.html"
+                class="mobile-nav__link mobile-nav__link--active"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li><a href="member.html" class="mobile-nav__link">Members</a></li>
+            <li><a href="event.html" class="mobile-nav__link">Events</a></li>
+            <li><a href="rule.html" class="mobile-nav__link">Rules</a></li>
+            <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="hero-section | section--large">
+        <div class="container">
+          <div class="hero-container">
+            <h1 class="hero__heading">We Make School More Fun.</h1>
+            <p class="hero__description">
+              We are the student council of Turun Normaalikoulu Upper Secondary
+              School. Our task is to organize fun events for our students to
+              make the school year more enjoyable.
+            </p>
+            <div class="hero__cta">
+              <a
+                href="event.html"
+                class="hero__cta-link | button button--large button--neutral-primary"
+                >Future Events</a
+              ><a
+                href="contact.html"
+                class="hero__cta-link | button button--large button--neutral-tertiary"
+                >Suggest Something</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-section">
+        <div class="container">
+          <div class="about__container">
+            <h2 class="section-heading">About Us</h2>
+            <div class="about__content">
+              <div class="about__text">
+                <p class="about__paragraph">
+                  We are the Student Council (STUCO) of Turun Normaalikoulu
+                  Upper Secondary School. We are a group of students responsible
+                  for making school more enjoyable. Our job is to organize fun
+                  events for our school throughout the school years. Examples of
+                  events organized by us include picnics and parties. We also
+                  help out in other ways, such as organizing fundraisers or
+                  helping out with sports teams. We are a fun group of people
+                  who enjoy being around each other and making new friends. We
+                  love to have fun together, which is why we always try to make
+                  sure that everyone has a good time when they attend one of our
+                  parties or events!
+                </p>
+                <p class="about__paragraph">
+                  This year, STUCO is composed of 25 students. The
+                  representative and deputy are elected by each class. There are
+                  three grades in our school. Each year group consists of the
+                  national lukio (AB) and International Baccalaureate (IB)
+                  students. There are 2–3 groups of each. The elected
+                  representatives present their class as a whole to STUCO. The
+                  members meet regularly to discuss how they can make things
+                  better at school and have fun activities for everyone to
+                  enjoy.
+                </p>
+                <a
+                  href="member.html"
+                  class="about__link | button button--accent-secondary button--small button--accent-slide-hover button--accent-stroke"
+                  >View Our Members</a
+                >
+              </div>
+              <div class="about__image-container" data-aos="fade-up">
+                <img
+                  class="about__image"
+                  src="./img/about-us-photo.jpeg"
+                  alt="Some of the STUCO members in the school auditorium"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quotes-section">
+        <div class="container">
+          <div class="quotes-container">
+            <h2 class="section-heading">Quotes</h2>
+            <div id="quote-card-container" class="quotes-card-container">
+              <!-- Quote Template -->
+              <template id="quote-card-template">
+                <blockquote
+                  id="quote-card"
+                  class="quote-card | card"
+                  data-aos="fade-up"
+                >
+                  <p id="quote-content"></p>
+                  <cite id="quote-cite" class="quote-cite"></cite>
+                </blockquote>
+              </template>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <p id="copyright-text" class="copyright-text">
+            © 2022 Turun normaalikoulun lukio. All rights reserved.
+          </p>
+          <p class="credits-text">Developed by Raiyan S. &amp; Rixen L.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true });
+    </script>
+  </body>
+</html>
