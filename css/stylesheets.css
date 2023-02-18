@@ -444,6 +444,16 @@ p {
   font-size: 0.8125rem;
   color: #9797a1;
 }
+.footer .translate-link {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5em;
+  font-size: 0.8125rem;
+  color: hsl(0deg, 0%, 100%);
+}
+.footer .translate-link:hover {
+  text-decoration: underline;
+}
 
 .member-card-container {
   display: flex;

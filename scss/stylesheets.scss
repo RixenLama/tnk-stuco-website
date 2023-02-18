@@ -292,6 +292,18 @@ p {
     font-size: $fs-xs;
     color: lighten($clr-text--light, 35%);
   }
+  
+  .translate-link{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5em;
+    font-size: $fs-xs;
+    color: $clr-white;
+
+    &:hover{
+      text-decoration: underline
+    }
+  }
 }
 
 // Members Page
