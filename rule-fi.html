@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
-    <title>Members | TNK STUCO</title>
-    <meta name="title" content="Members | TNK STUCO" />
+    <title>Rules | TNK STUCO</title>
+    <meta name="title" content="Rules | TNK STUCO" />
     <meta
       name="description"
-      content="Here you can view and contact the 25 members of STUCO during the
-      academic year 2022–2023. Some members have special responsibilities
-      that are also presented here."
+      content="Here you can view the legal rules and regulations of the student
+      body which describe STUCO's function in detail both in Finnish and
+      English."
     />
     <meta
       name="keywords"
@@ -21,16 +21,13 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://tnk-stuco.netlify.app/member.html"
-    />
-    <meta property="og:title" content="Members | TNK STUCO" />
+    <meta property="og:url" content="https://tnk-stuco.netlify.app/rule.html" />
+    <meta property="og:title" content="Rules | TNK STUCO" />
     <meta
       property="og:description"
-      content="Here you can view and contact the 25 members of STUCO during the
-      academic year 2022–2023. Some members have special responsibilities
-      that are also presented here."
+      content="Here you can view the legal rules and regulations of the student
+      body which describe STUCO's function in detail both in Finnish and
+      English."
     />
     <meta property="og:image" content="/img/hero-background.jpg" />
 
@@ -38,14 +35,14 @@
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="https://tnk-stuco.netlify.app/member.html"
+      content="https://tnk-stuco.netlify.app/rule.html"
     />
-    <meta property="twitter:title" content="Members | TNK STUCO" />
+    <meta property="twitter:title" content="Rules | TNK STUCO" />
     <meta
       property="twitter:description"
-      content="Here you can view and contact the 25 members of STUCO during the
-      academic year 2022–2023. Some members have special responsibilities
-      that are also presented here."
+      content="Here you can view the legal rules and regulations of the student
+      body which describe STUCO's function in detail both in Finnish and
+      English."
     />
     <meta property="twitter:image" content="/img/hero-background.jpg" />
 
@@ -62,7 +59,6 @@
 
     <!-- JS -->
     <script src="js/script.js" defer></script>
-    <script src="js/members.js" defer></script>
 
     <!-- Favicon -->
     <link
@@ -80,23 +76,12 @@
       href="/./img/tnk-logo-light.svg"
       media="(prefers-color-scheme:light)"
     />
-
-    <!-- AOS -->
-    <link
-      rel="preload"
-      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript>
-      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    </noscript>
   </head>
   <body data-mobile-nav-expanded="false">
     <header class="header">
       <div class="container">
         <div class="header-container">
-          <a class="header__logo" href="index.html" aria-label="Home">
+          <a class="header__logo" href="index-fi.html" aria-label="Home">
             <img
               src="./img/tnk-logo.svg"
               alt=""
@@ -104,7 +89,7 @@
               width="40"
               aria-hidden="true"
             />
-            TNK STUCO
+            TNK OPKH
           </a>
           <nav
             id="primary-nav"
@@ -113,20 +98,26 @@
           >
             <ul>
               <li>
-                <a href="index.html" class="primary-nav__link">Home</a>
+                <a href="index-fi.html" class="primary-nav__link">Koti</a>
+              </li>
+              <li>
+                <a href="member-fi.html" class="primary-nav__link">Jäsenet</a>
+              </li>
+              <li>
+                <a href="event-fi.html" class="primary-nav__link">Tapahtumat</a>
               </li>
               <li>
                 <a
-                  href="member.html"
+                  href="rule-fi.html"
                   class="primary-nav__link primary-nav__link--active"
                   aria-current="page"
-                  >Members</a
+                  >Säännöt</a
                 >
               </li>
-              <li><a href="event.html" class="primary-nav__link">Events</a></li>
-              <li><a href="rule.html" class="primary-nav__link">Rules</a></li>
               <li>
-                <a href="contact.html" class="primary-nav__link">Contact</a>
+                <a href="contact-fi.html" class="primary-nav__link"
+                  >Yhteystiedot</a
+                >
               </li>
             </ul>
           </nav>
@@ -162,19 +153,27 @@
         <div class="container">
           <ul>
             <li>
-              <a href="index.html" class="mobile-nav__link">Home</a>
+              <a href="index-fi.html" class="mobile-nav__link">Koti</a>
+            </li>
+            <li>
+              <a href="member-fi.html" class="mobile-nav__link">Jäsenet</a>
+            </li>
+            <li>
+              <a href="event-fi.html" class="mobile-nav__link">Tapahtumat</a>
             </li>
             <li>
               <a
-                href="member.html"
+                href="rule-fi.html"
                 class="mobile-nav__link mobile-nav__link--active"
                 aria-current="page"
-                >Members</a
+                >Säännöt</a
               >
             </li>
-            <li><a href="event.html" class="mobile-nav__link">Events</a></li>
-            <li><a href="rule.html" class="mobile-nav__link">Rules</a></li>
-            <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+            <li>
+              <a href="contact-fi.html" class="mobile-nav__link"
+                >Yhteystiedot</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
@@ -183,42 +182,24 @@
     <main class="main">
       <section>
         <div class="container">
-          <h1 class="page-heading">Members</h1>
+          <h1 class="page-heading">Säännöt</h1>
           <p class="page-subtitle">
-            Here you can view and contact the 25 members of STUCO during the
-            academic year 2022–2023. Some members have special responsibilities
-            that are also presented here.
+            Täältä voit tutustua opiskelijan laillisiin sääntöihin ja
+            määräyksiin laitos, joka kuvaa STUCOn toimintaa yksityiskohtaisesti
+            sekä suomeksi että Englanti.
           </p>
         </div>
       </section>
-
-      <section class="representatives-section">
+      <section>
         <div class="container">
-          <div id="members-container" class="member-card-container">
-            <!-- Member Card Template -->
-            <template id="member-card-template">
-              <article
-                id="member-card"
-                class="member-card | card"
-                data-aos="fade-up"
-              >
-                <div class="member-card__top">
-                  <h3 id="member-name"></h3>
-                  <p id="member-class"></p>
-                  <div id="member-role" class="member-card-role"></div>
-                </div>
-                <div class="member-card__bottom">
-                  <div id="member-email" class="member-card__link">
-                    <span>Email</span>
-                    <a href="#" class="link"></a>
-                  </div>
-                  <div id="member-instagram" class="member-card__link">
-                    <span>Instagram</span>
-                    <a href="#" target="_blank" class="link"></a>
-                  </div>
-                </div>
-              </article>
-            </template>
+          <div class="iframe-container">
+            <iframe
+              class="iframe iframe--min-width"
+              src="https://docs.google.com/document/d/e/2PACX-1vRPQsR5xOK4HRxAUXVP3hT7eFNUF108oBrJ-TwuTGjdEYChd_svXnD6tzez1Cf8Ngw7MfEW41lNnjwJ/pub?embedded=true"
+              width="640"
+              height="360"
+              title="Rules"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -228,17 +209,12 @@
       <div class="container">
         <div class="footer-container">
           <p id="copyright-text" class="copyright-text">
-            © 2022 Turun normaalikoulun lukio. All rights reserved.
+            © 2022 Turun normaalikoulun lukio. Kaikki oikeudet pidätetään.
           </p>
-          <p class="credits-text">Developed by Raiyan S. &amp; Rixen L.</p>
-          <a href="./member-fi.html" class="translate-link">Finnish</a>
+          <p class="credits-text">Kehittäjä Raiyan S. &amp; Rixen L.</p>
+          <a href="./rule.html" class="translate-link">English</a>
         </div>
       </div>
     </footer>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({ once: true });
-    </script>
   </body>
 </html>
