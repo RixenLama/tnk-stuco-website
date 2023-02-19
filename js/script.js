@@ -21,10 +21,9 @@ const translatePage = (translations) => {
   traverseObject(translations, "", keys);
 
   keys.forEach(([key, value]) => {
-    const element = document.querySelector(`[data-locale-id="${key}"]`);
-    if (element) {
-      console.log(element);
-      element.textContent = value;
+    const elements = document.querySelectorAll(`[data-locale-id="${key}"]`);
+    if (elements) {
+      elements.forEach((e) => (e.textContent = value));
     }
   });
 };
@@ -125,6 +124,6 @@ document.addEventListener("DOMContentLoaded", () => {
   switchLocale(locale);
 
   const year = new Date().getFullYear();
-  const footerText = document.querySelector("#copyright-text");
-  footerText.innerText = `© ${year} Turun normaalikoulun lukio. All rights reserved.`;
+  const copyrightYear = document.querySelector("#copyright-year");
+  copyrightYear.innerText = year;
 });
