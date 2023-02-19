@@ -2,27 +2,29 @@
   "en": {
     "common": {
       "name": "TNK STUCO",
-      "header": {
-        "home": "Home",
-        "members": "Members",
-        "events": "Events",
-        "rules": "Rules",
-        "contact": "Contact"
+      "nav": {
+        "1": "Home",
+        "2": "Members",
+        "3": "Events",
+        "4": "Rules",
+        "5": "Contact"
       },
       "footer": {
-        "copyright": "© 2022 Turun normaalikoulun lukio. All rights reserved.",
-        "credits": "Developed by Raiyan S. &amp; Rixen L."
+        "copyright": "Turun normaalikoulun lukio. All rights reserved.",
+        "credits": "Developed by Raiyan S. & Rixen L."
       }
     },
     "index": {
-      "hero-header": "We Make School More Fun",
-      "hero-description": "We are the student council of Turun Normaalikoulu Upper Secondary School. Our task is to organize fun events for our students to make the school year more enjoyable.",
-      "hero-links": {
-        "1": "Future Events",
-        "2": "Suggest Something"
+      "hero": {
+        "heading": "We Make School More Fun",
+        "desc": "We are the student council of Turun Normaalikoulu Upper Secondary School. Our task is to organize fun events for our students to make the school year more enjoyable.",
+        "link": {
+          "1": "Future Events",
+          "2": "Suggest Something"
+        }
       },
       "about": {
-        "header": "About Us",
+        "heading": "About Us",
         "text": {
           "1": "We are the Student Council (STUCO) of Turun Normaalikoulu Upper Secondary School. We are a group of students responsible for making school more enjoyable. Our job is to organize fun events for our school throughout the school years. Examples of events organized by us include picnics and parties. We alsohelp out in other ways, such as organizing fundraisers or helping out with sports teams. We are a fun group of people who enjoy being around each other and making new friends. We love to have fun together, which is why we always try to make sure that everyone has a good time when they attend one of our parties or events!",
           "2": "In the school year 2022–2023, STUCO is composed of 25 members. The representative and deputy are elected by each class. There are three grades in our school. Each year group consists of the national lukio (AB) and International Baccalaureate (IB) students. There are 2–3 groups of each. The elected representatives present their class as a whole to STUCO. The members meet regularly to discuss how they can make things better at school and have fun activities for everyone to enjoy."
@@ -30,42 +32,90 @@
         "link": "View Our Members"
       },
       "quotes": {
-        "header": "Quotes"
+        "heading": "Quotes"
+      }
+    },
+    "members": {
+      "heading": "Members",
+      "desc": "Here you can view and contact the 25 members of STUCO during the academic year 2022–2023. Some members have special responsibilities that are also presented here."
+    },
+    "events": {
+      "heading": "Events",
+      "desc": "Here you can view the various fun events we are organizing throughout this school year in a calendar. Click on the events to see more information.",
+      "subheading": {
+        "1": "Calendar",
+        "2": "Event List"
+      }
+    },
+    "rules": {
+      "heading": "Rules",
+      "desc": "Here you can view the legal rules and regulations of the student body which describe STUCO's function in detail both in Finnish and English."
+    },
+    "contact": {
+      "heading": "Contact",
+      "desc": "Here you can visit our social media accounts or write a comment to us directly about suggestions or feedback.",
+      "link": {
+        "1": "Email"
       }
     }
   },
   "fi": {
     "common": {
       "name": "TNK OPKH",
-      "header": {
-        "home": "Koti",
-        "members": "Jäsenet",
-        "events": "Tapahtumat",
-        "rules": "Säännöt",
-        "contact": "Yhteystiedot"
+      "nav": {
+        "1": "Koti",
+        "2": "Jäsenet",
+        "3": "Tapahtumat",
+        "4": "Säännöt",
+        "5": "Yhteystiedot"
       },
       "footer": {
-        "copyright": "© 2022 Turun normaalikoulun lukio. Kaikki oikeudet pidätetään.",
-        "credits": "Kehittäjät: Raiyan S. &amp; Rixen L."
+        "copyright": "Turun normaalikoulun lukio. Kaikki oikeudet pidätetään.",
+        "credits": "Kehittäjät: Raiyan S. & Rixen L."
       }
     },
     "index": {
-      "hero-header": "Teemme Koulusta Hauskempaa",
-      "hero-description": "Olemme Turun Normaalikoulun lukion oppilaskunta. Tehtävänämme on järjestää opiskelijoillemme hauskoja tapahtumia kouluvuoden iloksi.",
-      "hero-links": {
-        "1": "Tulevat tapahtumat",
-        "2": "Ehdota jotain"
+      "hero": {
+        "heading": "Teemme koulusta hauskempaa",
+        "desc": "Olemme Turun normaalikoulun lukion oppiskelijakunnan hallitus. Tehtävänämme on järjestää opiskelijoillemme hauskoja tapahtumia, jotta kouluvuosi olisi miellyttävämpi.",
+        "link": {
+          "1": "Tulevat tapahtumat",
+          "2": "Ehdota jotain"
+        }
       },
       "about": {
-        "header": "Meistä",
+        "heading": "Meistä",
         "text": {
-          "1": "Olemme Turun normaalikoulun lukion opiskelijakunnan hallitus (OPKH). Olemme ryhmä opiskelijoita, joiden tehtävänä on tehdä koulusta hauskempaa. Tehtävänämme on järjestää koulullemme hauskoja tapahtumia lukuvuosien ajan. Esimerkkejä järjestämistämme tapahtumista ovat piknikit ja juhlat. Autamme myös muilla tavoilla, kuten järjestämällä varainkeräyksiä tai auttamalla urheilujoukkueiden kanssa. Olemme hauska joukko ihmisiä, jotka nauttivat toistensa seurasta ja uusien ystävien saamisesta. Rakastamme pitää hauskaa yhdessä, minkä vuoksi pyrimme aina varmistamaan, että kaikilla on hauskaa osallistuessaan johonkin juhliimme tai tapahtumaamme!",
-          "2": "Lukuvuonna 2022–2023 OPKH:ssa on 25 jäsentä. Kukin luokka valitsee edustajan ja varajäsenen. Koulussamme on kolme luokkaa. Kukin vuosiryhmä koostuu kansallisista lukio- (AB) ja International Baccalaureate (IB) -opiskelijoista. Jokaisessa on 2-3 ryhmää. Valitut edustajat esittelevät luokkansa kokonaisuutena STUCOlle. Jäsenet kokoontuvat säännöllisesti keskustelemaan siitä, kuinka he voivat parantaa koulun asioita ja järjestää hauskoja aktiviteetteja, joista kaikki voivat nauttia."
+          "1": "Olemme Turun normaalikoulun lukion opiskelijakunnan hallitus (OPKH). Olemme ryhmä opiskelijoita, joiden tehtävänä on tehdä koulusta hauskempaa. Tehtävänämme on järjestää koulullemme hauskoja tapahtumia ympäri lukuvuoden. Esimerkkejä järjestämistämme tapahtumista ovat piknikit ja juhlat. Autamme myös muilla tavoilla, kuten järjestämällä varainkeräyksiä tai auttamalla urheilujoukkueiden kanssa. Olemme hauska joukko ihmisiä, jotka nauttivat toistensa seurasta ja uusien ystävien saamisesta. Rakastamme pitää hauskaa yhdessä, minkä vuoksi pyrimme aina varmistamaan, että kaikilla on hauskaa osallistuessaan johonkin juhliimme tai tapahtumaamme!",
+          "2": "Lukuvuonna 2022–2023 OPKH:ssa on 25 jäsentä. Kukin luokka valitsee edustajan ja varajäsenen. Koulussamme on kolme vuosiryhmää. Kukin vuosiryhmä koostuu kansallisista lukio- (AB) ja International Baccalaureate (IB) -opiskelijoista. Jokaisessa on 2-3 ryhmää. Valitut edustajat esittelevät luokkansa kokonaisuutena OPKH:lle. Jäsenet kokoontuvat säännöllisesti keskustelemaan siitä, kuinka he voivat parantaa koulun asioita ja järjestää hauskoja aktiviteetteja, joista kaikki voivat nauttia."
         },
-        "link": "Katso Jäseniämme"
+        "link": "Katso jäseniämme"
       },
       "quotes": {
-        "header": "Sitaatit"
+        "heading": "Sitaatit"
+      }
+    },
+    "members": {
+      "heading": "Jäsenet",
+      "desc": "Täältä voit katsoa ja ottaa yhteyttä OPKH:n 25 jäseneen lukuvuonna 2022–2023. Joillakin jäsenillä on erityisiä velvollisuuksia, jotka on myös esitetty tässä."
+    },
+    "events": {
+      "heading": "Tapahtumat",
+      "desc": "Täältä voit tarkastella kalenterissa erilaisia ​​hauskoja tapahtumia, joita järjestämme tämän lukuvuoden aikana. Klikkaa tapahtumia nähdäksesi lisätietoja.",
+      "subheading": {
+        "1": "Kalenteri",
+        "2": "Tapahtumalista"
+      }
+    },
+    "rules": {
+      "heading": "Säännöt",
+      "desc": "Täältä voit katsoa OPKH:n toimintaa yksityiskohtaisesti kuvaavat lait ja määräykset sekä suomeksi että englanniksi."
+    },
+    "contact": {
+      "heading": "Yhteystiedot",
+      "desc": "Täällä voit vierailla sosiaalisen median tileillämme tai kirjoittaa meille kommentin ehdotuksista tai palautteesta.",
+      "link": {
+        "1": "Sähköposti"
       }
     }
   }
