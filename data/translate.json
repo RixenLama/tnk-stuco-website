@@ -7,7 +7,8 @@
         "2": "Members",
         "3": "Events",
         "4": "Rules",
-        "5": "Contact"
+        "5": "Contact",
+        "menu": "Menu"
       },
       "footer": {
         "copyright": "Turun normaalikoulun lukio. All rights reserved.",
@@ -37,7 +38,18 @@
     },
     "members": {
       "heading": "Members",
-      "desc": "Here you can view and contact the 25 members of STUCO during the academic year 2022–2023. Some members have special responsibilities that are also presented here."
+      "desc": "Here you can view and contact the 25 members of STUCO during the academic year 2022–2023. Some members have special responsibilities that are also presented here.",
+      "roles": {
+        "chairperson": "Chairperson",
+        "deputy-chairperson": "Deputy Chairperson",
+        "treasurer": "Treasurer",
+        "media-manager": "Media Manager",
+        "secretary": "Secretary",
+        "public-affairs": "Public Affairs",
+        "sustainable-development": "Sustainable Development",
+        "gym-manager": "Gym Manager",
+        "kitchen-manager": "Kitchen Manager"
+      }
     },
     "events": {
       "heading": "Events",
@@ -67,7 +79,8 @@
         "2": "Jäsenet",
         "3": "Tapahtumat",
         "4": "Säännöt",
-        "5": "Yhteystiedot"
+        "5": "Yhteystiedot",
+        "menu": "Valikko"
       },
       "footer": {
         "copyright": "Turun normaalikoulun lukio. Kaikki oikeudet pidätetään.",
@@ -77,7 +90,7 @@
     "index": {
       "hero": {
         "heading": "Teemme koulusta hauskempaa",
-        "desc": "Olemme Turun normaalikoulun lukion oppiskelijakunnan hallitus. Tehtävänämme on järjestää opiskelijoillemme hauskoja tapahtumia, jotta kouluvuosi olisi miellyttävämpi.",
+        "desc": "Olemme Turun normaalikoulun lukion oppiskelijakunnan hallitus. Tehtävänämme on järjestää opiskelijoillemme hauskoja tapahtumia, jotta kouluvuosi olisi kaikille miellyttävämpi.",
         "link": {
           "1": "Tulevat tapahtumat",
           "2": "Ehdota jotain"
@@ -86,8 +99,8 @@
       "about": {
         "heading": "Meistä",
         "text": {
-          "1": "Olemme Turun normaalikoulun lukion opiskelijakunnan hallitus (OPKH). Olemme ryhmä opiskelijoita, joiden tehtävänä on tehdä koulusta hauskempaa. Tehtävänämme on järjestää koulullemme hauskoja tapahtumia ympäri lukuvuoden. Esimerkkejä järjestämistämme tapahtumista ovat piknikit ja juhlat. Autamme myös muilla tavoilla, kuten järjestämällä varainkeräyksiä tai auttamalla urheilujoukkueiden kanssa. Olemme hauska joukko ihmisiä, jotka nauttivat toistensa seurasta ja uusien ystävien saamisesta. Rakastamme pitää hauskaa yhdessä, minkä vuoksi pyrimme aina varmistamaan, että kaikilla on hauskaa osallistuessaan johonkin juhliimme tai tapahtumaamme!",
-          "2": "Lukuvuonna 2022–2023 OPKH:ssa on 25 jäsentä. Kukin luokka valitsee edustajan ja varajäsenen. Koulussamme on kolme vuosiryhmää. Kukin vuosiryhmä koostuu kansallisista lukio- (AB) ja International Baccalaureate (IB) -opiskelijoista. Jokaisessa on 2-3 ryhmää. Valitut edustajat esittelevät luokkansa kokonaisuutena OPKH:lle. Jäsenet kokoontuvat säännöllisesti keskustelemaan siitä, kuinka he voivat parantaa koulun asioita ja järjestää hauskoja aktiviteetteja, joista kaikki voivat nauttia."
+          "1": "Olemme Turun normaalikoulun lukion opiskelijakunnan hallitus (OPKH). Olemme ryhmä opiskelijoita, joiden tehtävänä on tehdä koulusta hauskempaa. Me järjestämme koulullemme hauskoja tapahtumia ympäri lukuvuoden. Esimerkkejä tapahtumista ovat piknikit ja juhlat. Autamme myös muilla tavoilla, kuten järjestämällä varainkeräyksiä tai auttamalla urheilujoukkueiden kanssa. Olemme hauska joukko ihmisiä, jotka nauttivat toistensa seurasta ja uusien ystävien saamisesta. Rakastamme pitää hauskaa yhdessä, minkä vuoksi pyrimme aina varmistamaan, että kaikilla on hauskaa osallistuessaan johonkin juhliimme tai tapahtumaamme!",
+          "2": "Lukuvuonna 2022–2023 OPKH:ssa on 25 jäsentä. Kukin luokka valitsee sekä jäsenen että varajäsenen. Lukiossamme on kolme vuosiryhmää. Kukin vuosiryhmä koostuu kansallisista lukio- (AB) ja kansainvälisistä International Baccalaureate (IB) -opiskelijoista. Jokaisessa on 2-3 luokkaryhmää. Valitut edustajat esittelevät luokkansa kokonaisuutena OPKH:lle. Jäsenet kokoontuvat säännöllisesti keskustelemaan siitä, kuinka he voivat parantaa koulun asioita ja järjestää hauskoja aktiviteetteja, joista kaikki voivat nauttia."
         },
         "link": "Katso jäseniämme"
       },
@@ -97,23 +110,34 @@
     },
     "members": {
       "heading": "Jäsenet",
-      "desc": "Täältä voit katsoa ja ottaa yhteyttä OPKH:n 25 jäseneen lukuvuonna 2022–2023. Joillakin jäsenillä on erityisiä velvollisuuksia, jotka on myös esitetty tässä."
+      "desc": "Täältä voit ottaa yhteyttä lukuvuoden 2022–2023 OPKH:n 25 jäseneen. Joillakin jäsenillä on erityisiä velvollisuuksia, jotka on myös esitetty täällä.",
+      "roles": {
+        "chairperson": "Puheenjohtaja",
+        "deputy-chairperson": "Varapuheenjohtaja",
+        "treasurer": "Talousvastaava",
+        "media-manager": "Mediavastaava",
+        "secretary": "Sihteeri",
+        "public-affairs": "Viestintävastaava",
+        "sustainable-development": "Kestävä kehityksen vastaava",
+        "gym-manager": "Kuntosalivastaava",
+        "kitchen-manager": "Keittiövastaava"
+      }
     },
     "events": {
       "heading": "Tapahtumat",
-      "desc": "Täältä voit tarkastella kalenterissa erilaisia ​​hauskoja tapahtumia, joita järjestämme tämän lukuvuoden aikana. Klikkaa tapahtumia nähdäksesi lisätietoja.",
+      "desc": "Täältä voit tarkastella kalenterissa erilaisia ​​hauskoja tapahtumia, joita järjestämme tämän lukuvuoden aikana. Napsauta tapahtumia nähdäksesi lisätietoja.",
       "subheading": {
         "1": "Kalenteri",
-        "2": "Tapahtumalista"
+        "2": "Tapahtumaluettelo"
       }
     },
     "rules": {
       "heading": "Säännöt",
-      "desc": "Täältä voit katsoa OPKH:n toimintaa yksityiskohtaisesti kuvaavat lait ja määräykset sekä suomeksi että englanniksi."
+      "desc": "Täältä voit katsoa OPKH:n toimintaa yksityiskohtaisesti kuvaavat määräykset sekä suomeksi että englanniksi."
     },
     "contact": {
       "heading": "Yhteystiedot",
-      "desc": "Täällä voit vierailla sosiaalisen median tileillämme tai kirjoittaa meille kommentin ehdotuksista tai palautteesta.",
+      "desc": "Täältä voit käydä meidän sosiaalisen median tileillämme tai kirjoittaa meille ehdotuksia ja palautetta",
       "link": {
         "1": "Sähköposti"
       }

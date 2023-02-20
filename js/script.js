@@ -29,8 +29,9 @@ const translatePage = (translations) => {
 };
 
 const switchLocale = (locale) => {
-  console.log(`Locale: ${locale}`);
+  console.info(`Locale: ${locale}`);
   localStorage.setItem("tnk-stuco_locale", locale);
+  document.documentElement.setAttribute("lang", locale);
 
   fetch("/data/translate.json")
     .then((res) => res.json())
