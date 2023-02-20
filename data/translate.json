@@ -7,7 +7,8 @@
         "2": "Members",
         "3": "Events",
         "4": "Rules",
-        "5": "Contact"
+        "5": "Contact",
+        "menu": "Menu"
       },
       "footer": {
         "copyright": "Turun normaalikoulun lukio. All rights reserved.",
@@ -37,7 +38,18 @@
     },
     "members": {
       "heading": "Members",
-      "desc": "Here you can view and contact the 25 members of STUCO during the academic year 2022–2023. Some members have special responsibilities that are also presented here."
+      "desc": "Here you can view and contact the 25 members of STUCO during the academic year 2022–2023. Some members have special responsibilities that are also presented here.",
+      "roles": {
+        "chairperson": "Chairperson",
+        "deputy-chairperson": "Deputy Chairperson",
+        "treasurer": "Treasurer",
+        "media-manager": "Media Manager",
+        "secretary": "Secretary",
+        "public-affairs": "Public Affairs",
+        "sustainable-development": "Sustainable Development",
+        "gym-manager": "Gym Manager",
+        "kitchen-manager": "Kitchen Manager"
+      }
     },
     "events": {
       "heading": "Events",
@@ -67,7 +79,8 @@
         "2": "Jäsenet",
         "3": "Tapahtumat",
         "4": "Säännöt",
-        "5": "Yhteystiedot"
+        "5": "Yhteystiedot",
+        "menu": "Valikko"
       },
       "footer": {
         "copyright": "Turun normaalikoulun lukio. Kaikki oikeudet pidätetään.",
@@ -97,7 +110,18 @@
     },
     "members": {
       "heading": "Jäsenet",
-      "desc": "Täältä voit katsoa ja ottaa yhteyttä OPKH:n 25 jäseneen lukuvuonna 2022–2023. Joillakin jäsenillä on erityisiä velvollisuuksia, jotka on myös esitetty tässä."
+      "desc": "Täältä voit katsoa ja ottaa yhteyttä OPKH:n 25 jäseneen lukuvuonna 2022–2023. Joillakin jäsenillä on erityisiä velvollisuuksia, jotka on myös esitetty tässä.",
+      "roles": {
+        "chairperson": "Puheenjohtaja",
+        "deputy-chairperson": "Varapuheenjohtaja",
+        "treasurer": "Talousvastaava",
+        "media-manager": "Mediavastaava",
+        "secretary": "Sihteeri",
+        "public-affairs": "Viestintävastaava",
+        "sustainable-development": "Kestävä kehityksen vastaava",
+        "gym-manager": "Kuntosalivastaava",
+        "kitchen-manager": "Keittiövastaava"
+      }
     },
     "events": {
       "heading": "Tapahtumat",
