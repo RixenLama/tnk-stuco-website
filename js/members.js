@@ -1,3 +1,5 @@
+import { switchLanguage, getLanguage } from "./modules/translate.js";
+
 const membersContainer = document.querySelector("#members-container");
 const memberCardTemplate = document.querySelector("#member-card-template");
 
@@ -9,7 +11,7 @@ const columnNumber = Math.floor(
   (containerWidth + GRID_GAP) / (MIN_MEMBER_WIDTH + GRID_GAP)
 );
 
-let translatedObject;
+let translationObject = {};
 
 const populateMember = (member, idx) => {
   const { name, class: _class, role, socials } = member;
@@ -27,14 +29,14 @@ const populateMember = (member, idx) => {
 
   if (role) {
     memberClone.querySelector("#member-role").innerText =
-      translatedObject.members.roles[role];
+      translationObject.members.roles[role];
     memberClone
       .querySelector("#member-role")
       .setAttribute("data-locale-id", `members-roles-${role}`);
   }
 
   memberClone.querySelector('[data-locale-id="contact-link-1"]').innerText =
-    translatedObject.contact.link["1"];
+    translationObject.contact.link["1"];
   memberClone.querySelector("#member-email a").innerText = socials.email;
   memberClone
     .querySelector("#member-email a")
@@ -60,8 +62,8 @@ const populateMember = (member, idx) => {
 fetch("/data/translate.json")
   .then((res) => res.json())
   .then((translations) => {
-    const locale = localStorage.getItem("tnk-stuco_locale") || "en";
-    translatedObject = translations[locale];
+    const language = getLanguage();
+    translationObject = translations[language];
 
     fetch("/data/members.json")
       .then((res) => res.json())

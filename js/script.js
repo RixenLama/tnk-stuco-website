@@ -1,51 +1,47 @@
-const DEFAULT_LOCALE = "en";
+import { switchLanguage, getLanguage } from "./modules/translate.js";
 
-const enButton = document.querySelector("#en-button");
-const fiButton = document.querySelector("#fi-button");
+const enTranslateButton = document.querySelector("#en-button");
+const fiTranslateButton = document.querySelector("#fi-button");
 
-const traverseObject = (object, root, array) => {
-  return Object.keys(object).forEach((key) => {
-    const keyPath = `${root}-${key}`;
+// const traverseObject = (object, root, array) => {
+//   return Object.keys(object).forEach((key) => {
+//     const keyPath = `${root}-${key}`;
 
-    if (typeof object[key] === "object") {
-      traverseObject(object[key], keyPath, array);
-    } else {
-      return array.push([keyPath.slice(1), object[key]]);
-    }
-  });
-};
+//     if (typeof object[key] === "object") {
+//       traverseObject(object[key], keyPath, array);
+//     } else {
+//       return array.push([keyPath.slice(1), object[key]]);
+//     }
+//   });
+// };
 
-const translatePage = (translations) => {
-  const keys = [];
+// const translatePage = (translations) => {
+//   const keys = [];
 
-  traverseObject(translations, "", keys);
+//   traverseObject(translations, "", keys);
 
-  keys.forEach(([key, value]) => {
-    const elements = document.querySelectorAll(`[data-locale-id="${key}"]`);
-    if (elements) {
-      elements.forEach((e) => (e.textContent = value));
-    }
-  });
-};
+//   keys.forEach(([key, value]) => {
+//     const elements = document.querySelectorAll(`[data-locale-id="${key}"]`);
+//     if (elements) {
+//       elements.forEach((e) => (e.textContent = value));
+//     }
+//   });
+// };
 
-const switchLocale = (locale) => {
-  console.info(`Locale: ${locale}`);
-  localStorage.setItem("tnk-stuco_locale", locale);
-  document.documentElement.setAttribute("lang", locale);
+// const switchLocale = (locale) => {
+//   console.info(`Locale: ${locale}`);
+//   localStorage.setItem("TNK-STUCO__LOCALE", locale);
+//   document.documentElement.setAttribute("lang", locale);
 
-  fetch("/data/translate.json")
-    .then((res) => res.json())
-    .then((translations) => {
-      translatePage(translations[locale]);
-    });
-};
+//   fetch("/data/translate.json")
+//     .then((res) => res.json())
+//     .then((translations) => {
+//       translatePage(translations[locale]);
+//     });
+// };
 
-enButton.addEventListener("click", () => {
-  switchLocale("en");
-});
-fiButton.addEventListener("click", () => {
-  switchLocale("fi");
-});
+enTranslateButton.addEventListener("click", () => switchLanguage("en"));
+fiTranslateButton.addEventListener("click", () => switchLanguage("fi"));
 
 // Responsive Navbar
 
@@ -118,11 +114,10 @@ window.addEventListener("pageshow", () => {
   hideMobileNav();
 });
 
-// Dynamic Copyright Year
+// Translation Preferences & Dynamic Copyright Year
 
 document.addEventListener("DOMContentLoaded", () => {
-  const locale = localStorage.getItem("tnk-stuco_locale") || DEFAULT_LOCALE;
-  switchLocale(locale);
+  switchLanguage(getLanguage());
 
   const year = new Date().getFullYear();
   const copyrightYear = document.querySelector("#copyright-year");
