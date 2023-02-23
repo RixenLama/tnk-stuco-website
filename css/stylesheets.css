@@ -444,15 +444,17 @@ p {
   font-size: 0.8125rem;
   color: #9797a1;
 }
-.footer .translate-link {
+.footer .translate-link-container {
   display: flex;
   justify-content: flex-end;
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
+}
+.footer .translate-link {
+  min-width: 10%;
   font-size: 0.8125rem;
   color: hsl(0deg, 0%, 100%);
-}
-.footer .translate-link:hover {
-  text-decoration: underline;
+  background-color: hsl(273deg, 83%, 47%);
+  border-radius: 3px;
 }
 
 .member-card-container {
