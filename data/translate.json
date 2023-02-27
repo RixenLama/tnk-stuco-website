@@ -1,5 +1,14 @@
 {
   "en": {
+    "meta": {
+      "title": {
+        "1": "Home | TNK STUCO",
+        "2": "Members | TNK STUCO",
+        "3": "Events | TNK STUCO",
+        "4": "Rules | TNK STUCO",
+        "5": "Contact | TNK STUCO"
+      }
+    },
     "common": {
       "name": "TNK STUCO",
       "nav": {
@@ -75,6 +84,15 @@
 
 
   "fi": {
+    "meta": {
+      "title": {
+        "1": "Koti | TNK OPKH",
+        "2": "Jäsenet | TNK OPKH",
+        "3": "Tapahtumat | TNK OPKH",
+        "4": "Säännöt | TNK OPKH",
+        "5": "Yhteystiedot | TNK OPKH"
+      }
+    },
     "common": {
       "name": "TNK OPKH",
       "nav": {
@@ -128,7 +146,7 @@
     },
     "events": {
       "heading": "Tapahtumat",
-      "desc": "Täältä voit tarkastella kalenterissa erilaisia ​​hauskoja tapahtumia, joita järjestämme tämän lukuvuoden aikana. Napsauta tapahtumia nähdäksesi lisätietoja.",
+      "desc": "Täältä voit tarkastella erilaisia ​​hauskoja tapahtumia, joita järjestämme tämän lukuvuoden aikana. Napsauta tapahtumia nähdäksesi lisätietoja.",
       "subheading": {
         "1": "Kalenteri",
         "2": "Tapahtumaluettelo"
@@ -136,11 +154,11 @@
     },
     "rules": {
       "heading": "Säännöt",
-      "desc": "Täältä voit katsoa OPKH:n toimintaa yksityiskohtaisesti kuvaavat määräykset sekä suomeksi että englanniksi."
+      "desc": "Täältä voit katsoa OPKH:n toimintaa kuvaavat lailliset määräykset sekä suomeksi että englanniksi."
     },
     "contact": {
       "heading": "Yhteystiedot",
-      "desc": "Täältä voit käydä meidän sosiaalisen median tileillämme tai kirjoittaa meille ehdotuksia ja palautetta",
+      "desc": "Täältä voit käydä sosiaalisen median tileillämme tai kirjoittaa meille ehdotuksia ja palautetta.",
       "link": {
         "1": "Sähköposti"
       }
