@@ -300,11 +300,15 @@ p {
 
   .translation-button {
     background: none;
+    text-decoration: none;
     margin-inline: 0.5em;
-    color: white;
+    color: $clr-white;
     border: none;
     padding: 0;
     cursor: pointer;
+    &:hover{
+      color: $clr-accent
+    }
   }
 }
 

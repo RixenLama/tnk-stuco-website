@@ -89,44 +89,44 @@ select {
 }
 
 .button--neutral-primary {
-  background-color: hsl(0deg, 0%, 0%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
 }
 .button--neutral-primary:hover {
   background-color: #1a1a1a;
 }
 
 .button--neutral-secondary {
-  background-color: hsl(240deg, 6%, 90%);
-  color: hsl(0deg, 0%, 0%);
+  background-color: hsl(240, 6%, 90%);
+  color: hsl(0, 0%, 0%);
 }
 .button--neutral-secondary:hover {
   background-color: #c9c9cf;
 }
 
 .button--neutral-tertiary {
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(0deg, 0%, 0%);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
 }
 .button--neutral-tertiary:hover {
   background-color: #e6e6e6;
 }
 
 .button--accent-primary {
-  background-color: hsl(273deg, 83%, 47%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(273, 83%, 47%);
+  color: hsl(0, 0%, 100%);
 }
 .button--accent-primary:hover {
   background-color: #6610ad;
 }
 
 .button--accent-secondary {
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(273deg, 83%, 47%);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(273, 83%, 47%);
 }
 .button--accent-secondary:hover {
-  background-color: hsl(273deg, 83%, 47%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(273, 83%, 47%);
+  color: hsl(0, 0%, 100%);
 }
 
 .button--large {
@@ -140,23 +140,23 @@ select {
 }
 
 .button--accent-slide-hover {
-  box-shadow: inset 0 0 0 0 hsl(273deg, 83%, 47%);
+  box-shadow: inset 0 0 0 0 hsl(273, 83%, 47%);
 }
 .button--accent-slide-hover:hover {
   background-color: unset;
-  box-shadow: inset 12rem 0 0 0 hsl(273deg, 83%, 47%);
+  box-shadow: inset 12rem 0 0 0 hsl(273, 83%, 47%);
 }
 
 .button--neutral-stroke {
-  border: 1px solid hsl(240deg, 6%, 90%);
+  border: 1px solid hsl(240, 6%, 90%);
 }
 
 .button--accent-stroke {
-  border: 1px solid hsl(273deg, 83%, 47%);
+  border: 1px solid hsl(273, 83%, 47%);
 }
 
 .link {
-  color: hsl(194deg, 100%, 25%);
+  color: hsl(194, 100%, 25%);
   transition: color 200ms;
 }
 .link:hover, .link:focus {
@@ -165,8 +165,8 @@ select {
 }
 
 .card {
-  background-color: hsl(0deg, 0%, 100%);
-  border: 1px solid hsl(240deg, 6%, 90%);
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(240, 6%, 90%);
   padding: 1rem;
   border-radius: 4px;
 }
@@ -207,7 +207,7 @@ p {
 
 .page-subtitle {
   margin-top: 1rem;
-  color: hsl(240deg, 5%, 26%);
+  color: hsl(240, 5%, 26%);
   max-width: 50ch;
 }
 
@@ -229,7 +229,7 @@ p {
 .iframe {
   width: 100%;
   height: 100vh;
-  border: 1px solid hsl(240deg, 6%, 90%);
+  border: 1px solid hsl(240, 6%, 90%);
   border-radius: 4px;
 }
 .iframe--min-width {
@@ -237,8 +237,8 @@ p {
 }
 
 .header {
-  background-color: hsl(0deg, 0%, 0%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
   height: 64px;
   position: relative;
 }
@@ -290,7 +290,7 @@ p {
   height: 2rem;
 }
 .mobile-nav-button:hover, .mobile-nav-button:focus {
-  background-color: hsla(0deg, 0%, 100%, 0.2);
+  background-color: hsla(0, 0%, 100%, 0.2);
 }
 
 .mobile-nav {
@@ -299,7 +299,7 @@ p {
   left: 0;
   top: 64px;
   z-index: 100;
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   transition: transform 500ms;
   transform: translateX(-100%);
   display: none;
@@ -312,7 +312,7 @@ p {
   gap: 2em;
   height: calc(100vh - 64px);
   list-style: none;
-  color: hsl(0deg, 0%, 0%);
+  color: hsl(0, 0%, 0%);
 }
 .mobile-nav ul a {
   font-size: clamp(1.56rem, 1.38vw + 1.29rem, 2.53rem);
@@ -321,11 +321,11 @@ p {
   font-weight: 700;
 }
 .mobile-nav ul a:hover {
-  color: hsl(273deg, 83%, 47%);
+  color: hsl(273, 83%, 47%);
 }
 
 .hero-section {
-  background: hsl(194deg, 36%, 55%) url("/img/hero-background.webp") center/cover no-repeat;
+  background: hsl(194, 36%, 55%) url("/img/hero-background.webp") center/cover no-repeat;
   min-height: calc(100vh - 64px);
   position: relative;
   overflow: hidden;
@@ -333,7 +333,7 @@ p {
 .hero-section::before {
   content: "";
   width: max(50%, 600px);
-  background-color: hsla(273deg, 83%, 47%, 0.25);
+  background-color: hsla(273, 83%, 47%, 0.25);
   aspect-ratio: 1/1;
   border-radius: 100%;
   position: absolute;
@@ -348,7 +348,7 @@ p {
 .hero__heading {
   max-width: 800px;
   font-size: clamp(2.44rem, 4.65vw + 1.51rem, 5.7rem);
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   line-height: 1;
 }
 
@@ -377,7 +377,7 @@ p {
 
 .about__paragraph {
   font-size: 1rem;
-  color: hsl(240deg, 5%, 26%);
+  color: hsl(240, 5%, 26%);
   margin-bottom: 2rem;
 }
 
@@ -395,7 +395,7 @@ p {
 }
 
 .quotes-section {
-  background-color: hsl(240deg, 5%, 96%);
+  background-color: hsl(240, 5%, 96%);
 }
 
 .quotes-card-container {
@@ -421,7 +421,7 @@ p {
   margin-top: auto;
   font-size: 0.875rem;
   font-weight: 700;
-  color: hsl(273deg, 83%, 47%);
+  color: hsl(273, 83%, 47%);
   font-style: normal;
 }
 .quote-cite::before {
@@ -432,12 +432,12 @@ p {
 .footer {
   margin-top: auto;
   padding: 1.5rem 0;
-  background-color: hsl(0deg, 0%, 0%);
+  background-color: hsl(0, 0%, 0%);
   text-align: center;
 }
 .footer .copyright-text {
   font-size: 0.875rem;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 .footer .credits-text {
   margin-top: 0.5em;
@@ -450,11 +450,15 @@ p {
 }
 .footer .translation-button {
   background: none;
+  text-decoration: none;
   margin-inline: 0.5em;
-  color: white;
+  color: hsl(0, 0%, 100%);
   border: none;
   padding: 0;
   cursor: pointer;
+}
+.footer .translation-button:hover {
+  color: hsl(273, 83%, 47%);
 }
 
 .member-card-container {
@@ -475,7 +479,7 @@ p {
   padding: 0.5rem 1rem;
   background-color: #ecdafc;
   font-weight: 700;
-  color: hsl(273deg, 83%, 47%);
+  color: hsl(273, 83%, 47%);
   font-size: 0.8125rem;
   margin: 1rem -1rem 0 -1rem;
 }
@@ -500,7 +504,7 @@ p {
 }
 .member-card__link span {
   font-size: 0.8125rem;
-  color: hsl(240deg, 5%, 26%);
+  color: hsl(240, 5%, 26%);
 }
 .member-card__link a {
   font-size: 1rem;
