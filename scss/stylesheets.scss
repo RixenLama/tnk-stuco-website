@@ -292,24 +292,6 @@ p {
     font-size: $fs-xs;
     color: lighten($clr-text--light, 35%);
   }
-  
-  .translate-link-container{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 0.5rem;
-  }
-
-  .translate-link{
-    min-width: 10%;
-    font-size: $fs-xs;
-    color: $clr-white;
-    background-color: $clr-accent;
-    border-radius: 3px;
-
-    &:hover{
-      background-color: 
-    }
-  }
 }
 
 // Members Page
