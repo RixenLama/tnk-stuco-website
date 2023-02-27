@@ -104,7 +104,7 @@
               width="40"
               aria-hidden="true"
             />
-            TNK STUCO
+            <span data-locale-id="common-name">TNK STUCO</span>
           </a>
           <nav
             id="primary-nav"
@@ -113,20 +113,45 @@
           >
             <ul>
               <li>
-                <a href="index.html" class="primary-nav__link">Home</a>
+                <a
+                  href="index.html"
+                  class="primary-nav__link"
+                  aria-current="page"
+                  data-locale-id="common-nav-1"
+                  >Home</a
+                >
               </li>
               <li>
                 <a
                   href="member.html"
                   class="primary-nav__link primary-nav__link--active"
-                  aria-current="page"
+                  data-locale-id="common-nav-2"
                   >Members</a
                 >
               </li>
-              <li><a href="event.html" class="primary-nav__link">Events</a></li>
-              <li><a href="rule.html" class="primary-nav__link">Rules</a></li>
               <li>
-                <a href="contact.html" class="primary-nav__link">Contact</a>
+                <a
+                  href="event.html"
+                  class="primary-nav__link"
+                  data-locale-id="common-nav-3"
+                  >Events</a
+                >
+              </li>
+              <li>
+                <a
+                  href="rule.html"
+                  class="primary-nav__link"
+                  data-locale-id="common-nav-4"
+                  >Rules</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="primary-nav__link"
+                  data-locale-id="common-nav-5"
+                  >Contact</a
+                >
               </li>
             </ul>
           </nav>
@@ -137,7 +162,7 @@
             aria-expanded="false"
             tabindex="0"
           >
-            <span class="sr-only">Menu</span>
+            <span class="sr-only" data-locale-id="common-nav-menu">Menu</span>
             <img
               src="./img/icons/ic_menu.svg"
               alt=""
@@ -162,19 +187,46 @@
         <div class="container">
           <ul>
             <li>
-              <a href="index.html" class="mobile-nav__link">Home</a>
+              <a
+                href="index.html"
+                class="mobile-nav__link"
+                data-locale-id="common-nav-1"
+                >Home</a
+              >
             </li>
             <li>
               <a
                 href="member.html"
                 class="mobile-nav__link mobile-nav__link--active"
                 aria-current="page"
+                data-locale-id="common-nav-2"
                 >Members</a
               >
             </li>
-            <li><a href="event.html" class="mobile-nav__link">Events</a></li>
-            <li><a href="rule.html" class="mobile-nav__link">Rules</a></li>
-            <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+            <li>
+              <a
+                href="event.html"
+                class="mobile-nav__link"
+                data-locale-id="common-nav-3"
+                >Events</a
+              >
+            </li>
+            <li>
+              <a
+                href="rule.html"
+                class="mobile-nav__link"
+                data-locale-id="common-nav-4"
+                >Rules</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="mobile-nav__link"
+                data-locale-id="common-nav-5"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
@@ -183,8 +235,8 @@
     <main class="main">
       <section>
         <div class="container">
-          <h1 class="page-heading">Members</h1>
-          <p class="page-subtitle">
+          <h1 class="page-heading" data-locale-id="members-heading">Members</h1>
+          <p class="page-subtitle" data-locale-id="members-desc">
             Here you can view and contact the 25 members of STUCO during the
             academic year 2022–2023. Some members have special responsibilities
             that are also presented here.
@@ -209,7 +261,7 @@
                 </div>
                 <div class="member-card__bottom">
                   <div id="member-email" class="member-card__link">
-                    <span>Email</span>
+                    <span data-locale-id="contact-link-1">Email</span>
                     <a href="#" class="link"></a>
                   </div>
                   <div id="member-instagram" class="member-card__link">
@@ -227,10 +279,32 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-container">
-          <p id="copyright-text" class="copyright-text">
-            © 2022 Turun normaalikoulun lukio. All rights reserved.
+          <p class="copyright-text">
+            ©
+            <span id="copyright-year">2022</span>
+            <span data-locale-id="common-footer-copyright">
+              Turun normaalikoulun lukio. All rights reserved.
+            </span>
           </p>
-          <p class="credits-text">Developed by Raiyan S. &amp; Rixen L.</p>
+          <p class="credits-text" data-locale-id="common-footer-credits">
+            Developed by Raiyan S. &amp; Rixen L.
+          </p>
+          <div class="translation-buttons">
+            <button
+              id="en-button"
+              class="translation-button | link"
+              aria-label="translate to english"
+            >
+              English
+            </button>
+            <button
+              id="fi-button"
+              class="translation-button | link"
+              aria-label="käännä suomeksi"
+            >
+              Suomi
+            </button>
+          </div>
         </div>
       </div>
     </footer>

@@ -9,6 +9,8 @@ const columnNumber = Math.floor(
   (containerWidth + GRID_GAP) / (MIN_MEMBER_WIDTH + GRID_GAP)
 );
 
+let translatedObject;
+
 const populateMember = (member, idx) => {
   const { name, class: _class, role, socials } = member;
 
@@ -22,8 +24,17 @@ const populateMember = (member, idx) => {
 
   memberClone.querySelector("#member-name").innerText = name;
   memberClone.querySelector("#member-class").innerText = _class;
-  memberClone.querySelector("#member-role").innerText = role;
 
+  if (role) {
+    memberClone.querySelector("#member-role").innerText =
+      translatedObject.members.roles[role];
+    memberClone
+      .querySelector("#member-role")
+      .setAttribute("data-locale-id", `members-roles-${role}`);
+  }
+
+  memberClone.querySelector('[data-locale-id="contact-link-1"]').innerText =
+    translatedObject.contact.link["1"];
   memberClone.querySelector("#member-email a").innerText = socials.email;
   memberClone
     .querySelector("#member-email a")
@@ -46,11 +57,18 @@ const populateMember = (member, idx) => {
   return memberClone;
 };
 
-fetch("/data/members.json")
+fetch("/data/translate.json")
   .then((res) => res.json())
-  .then((members) => {
-    members.forEach((member, idx) => {
-      const memberElement = populateMember(member, idx);
-      membersContainer.appendChild(memberElement);
-    });
+  .then((translations) => {
+    const locale = localStorage.getItem("tnk-stuco_locale") || "en";
+    translatedObject = translations[locale];
+
+    fetch("/data/members.json")
+      .then((res) => res.json())
+      .then((members) => {
+        members.forEach((member, idx) => {
+          const memberElement = populateMember(member, idx);
+          membersContainer.appendChild(memberElement);
+        });
+      });
   });

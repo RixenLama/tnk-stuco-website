@@ -278,7 +278,7 @@ p {
 
 .footer {
   margin-top: auto;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   background-color: $clr-black;
   text-align: center;
 
@@ -291,6 +291,20 @@ p {
     margin-top: 0.5em;
     font-size: $fs-xs;
     color: lighten($clr-text--light, 35%);
+  }
+
+  .translation-buttons {
+    margin-top: 2em;
+    font-size: $fs-sm;
+  }
+
+  .translation-button {
+    background: none;
+    margin-inline: 0.5em;
+    color: white;
+    border: none;
+    padding: 0;
+    cursor: pointer;
   }
 }
 

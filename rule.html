@@ -89,7 +89,7 @@
               width="40"
               aria-hidden="true"
             />
-            TNK STUCO
+            <span data-locale-id="common-name">TNK STUCO</span>
           </a>
           <nav
             id="primary-nav"
@@ -98,22 +98,45 @@
           >
             <ul>
               <li>
-                <a href="index.html" class="primary-nav__link">Home</a>
+                <a
+                  href="index.html"
+                  class="primary-nav__link"
+                  aria-current="page"
+                  data-locale-id="common-nav-1"
+                  >Home</a
+                >
               </li>
               <li>
-                <a href="member.html" class="primary-nav__link">Members</a>
+                <a
+                  href="member.html"
+                  class="primary-nav__link"
+                  data-locale-id="common-nav-2"
+                  >Members</a
+                >
               </li>
-              <li><a href="event.html" class="primary-nav__link">Events</a></li>
+              <li>
+                <a
+                  href="event.html"
+                  class="primary-nav__link"
+                  data-locale-id="common-nav-3"
+                  >Events</a
+                >
+              </li>
               <li>
                 <a
                   href="rule.html"
                   class="primary-nav__link primary-nav__link--active"
-                  aria-current="page"
+                  data-locale-id="common-nav-4"
                   >Rules</a
                 >
               </li>
               <li>
-                <a href="contact.html" class="primary-nav__link">Contact</a>
+                <a
+                  href="contact.html"
+                  class="primary-nav__link"
+                  data-locale-id="common-nav-5"
+                  >Contact</a
+                >
               </li>
             </ul>
           </nav>
@@ -124,7 +147,7 @@
             aria-expanded="false"
             tabindex="0"
           >
-            <span class="sr-only">Menu</span>
+            <span class="sr-only" data-locale-id="common-nav-menu">Menu</span>
             <img
               src="./img/icons/ic_menu.svg"
               alt=""
@@ -149,19 +172,46 @@
         <div class="container">
           <ul>
             <li>
-              <a href="index.html" class="mobile-nav__link">Home</a>
+              <a
+                href="index.html"
+                class="mobile-nav__link"
+                data-locale-id="common-nav-1"
+                >Home</a
+              >
             </li>
-            <li><a href="member.html" class="mobile-nav__link">Members</a></li>
-            <li><a href="event.html" class="mobile-nav__link">Events</a></li>
+            <li>
+              <a
+                href="member.html"
+                class="mobile-nav__link"
+                data-locale-id="common-nav-2"
+                >Members</a
+              >
+            </li>
+            <li>
+              <a
+                href="event.html"
+                class="mobile-nav__link"
+                data-locale-id="common-nav-3"
+                >Events</a
+              >
+            </li>
             <li>
               <a
                 href="rule.html"
                 class="mobile-nav__link mobile-nav__link--active"
                 aria-current="page"
+                data-locale-id="common-nav-4"
                 >Rules</a
               >
             </li>
-            <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+            <li>
+              <a
+                href="contact.html"
+                class="mobile-nav__link"
+                data-locale-id="common-nav-5"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
@@ -170,8 +220,8 @@
     <main class="main">
       <section>
         <div class="container">
-          <h1 class="page-heading">Rules</h1>
-          <p class="page-subtitle">
+          <h1 class="page-heading" data-locale-id="rules-heading">Rules</h1>
+          <p class="page-subtitle" data-locale-id="rules-desc">
             Here you can view the legal rules and regulations of the student
             body which describe STUCO's function in detail both in Finnish and
             English.
@@ -196,10 +246,32 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-container">
-          <p id="copyright-text" class="copyright-text">
-            © 2022 Turun normaalikoulun lukio. All rights reserved.
+          <p class="copyright-text">
+            ©
+            <span id="copyright-year">2022</span>
+            <span data-locale-id="common-footer-copyright">
+              Turun normaalikoulun lukio. All rights reserved.
+            </span>
           </p>
-          <p class="credits-text">Developed by Raiyan S. &amp; Rixen L.</p>
+          <p class="credits-text" data-locale-id="common-footer-credits">
+            Developed by Raiyan S. &amp; Rixen L.
+          </p>
+          <div class="translation-buttons">
+            <button
+              id="en-button"
+              class="translation-button | link"
+              aria-label="translate to english"
+            >
+              English
+            </button>
+            <button
+              id="fi-button"
+              class="translation-button | link"
+              aria-label="käännä suomeksi"
+            >
+              Suomi
+            </button>
+          </div>
         </div>
       </div>
     </footer>
